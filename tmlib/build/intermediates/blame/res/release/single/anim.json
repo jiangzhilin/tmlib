@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\tooltip_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\tooltip_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\scale.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\scale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\right_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\right_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\bottom_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\bottom_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\bottom_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\bottom_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\popshow_anim.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\popshow_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\pop_enter.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\pop_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\activity_right_enter.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\activity_right_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\tooltip_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\tooltip_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\top_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\top_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\show_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\show_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\jump.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\jump.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\left_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\left_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\scale_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\scale_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\pop_exit.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\pop_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\scale_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\scale_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\activity_exit.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\activity_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\pophidden_anim.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\pophidden_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\hide_to_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\hide_to_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\activity_enter.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\activity_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\cycle_map.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\anim\\cycle_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\left_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\left_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\right_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\right_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\top_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\anim\\top_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    }
+]

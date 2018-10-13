@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.tenma.ventures" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets">
+    <name>TenmaVentures</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <!-- 白名单插件 -->
+    <feature name="Whitelist">
+        <param name="android-package" value="com.tenma.ventures.plugins.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <!-- 腾讯X5 -->
+    <preference name="webView" value="org.apache.cordova.engine.x5engine.X5WebViewEngine" />
+    <!-- 天马消息通信插件 -->
+    <feature name="TMController">
+        <param name="android-package" value="com.tenma.ventures.plugins.controller.TMController" />
+    </feature>
+    <!-- 相机插件 -->
+    <feature name="Camera">
+        <param name="android-package" value="com.tenma.ventures.plugins.camera.CameraLauncher" />
+    </feature>
+    <!-- 获取当前应用的版本号 -->
+    <feature name="AppVersion">
+        <param name="android-package" value="com.tenma.ventures.plugins.appversion.AppVersion" />
+    </feature>
+    <!-- 获取设备信息 -->
+    <feature name="Device">
+        <param name="android-package" value="com.tenma.ventures.plugins.device.Device" />
+    </feature>
+    <!-- 获取网络连接信息 -->
+    <feature name="NetworkStatus">
+        <param name="android-package" value="com.tenma.ventures.plugins.networkinformation.NetworkManager" />
+    </feature>
+    <!-- 基于高德地图的定位插件 -->
+    <feature name="TMLocation">
+        <param name="android-package" value="com.tenma.ventures.plugins.location.TMLocation" />
+    </feature>
+    <!-- 在设备上读/写 -->
+    <feature name="File">
+        <param name="android-package" value="com.tenma.ventures.plugins.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <!-- 调用相册 -->
+    <feature name="TMMultiImageSelector">
+        <param name="android-package" value="com.tenma.ventures.plugins.multi_image_selector.TMMultiImageSelector" />
+    </feature>
+    <feature name="TMImagePicker">
+        <param name="android-package" value="com.tenma.ventures.plugins.imagepicker.TMImagePicker" />
+    </feature>
+    <!-- 选择视频 -->
+    <feature name="TMVideoPicker">
+        <param name="android-package" value="com.tenma.ventures.plugins.videopicker.TMVideoPicker" />
+    </feature>
+    <!-- 媒体捕获 -->
+    <feature name="Capture">
+        <param name="android-package" value="com.tenma.ventures.plugins.mediacapture.Capture" />
+    </feature>
+    <!-- 退出APP -->
+    <feature name="ExitApp">
+        <param name="android-package" value="com.tenma.ventures.plugins.exitapp.ExitApp" />
+    </feature>
+    <!-- barcodeScanner（条形码/二维码扫描） -->
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="org.apache.cordova.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <!-- Hardware Nofifications（硬件消息提醒） -->
+    <feature name="Vibration">
+        <param name="android-package" value="com.tenma.ventures.plugins.vibration.Vibration" />
+    </feature>
+    <!-- Visual Notification（可视化消息提醒） -->
+    <feature name="Notification">
+        <param name="android-package" value="com.tenma.ventures.plugins.dialogs.Notification" />
+    </feature>
+    <!-- Contacts（联系人） -->
+    <feature name="Contacts">
+        <param name="android-package" value="com.tenma.ventures.plugins.contacts.ContactManager" />
+    </feature>
+    <!-- Media（播放/记录媒体文件） -->
+    <feature name="Media">
+        <param name="android-package" value="com.tenma.ventures.plugins.media.AudioHandler" />
+    </feature>
+    <!-- InAppBrowser（内置浏览器） -->
+    <feature name="InAppBrowser">
+        <param name="android-package" value="com.tenma.ventures.plugins.inappbrowser.InAppBrowser" />
+    </feature>
+    <!-- Splashscreen（闪屏） -->
+    <feature name="SplashScreen">
+        <param name="android-package" value="com.tenma.ventures.plugins.splashscreen.SplashScreen" />
+        <param name="onload" value="false" />
+    </feature>
+    <!-- fileTransfer（文件传输） -->
+    <feature name="FileTransfer">
+        <param name="android-package" value="com.tenma.ventures.plugins.filetransfer.FileTransfer" />
+    </feature>
+</widget>
