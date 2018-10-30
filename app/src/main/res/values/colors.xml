@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_bg">#fe350e</color>
+    <color name="night_main_bg">#1e1e2a</color>
+    <color name="text_white">#f4f4f4</color>
+    <color name="text_white2">#b0f4f4f4</color>
+    <color name="text_gray">#333333</color>
+    <color name="text_gray2">#999999</color>
+    <color name="text_gray3">#666666</color>
+    <color name="text_gray4">#888888</color>
+    <color name="text_black">#525252</color>
+    <color name="line_color">#f1f1f1</color>
+    <color name="line_color_night">#292929</color>
+
+    <!-- 天马框架 -->
+    <color name="main_background">#fff5f5f6</color>
+    <color name="white">#ffffffff</color>
+    <color name="color5b9fc4">#ff5b9fc4</color>
+    <color name="color99ffffff">#99ffffff</color>
+    <color name="color5a9fc3">#cc5a9fc3</color>
+    <color name="color15476a">#ff15476a</color>
+    <color name="colorcbcbcb">#ffcbcbcb</color>
+    <color name="color46798e">#ff46798e</color>
+    <color name="transparent_black">#7F000000</color>
+</resources>

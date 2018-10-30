@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<!--<head>-->
+<!--&lt;!&ndash;-->
+<!--Customize this policy to fit your own app's needs. For more guidance, see:-->
+<!--https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy-->
+<!--Some notes:-->
+<!--* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication-->
+<!--* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly-->
+<!--* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:-->
+<!--* Enable inline JS: add 'unsafe-inline' to default-src-->
+<!--&ndash;&gt;-->
+<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+<!--<meta name="format-detection" content="telephone=no">-->
+<!--<meta name="msapplication-tap-highlight" content="no">-->
+<!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">-->
+<!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+<!--<title>Hello World</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="app">-->
+<!--<h1>Apache Cordova</h1>-->
+<!--<div id="deviceready" class="blink">-->
+<!--<p class="event listening">Connecting to Device</p>-->
+<!--<p class="event received">Device is Ready</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<script type="text/javascript" src="cordova.js"></script>-->
+<!--<script type="text/javascript" src="js/index.js"></script>-->
+<!--</body>-->
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+    <meta charset="UTF-8">
+</head>
+<script type="text/javascript" src="../../tm_src/exec/cordova.js"></script>
+<script type="text/javascript" src="js/module_cordova_plugins.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+function create(){
+    <!--createDocument("com.sobey.native.craeteDocument", "{\"title\":\"这是标题\",\"content\":\"这是内容\"}");-->
+    var title = document.getElementById("title").value;
+    var content = document.getElementById("content").value;
+
+    var messageJson = "{\"title\":\""+title+"\",\"content\":\""+content+"\"}";
+     	TMController.sendMessage("com.tm.native.createDocument",messageJson,onSuccess, onError);
+
+		function onSuccess(msg){
+        	alert(msg);
+        	var jsonStr = JSON.parse(msg);
+        	document.getElementById("title").value = jsonStr['title'];
+        	document.getElementById("content").value = jsonStr['content'];
+		}
+
+		function onError(error){
+        	alert(error);
+		}
+ }
+
+function takPhoto(){
+    headImg1('attr','my_data_touxiang','cuntouxiang');
+ }
+
+function getAppVersion(){
+    var appInfo = "";
+     cordova.getAppVersion.getAppName(function success(msg){
+        appInfo = "APP名称：" + msg;
+    },function fail(msg){
+        alert("获取失败："+msg);
+    });
+    cordova.getAppVersion.getVersionNumber(function success(msg){
+        appInfo = appInfo + "\nAPP版本名："+msg;
+    },function fail(msg){
+        alert("获取失败："+msg);
+    });
+
+    cordova.getAppVersion.getVersionCode(function success(msg){
+        appInfo = appInfo + "\nAPP版本号："+msg;
+    },function fail(msg){
+        alert("获取失败："+msg);
+    });
+
+    cordova.getAppVersion.getPackageName(function success(msg){
+        appInfo = appInfo + "\nAPP包名："+msg;
+        alert("获取成功：\n"+appInfo);
+    },function fail(msg){
+        alert("获取失败："+msg);
+    });
+}
+
+function getDeviceInfo(){
+    device.getInfo(function success(msg){
+        alert("获取成功："+JSON.stringify(msg));
+    },function fail(msg){
+        alert("获取失败："+msg);
+    });
+}
+
+function checkConnection() {
+    var networkState = navigator.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.CELL]     = 'Cell generic connection';
+    states[Connection.NONE]     = 'No network connection';
+
+    alert('Connection type: ' + states[networkState]);
+}
+
+function getCurrentPosition(isOnce){
+    TMLocation.getCurrentPosition(success, error,{
+				locationMode:"Hight_Accuracy",
+				gpsFirst:false,
+				httpTimeOut:30000,
+				interval:2000,
+				needAddress:true,
+				onceLocation:isOnce,
+				onceLocationLatest:false,
+				locationProtocol:"HTTP",
+				sensorEnable:false,
+				wifiScan:true,
+				locationCacheEnable:true
+			});
+
+		function success(result){
+			alert("获取成功："+JSON.stringify(result));
+		}
+
+		function error(){
+			alert("获取失败："+msg);
+		}
+}
+
+function stopLocation(){
+    TMLocation.stopLocation(function success(msg){
+        alert("定位已停止");
+    },function fail(msg){
+        alert("停止定位失败");
+    });
+}
+
+function multiImage(){
+    var isMulti = true;
+    TMMultiImageSelector.openMultiImageSelector(JSON.parse("{\"count\":9,\"isMulti\":"+isMulti+"}"),function success(msg){
+       alert(JSON.stringify(msg));
+    },function fail(msg){
+        alert("调用失败");
+    });
+}
+function getPictures(){
+    TMImagePicker.getPictures(function(result) {
+        <!--alert(result);-->
+        alert(result);
+        document.getElementById("image").src = result;
+    }, function(err) {
+        alert(err);
+    }, { maximumImagesCount : 9, maxWidth : 1920, maxHeight : 1440, quality : 100, isOriginal:false });
+
+}
+
+function captureVideo(){
+     var options = {
+      limit: 1,
+      duration: 10
+   };
+
+   navigator.device.capture.captureVideo(onSuccess, onError, options);
+
+   function onSuccess(mediaFiles) {
+      var i, path, len;
+
+      for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+         path = mediaFiles[i].fullPath;
+         playVideo(path);
+      }
+   }
+
+   function onError(error) {
+      navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+   }
+}
+
+function playVideo(videoPath){
+    url = "video.html?videoPath="+videoPath;
+    location.href=url;
+}
+
+function selectVideo(){
+
+   TMVideoPicker.getVideos(onSuccess, onError, { isMulti : true });
+
+   function onSuccess(videos) {
+      playVideo(videos[0]);
+   }
+
+   function onError(error) {
+       alert(error);
+   }
+}
+
+function openWindow(){
+		var windowName = "com.sobey.anative.NewActivity";
+
+		var title = document.getElementById("title").value;
+    	var content = document.getElementById("content").value;
+
+		var arguments = "{\"title\":\""+title+"\",\"content\":\""+content+"\"}";
+
+        TMController.openWindow(windowName, arguments);
+	}
+</script>
+<body>
+<!--<video controls="controls" autoplay="autoplay">-->
+<!--<source src="https://flv3.bn.netease.com/videolib3/1712/07/hEGJK9803/SD/hEGJK9803-mobile.mp4"-->
+<!--type="video/mp4"/>-->
+<!--Your browser does not support the video tag.-->
+<!--</video>-->
+<div>
+    <input id="title" placeholder="请输入文稿标题" value=""/>
+    <input id="content" placeholder="请输入文稿内容" value=""/>
+</div>
+<div>
+    <button onclick="create()">写文稿</button>
+</div>
+<div>
+    <button onclick="takPhoto()">拍照</button>
+</div>
+<div>
+    <button onclick="getAppVersion()">获取APP版本</button>
+</div>
+<div>
+    <button onclick="getDeviceInfo()">获取设备信息</button>
+</div>
+<div>
+    <button onclick="checkConnection()">获取网络连接信息</button>
+</div>
+<div>
+    <button onclick="getCurrentPosition(false)">循环获取当前位置信息</button>
+</div>
+<div>
+    <button onclick="getCurrentPosition(true)">单次获取当前位置信息</button>
+</div>
+<div>
+    <button onclick="stopLocation()">停止定位</button>
+</div>
+<div>
+    <img id="image" src="">
+</div>
+<div>
+    <button onclick="getPictures()">调用相册</button>
+</div>
+<div>
+    <button onclick="captureVideo()">录制视频并播放</button>
+</div>
+<div>
+    <button onclick="selectVideo()">选择本地视频并播放</button>
+</div>
+<div>
+    <button onclick="openWindow()">打开新窗口</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="76.0dip">
+
+            <TextView
+                android:id="@+id/bg_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/color5b9fc4" />
+
+            <LinearLayout
+                android:id="@+id/tab_item_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="88.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_toLeftOf="@+id/layout_search"
+                android:orientation="horizontal">
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="1.0">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/map_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="36.0dip"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35.0dip"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="地图"-->
+                        <!--android:textColor="@color/color99ffffff"-->
+                        <!--android:textSize="@dimen/font_16" />-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/line_map"-->
+                        <!--android:layout_width="30.0dip"-->
+                        <!--android:layout_height="2.0dip"-->
+                        <!--android:layout_alignLeft="@+id/map_title"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignRight="@+id/map_title"-->
+                        <!--android:background="#ffffffff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="1.0">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/select_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="36.0dip"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35.0dip"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="精选"-->
+                        <!--android:textColor="@color/color99ffffff"-->
+                        <!--android:textSize="@dimen/font_16" />-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/line_select"-->
+                        <!--android:layout_width="20.0dip"-->
+                        <!--android:layout_height="2.0dip"-->
+                        <!--android:layout_alignLeft="@+id/select_title"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignRight="@+id/select_title"-->
+                        <!--android:background="#ffffffff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="1.0">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/emergency_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="36.0dip"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35.0dip"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="直播"-->
+                        <!--android:textColor="@color/color99ffffff"-->
+                        <!--android:textSize="@dimen/font_16" />-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/line_emergency"-->
+                        <!--android:layout_width="20.0dip"-->
+                        <!--android:layout_height="2.0dip"-->
+                        <!--android:layout_alignLeft="@+id/emergency_title"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignRight="@+id/emergency_title"-->
+                        <!--android:background="#ffffffff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="1.0">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/politics_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="36.0dip"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35.0dip"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="时政"-->
+                        <!--android:textColor="@color/color99ffffff"-->
+                        <!--android:textSize="@dimen/font_16" />-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/line_politics"-->
+                        <!--android:layout_width="20.0dip"-->
+                        <!--android:layout_height="2.0dip"-->
+                        <!--android:layout_alignLeft="@+id/politics_title"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignRight="@+id/politics_title"-->
+                        <!--android:background="#ffffffff" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="1.5">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/matrix_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="36.0dip"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="35.0dip"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="矩阵号"-->
+                        <!--android:textColor="@color/color99ffffff"-->
+                        <!--android:textSize="@dimen/font_16" />-->
+
+                    <!--<View-->
+                        <!--android:id="@+id/line_matrix"-->
+                        <!--android:layout_width="40.0dip"-->
+                        <!--android:layout_height="2.0dip"-->
+                        <!--android:layout_alignLeft="@+id/matrix_title"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignRight="@+id/matrix_title"-->
+                        <!--android:background="#ffffffff" />-->
+                <!--</RelativeLayout>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_search"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30.0dip">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:src="@mipmap/img_search" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_bar"
+            android:background="@color/color5b9fc4"
+            android:paddingBottom="14.0dip"
+            android:paddingTop="9.0dip"
+            android:shadowColor="#c0000000"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="7.0"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="12.0dip"
+                android:lineSpacingExtra="7.0dip"
+                android:lineSpacingMultiplier="1.0"
+                android:textColor="@color/white"
+                android:textSize="15.5sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:src="@mipmap/video_type_politics_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_title" />
+
+    <ImageView
+        android:id="@+id/web_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="78.0dip"
+        android:scaleType="matrix"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/activity_main_rfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginRight="17.0dip"
+        android:src="@drawable/floatingbutton" />
+
+    <ImageView
+        android:id="@+id/icon_navi"
+        android:layout_width="58.0dip"
+        android:layout_height="58.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="29.0dip"
+        android:src="@mipmap/icon_logo" />
+
+    <RelativeLayout
+        android:id="@+id/floatingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#e1ffffff"
+        android:visibility="gone">
+
+        <include layout="@layout/title_bar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingLeft="19.0dip"
+            android:paddingRight="19.0dip">
+
+            <LinearLayout
+                android:id="@+id/local_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="121.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="82.0dip"
+                    android:background="@color/color5a9fc3">
+
+                    <ImageView
+                        android:layout_width="55.0dip"
+                        android:layout_height="55.0dip"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/local" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="39.0dip"
+                    android:background="#c4e8e8e8"
+                    android:gravity="center"
+                    android:text="本地上传"
+                    android:textColor="@color/color15476a"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/live_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="121.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="82.0dip"
+                    android:background="@color/color5a9fc3">
+
+                    <ImageView
+                        android:layout_width="55.0dip"
+                        android:layout_height="55.0dip"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/img_live" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="39.0dip"
+                    android:background="#c4e8e8e8"
+                    android:gravity="center"
+                    android:text="手机直播"
+                    android:textColor="@color/color15476a"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_notify"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ba000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_open_permission" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25.0dip"
+            android:text="含泪错过"
+            android:textColor="@color/colorcbcbcb"
+            android:textSize="15.0dip" />
+
+        <ImageView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp13"
+            android:src="@drawable/img_open_permission" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sure"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38.0dip"
+            android:text="错过好新闻？只因没通知"
+            android:textColor="#ff515151"
+            android:textSize="19.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_boot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ba000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_boot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="80.0dip"
+            android:layout_marginLeft="37.5dip"
+            android:layout_marginRight="37.5dip"
+            android:layout_marginTop="80.0dip" />
+
+        <ImageView
+            android:id="@+id/boot_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/img_boot"
+            android:layout_alignTop="@+id/img_boot"
+            android:layout_marginRight="13.0dip"
+            android:layout_marginTop="7.0dip"
+            android:src="@mipmap/img_close" />
+
+        <ImageView
+            android:id="@+id/boot_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_boot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22.0dip"
+            android:src="@mipmap/img_ask_info" />
+    </RelativeLayout>
+</RelativeLayout>

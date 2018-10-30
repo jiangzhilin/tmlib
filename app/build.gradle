@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.1"
+    defaultConfig {
+        applicationId "com.sobey.tmgc"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        manifestPlaceholders = [
+                // 包名
+                JPUSH_PKGNAME: applicationId,
+                // 正式KEY
+                JPUSH_APPKEY : "e78c96fcbcf84a6ea1ac06ac",
+                // 渠道名称
+                JPUSH_CHANNEL: "developer-default",
+        ]
+
+        ndk {
+            abiFilters 'armeabi'
+            //, 'armeabi-v7a', 'armeabi64-v8a', 'mips', 'mips64', 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs project(':native').file('libs')
+        dirs project(':h5').file('libs')
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile project(':native')
+    compile project(':h5')
+}

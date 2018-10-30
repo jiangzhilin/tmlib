@@ -1,0 +1,57 @@
+<html>
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Hello World</title>
+    <meta charset="UTF-8">
+</head>
+
+<script type="text/javascript" src="http://injection.android/cordova.js" ></script>
+<script type="text/javascript" src="http://injection.android/pages/comp01/js/module_cordova_plugins.js"></script>
+<script type="text/javascript" src="http://injection.android/pages/comp01/js/index.js"></script>
+
+
+    <script type="text/javascript">
+        function getRemoteUserInfo(){
+            var userInfo = window.tmAndroidInf.getTMUser();
+            alert(userInfo);
+        }
+
+        function getUserInfo(){
+               TMController.getUser(onSuccess, onError);
+
+               function onSuccess(userInfo) {
+                  alert(userInfo);
+               }
+
+               function onError(error) {
+                   alert(error);
+               }
+        }
+
+ function buttonClick10(){
+
+            cordova.exec(success8, error8, "CacheDataI008InstanceController", "userConfigData");
+        }
+
+        function success8(message){
+            alert(message);
+        }
+        function error8(){
+            alert("调用失败");
+        }
+    </script>
+<body>
+<div>
+    <button  style="width:100%;height:50px;font-size:20px;"  onclick="getRemoteUserInfo()">通过原生交互获取用户信息</button>
+</div>
+<div>
+    <button  style="width:100%;height:50px;font-size:20px;"  onclick="getUserInfo()">通过Cordova插件获取用户信息</button>
+</div>
+<div>
+    <button  style="width:100%;height:50px;font-size:20px;"  onclick="buttonClick10()">iOS测试</button>
+</div>
+</body>
+</html>
