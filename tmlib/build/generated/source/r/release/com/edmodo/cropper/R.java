@@ -8,34 +8,34 @@ package com.edmodo.cropper;
 
 public final class R {
     public static final class attr {
-        public static int aspectRatioX = 0x7f010120;
-        public static int aspectRatioY = 0x7f010121;
-        public static int fixAspectRatio = 0x7f01011f;
-        public static int guidelines = 0x7f01011e;
-        public static int imageResource = 0x7f010122;
+        public static int aspectRatioX = 0x7f01012b;
+        public static int aspectRatioY = 0x7f01012c;
+        public static int fixAspectRatio = 0x7f01012a;
+        public static int guidelines = 0x7f010129;
+        public static int imageResource = 0x7f01012d;
     }
     public static final class color {
-        public static int black_translucent = 0x7f0d0014;
+        public static int black_translucent = 0x7f0e0014;
     }
     public static final class id {
-        public static int CropOverlayView = 0x7f0e0128;
-        public static int ImageView_image = 0x7f0e0127;
-        public static int off = 0x7f0e006b;
-        public static int on = 0x7f0e006c;
-        public static int onTouch = 0x7f0e006d;
+        public static int CropOverlayView = 0x7f0f0160;
+        public static int ImageView_image = 0x7f0f015f;
+        public static int off = 0x7f0f0074;
+        public static int on = 0x7f0f0075;
+        public static int onTouch = 0x7f0f0076;
     }
     public static final class layout {
-        public static int crop_image_view = 0x7f040031;
+        public static int crop_image_view = 0x7f04003b;
     }
     public static final class string {
-        public static int app_name = 0x7f080057;
+        public static int app_name = 0x7f0800eb;
     }
     public static final class style {
-        public static int AppBaseTheme = 0x7f0a000c;
-        public static int AppTheme = 0x7f0a00ad;
+        public static int AppBaseTheme = 0x7f0b000c;
+        public static int AppTheme = 0x7f0b00b0;
     }
     public static final class styleable {
-        public static int[] CropImageView = { 0x7f01011e, 0x7f01011f, 0x7f010120, 0x7f010121, 0x7f010122, 0x7f010123, 0x7f010124, 0x7f010125, 0x7f010126, 0x7f010127, 0x7f010128 };
+        public static int[] CropImageView = { 0x7f010129, 0x7f01012a, 0x7f01012b, 0x7f01012c, 0x7f01012d, 0x7f01012e, 0x7f01012f, 0x7f010130, 0x7f010131, 0x7f010132, 0x7f010133 };
         public static int CropImageView_aspectRatioX = 2;
         public static int CropImageView_aspectRatioY = 3;
         public static int CropImageView_fixAspectRatio = 1;

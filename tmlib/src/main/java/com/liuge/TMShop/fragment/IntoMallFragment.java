@@ -21,6 +21,7 @@ import com.liuge.TMShop.adapter.IndexListAdapter;
 import com.liuge.TMShop.adapter.PagerAdapter;
 import com.liuge.TMShop.entity.BannerEntity;
 import com.liuge.TMShop.network.ApiManager;
+import com.liuge.TMShop.network.SixGridContext;
 import com.liuge.TMShop.ui.GoodsClassActivity;
 import com.liuge.TMShop.ui.MallActivity;
 import com.liuge.TMShop.utils.GlideImageLoader;
@@ -56,6 +57,9 @@ public class IntoMallFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_new, container, false);
         vh = new ViewHolder(view);
+
+
+        SixGridContext.init(getActivity());
 
 //        //获得状态栏高度
 //        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, StatusBarUtil.getStatusBarHeight(getActivity()));
@@ -120,37 +124,69 @@ public class IntoMallFragment extends Fragment {
         //定义底部标签图片大小和位置
         Drawable drawable_idnex = getResources().getDrawable(R.drawable.radio_index);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_idnex.setBounds(0, 10, 75, 80);
+        drawable_idnex.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         vh.rb_index.setCompoundDrawables(null, drawable_idnex, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_goods = getResources().getDrawable(R.drawable.radio_goods);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_goods.setBounds(0, 10, 75, 80);
+        drawable_goods.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         vh.rb_goods.setCompoundDrawables(null, drawable_goods, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_cart = getResources().getDrawable(R.drawable.radio_cart);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_cart.setBounds(0, 10, 75, 80);
+        drawable_cart.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         vh.rb_cart.setCompoundDrawables(null, drawable_cart, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_shouyi = getResources().getDrawable(R.drawable.radio_shouyi);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_shouyi.setBounds(0, 10, 75, 80);
+        drawable_shouyi.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         vh.rb_shouyi.setCompoundDrawables(null, drawable_shouyi, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_mine = getResources().getDrawable(R.drawable.radio_mine);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_mine.setBounds(0, 10, 75, 80);
+        drawable_mine.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         vh.rb_mine.setCompoundDrawables(null, drawable_mine, null, null);
+
+
+        vh.rb_index.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vh.view_pager.setCurrentItem(0,false);
+            }
+        });
+        vh.rb_goods.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vh.view_pager.setCurrentItem(1,false);
+            }
+        });
+        vh.rb_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vh.view_pager.setCurrentItem(2,false);
+            }
+        });
+        vh.rb_shouyi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vh.view_pager.setCurrentItem(3,false);
+            }
+        });
+        vh.rb_mine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vh.view_pager.setCurrentItem(4,false);
+            }
+        });
 
         setPager();
     }

@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.liuge.TMShop.R;
+import com.liuge.TMShop.entity.GoodsComentEntity;
 
 import java.util.List;
 
@@ -18,9 +19,9 @@ import java.util.List;
 
 public class CommentImgAdapter extends BaseAdapter {
     Context mContext;
-    List<String> img;
+    List<GoodsComentEntity.DataBean.imgBean> img;
 
-    public CommentImgAdapter(Context mContext, List<String> img) {
+    public CommentImgAdapter(Context mContext, List<GoodsComentEntity.DataBean.imgBean> img) {
         this.mContext = mContext;
         this.img = img;
     }
@@ -55,7 +56,7 @@ public class CommentImgAdapter extends BaseAdapter {
         }else{
             vh=(ViewHolder) view.getTag();
         }
-        Glide.with(mContext).load(img.get(i)).into(vh.iv_img);
+        Glide.with(mContext).load(img.get(i).getPath()).into(vh.iv_img);
         return view;
     }
 

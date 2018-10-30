@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+        "outputFile": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 103
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 150
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 195
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

@@ -31,29 +31,29 @@ public final class R {
         public static int black_background = 0x7f020060;
         public static int gray_radius = 0x7f02006f;
         public static int no_banner = 0x7f020094;
-        public static int white_radius = 0x7f0200bb;
+        public static int white_radius = 0x7f020107;
     }
     public static final class id {
-        public static int bannerContainer = 0x7f0e0004;
-        public static int bannerDefaultImage = 0x7f0e0005;
-        public static int bannerTitle = 0x7f0e0006;
-        public static int bannerViewPager = 0x7f0e0007;
-        public static int center = 0x7f0e0053;
-        public static int center_crop = 0x7f0e0054;
-        public static int center_inside = 0x7f0e0055;
-        public static int circleIndicator = 0x7f0e0009;
-        public static int fit_center = 0x7f0e0056;
-        public static int fit_end = 0x7f0e0057;
-        public static int fit_start = 0x7f0e0058;
-        public static int fit_xy = 0x7f0e0059;
-        public static int indicatorInside = 0x7f0e0010;
-        public static int matrix = 0x7f0e005a;
-        public static int numIndicator = 0x7f0e0016;
-        public static int numIndicatorInside = 0x7f0e0017;
-        public static int titleView = 0x7f0e002c;
+        public static int bannerContainer = 0x7f0f0004;
+        public static int bannerDefaultImage = 0x7f0f0005;
+        public static int bannerTitle = 0x7f0f0006;
+        public static int bannerViewPager = 0x7f0f0007;
+        public static int center = 0x7f0f005c;
+        public static int center_crop = 0x7f0f005d;
+        public static int center_inside = 0x7f0f005e;
+        public static int circleIndicator = 0x7f0f0009;
+        public static int fit_center = 0x7f0f005f;
+        public static int fit_end = 0x7f0f0060;
+        public static int fit_start = 0x7f0f0061;
+        public static int fit_xy = 0x7f0f0062;
+        public static int indicatorInside = 0x7f0f0010;
+        public static int matrix = 0x7f0f0063;
+        public static int numIndicator = 0x7f0f0016;
+        public static int numIndicatorInside = 0x7f0f0017;
+        public static int titleView = 0x7f0f0035;
     }
     public static final class layout {
-        public static int banner = 0x7f04002f;
+        public static int banner = 0x7f040039;
     }
     public static final class styleable {
         public static int[] Banner = { 0x7f0100dc, 0x7f0100dd, 0x7f0100de, 0x7f0100df, 0x7f0100e0, 0x7f0100e1, 0x7f0100e2, 0x7f0100e3, 0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7, 0x7f0100e8, 0x7f0100e9, 0x7f0100ea };

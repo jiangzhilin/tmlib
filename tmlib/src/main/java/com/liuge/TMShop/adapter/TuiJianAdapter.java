@@ -61,6 +61,7 @@ public class TuiJianAdapter extends BaseAdapter {
 //        vh.tv_jingpai_num_1.setText(mList.get(i).getNumber() + "人竞拍");
         vh.ll_jingpai.setVisibility(View.GONE);
         vh.tv_xianshi_detail_1.setText(mList.get(i).getIntegral());
+        vh.tv_price_txt.setVisibility(View.GONE);
         vh.tv_xianshi_price_1.setText(mList.get(i).getPrice());
         vh.ll_time.setVisibility(View.GONE);
         vh.rl_bottom.setVisibility(View.GONE);

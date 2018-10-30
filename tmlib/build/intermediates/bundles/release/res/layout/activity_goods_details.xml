@@ -154,7 +154,14 @@
                         android:orientation="vertical"
                         android:gravity="center_vertical|right"
                         android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
                         <LinearLayout
+                            android:id="@+id/ll_time"
+                            android:visibility="gone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -217,7 +224,17 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+            <com.liuge.TMShop.view.NoScroGridView
+                android:id="@+id/nogrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:numColumns="3"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"></com.liuge.TMShop.view.NoScroGridView>
             <LinearLayout
+                android:id="@+id/ll_jifen"
                 android:layout_width="match_parent"
                 android:layout_height="200px"
                 android:orientation="vertical"
@@ -225,6 +242,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:visibility="visible"
                 android:background="@color/colorWhite">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -351,7 +369,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
+                    android:visibility="gone"
                     android:id="@+id/list_details"></com.liuge.TMShop.view.NoScroListView>
+                <com.tencent.smtt.sdk.WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/web"></com.tencent.smtt.sdk.WebView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

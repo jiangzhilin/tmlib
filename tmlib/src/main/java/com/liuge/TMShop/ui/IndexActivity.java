@@ -16,6 +16,7 @@ import com.liuge.TMShop.fragment.GoodsFragment;
 import com.liuge.TMShop.fragment.IndexFragment;
 import com.liuge.TMShop.fragment.MineFragment;
 import com.liuge.TMShop.fragment.ShouyiFragment;
+import com.liuge.TMShop.network.SixGridContext;
 import com.liuge.TMShop.utils.StatusBarUtil;
 import com.tenma.ventures.base.TMActivity;
 
@@ -43,6 +44,7 @@ public class IndexActivity extends FragmentActivity {
         StatusBarUtil.setStatusBarColor(this,R.color.transparent);
         StatusBarUtil.StatusBarLightMode(this);
         setContentView(R.layout.activity_new);
+        SixGridContext.init(this);
         initView();
     }
 
@@ -122,35 +124,35 @@ public class IndexActivity extends FragmentActivity {
         //定义底部标签图片大小和位置
         Drawable drawable_idnex = getResources().getDrawable(R.drawable.radio_index);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_idnex.setBounds(0, 10, 75, 80);
+        drawable_idnex.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         rb_index.setCompoundDrawables(null, drawable_idnex, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_goods = getResources().getDrawable(R.drawable.radio_goods);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_goods.setBounds(0, 10, 75, 80);
+        drawable_goods.setBounds(0, 10, 70, 70);
         //设置图片在文字的哪个方向
         rb_goods.setCompoundDrawables(null, drawable_goods, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_cart = getResources().getDrawable(R.drawable.radio_cart);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_cart.setBounds(0, 10, 75, 80);
+        drawable_cart.setBounds(0, 10, 70,70);
         //设置图片在文字的哪个方向
         rb_cart.setCompoundDrawables(null, drawable_cart, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_shouyi = getResources().getDrawable(R.drawable.radio_shouyi);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_shouyi.setBounds(0, 10, 75, 80);
+        drawable_shouyi.setBounds(0, 10, 70,70);
         //设置图片在文字的哪个方向
         rb_shouyi.setCompoundDrawables(null, drawable_shouyi, null, null);
 
         //定义底部标签图片大小和位置
         Drawable drawable_mine = getResources().getDrawable(R.drawable.radio_mine);
         //当这个图片被绘制时，给他绑定一个矩形 ltrb规定这个矩形
-        drawable_mine.setBounds(0, 10, 75, 80);
+        drawable_mine.setBounds(0, 10, 70,70);
         //设置图片在文字的哪个方向
         rb_mine.setCompoundDrawables(null, drawable_mine, null, null);
 

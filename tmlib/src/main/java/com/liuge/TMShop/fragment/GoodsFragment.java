@@ -101,6 +101,8 @@ public class GoodsFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.VISIBLE);
                 vh.rb_xinpin_2.setChecked(false);
                 vh.ll_line_2.setVisibility(View.INVISIBLE);
+
+                getClaGoods(0);
             }
         });
         vh.ll_rexiao.setOnClickListener(new View.OnClickListener() {
@@ -110,18 +112,22 @@ public class GoodsFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.INVISIBLE);
                 vh.rb_xinpin_2.setChecked(true);
                 vh.ll_line_2.setVisibility(View.VISIBLE);
+
+                getClaGoods(1);
             }
         });
 
         madapter2 = new IndexHotGoodsAdapter(getActivity());
         vh.gvJinpin.setAdapter(madapter2);
 
-        madapter = new IndexHotGoodsAdapter(getActivity());
-        vh.new_goods.setAdapter(madapter);
+//        madapter = new IndexHotGoodsAdapter(getActivity());
+//        vh.new_goods.setAdapter(madapter);
 
         getGoosClass();
 
         getGoods();
+
+        getClaGoods(0);
 
         vh.gvJinpin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -186,6 +192,44 @@ public class GoodsFragment extends BaseFragment {
 //                    mList.addAll(entity.getData().getResult());
 //                }
                 madapter2.setList(mList);
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+
+            }
+
+            @Override
+            public void onCancelled(CancelledException cex) {
+
+            }
+
+            @Override
+            public void onFinished() {
+                LoadDialog.dismiss(getActivity());
+            }
+        });
+    }
+
+
+    private void getClaGoods(int type){
+        LoadDialog.show(getActivity());
+        new ApiManager().getGoodsList(null, null, null, null, null, type==0?null:"1", new Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String result) {
+                final GoodsListEntity goodsList=JSONObject.parseObject(result,GoodsListEntity.class);
+                IndexHotGoodsAdapter adapter=new IndexHotGoodsAdapter(getActivity());
+                vh.new_goods.setAdapter(adapter);
+                adapter.setList(goodsList.getData().getResult());
+
+                vh.new_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent=new Intent(getActivity(),GoodsDetailsActivity.class);
+                        intent.putExtra("goods_id",goodsList.getData().getResult().get(position).getGoods_id());
+                        startActivity(intent);
+                    }
+                });
             }
 
             @Override

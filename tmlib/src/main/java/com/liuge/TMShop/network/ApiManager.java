@@ -64,6 +64,17 @@ public class ApiManager {
             params.addBodyParameter("is_best", is_best);
         }
         x.http().get(params, call);
+    }   /**
+     * 获取商品列表
+     * @param call
+     */
+    public void getGoodsSearch(String key,Callback.CommonCallback<String> call) {
+        URL = SixGridContext.DO.GOODS_List;
+        RequestParams params = new RequestParams(URL);
+
+        params.addBodyParameter("keyword", key);
+
+        x.http().get(params, call);
     }
 
     /**
@@ -113,6 +124,9 @@ public class ApiManager {
     public void getPaiMaiDetails(String id,Callback.CommonCallback<String> call){
         URL = SixGridContext.DO.INDEX_PAIMAI_DETAILS;
         RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
         if(id!=null){
             params.addBodyParameter("id", id);
         }
@@ -133,7 +147,7 @@ public class ApiManager {
             params.addBodyParameter("id", id);
         }
         if(monney!=null){
-            params.addBodyParameter("monney", id);
+            params.addBodyParameter("price", monney);
         }
         if(SixGridContext.token!=null){
             params.addBodyParameter("token", SixGridContext.token);
@@ -154,7 +168,7 @@ public class ApiManager {
 
         x.http().get(params, call);
     }
-    public void addCart(String id,String num ,Callback.CommonCallback<String> call){
+    public void addCart(String id,String num ,String guige,Callback.CommonCallback<String> call){
         URL = SixGridContext.DO.ADD_CART;
         RequestParams params = new RequestParams(URL);
         if(id!=null){
@@ -163,6 +177,7 @@ public class ApiManager {
         if(SixGridContext.token!=null){
             params.addBodyParameter("token", SixGridContext.token);
             params.addBodyParameter("quantity", num);
+            params.addBodyParameter("spec_id",guige);
         }
 
         x.http().get(params, call);
@@ -180,8 +195,21 @@ public class ApiManager {
 
         x.http().get(params, call);
     }
+    public void miaoshaBuy(String id,String num ,Callback.CommonCallback<String> call){
+        URL = SixGridContext.DO.MIAOSHA_BUY;
+        RequestParams params = new RequestParams(URL);
+        if(id!=null){
+            params.addBodyParameter("id", id);
+        }
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+            params.addBodyParameter("quantity", num);
+        }
+
+        x.http().get(params, call);
+    }
     public void mallInfo(String id,Callback.CommonCallback<String> call){
-        URL = SixGridContext.DO.MALL_INFO;
+        URL = SixGridContext.DO.MALL_DETAIL;
         RequestParams params = new RequestParams(URL);
         if(id!=null){
             params.addBodyParameter("sid", id);
@@ -288,6 +316,226 @@ public class ApiManager {
         params.addBodyParameter("address_id", id);
         x.http().get(params, call);
     }
+    public void collect(String id,String type,Callback.CommonCallback<String> call){
+        URL = SixGridContext.DO.COLLECT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("type", type);
+        x.http().get(params, call);
+    }
+    public void getCollect(String type,Callback.CommonCallback<String> call){
+        URL = SixGridContext.DO.MINE_COLLECT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("type", type);
+        x.http().get(params, call);
+    }
+    public void delCollect(String id,Callback.CommonCallback<String> call){
+        URL = SixGridContext.DO.DEL_COLLECT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("id", id);
+        x.http().get(params, call);
+    }
+
+    public void getSearch(String key, Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.SEARCH;
+        RequestParams params = new RequestParams(URL);
+//        if(SixGridContext.token!=null){
+//            params.addBodyParameter("token", SixGridContext.token);
+//        }
+
+        params.addBodyParameter("keyword", key);
+        x.http().get(params, call);
+    }
+    public void tuangou_buy(String id,String quantity, Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.TUANGOU_BUY;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("quantity", quantity);
+        x.http().get(params, call);
+    }
+    public void cart_update(String id,String quantity, Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.CART_COUNT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("spec_id", id);
+        params.addBodyParameter("quantity", quantity);
+        x.http().get(params, call);
+    }
+    public void chooseOne(String id,int status, Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.CART_CHOOSE;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("rec_id", id);
+        params.addBodyParameter("status", ""+status);
+        x.http().get(params, call);
+    }
+    public void chooseAll(String id,int status, Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.CART_CHOOSEALL;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+        if(id!=null) {
+            params.addBodyParameter("sid", id);
+        }
+        params.addBodyParameter("status", ""+status);
+        x.http().get(params, call);
+    }
+    public void submitCart( Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.SUBMIT_CART;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+        x.http().get(params, call);
+    }
+    public void createOrder(String flow_type,String address_id,String pay_id,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.CREATE_ORDER;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+        if(flow_type!=null){
+            params.addBodyParameter("flow_type", flow_type);
+        }
+        if(address_id!=null){
+            params.addBodyParameter("address_id", address_id);
+        }
+        if(pay_id!=null){
+            params.addBodyParameter("pay_id", pay_id);
+        }
+        x.http().get(params, call);
+    }
+    public void mineOrder(int order_status,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.MINE_ORDER;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+//        if(order_status!=-1){
+            params.addBodyParameter("order_status", ""+order_status);
+//        }
+        x.http().get(params, call);
+    }
+    public void orderPay(String mid,String type,String sn,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.ORDER_PAY;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+        params.addBodyParameter("mid", mid);
+        params.addBodyParameter("type", type);
+        params.addBodyParameter("form", sn);
+
+        x.http().get(params, call);
+    }
+    public void userAccount(Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.USER_ACCOUNT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        x.http().get(params, call);
+    }
+    public void addAccount(String type,String num,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.ADD_ACCOUNT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("type", type);
+        params.addBodyParameter("number", num);
+
+        x.http().get(params, call);
+    }
+    public void delAccount(String id,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.DEL_ACCOUNT;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("id", id);
+
+        x.http().get(params, call);
+    }
+    public void applyTixian(String id,String price,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.APPLY_TIXIAN;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("account_id", id);
+        params.addBodyParameter("priced", price);
+
+        x.http().get(params, call);
+    }
+    public void cancal(String id,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.CANCAL_ORDER;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("mid", id);
+
+        x.http().get(params, call);
+    }
+    public void returnOrder(String rec_id,String order_id,String type,String reason,String desc,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.RETURN_ORDER;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("rec_id", rec_id);
+        params.addBodyParameter("order_id", order_id);
+        params.addBodyParameter("type", type);
+        params.addBodyParameter("reson", reason);
+        params.addBodyParameter("desc", desc);
+
+        x.http().get(params, call);
+    }
+    public void orderComment(String rec_id,String comment,String scor,String img,Callback.CommonCallback<String>call){
+        URL = SixGridContext.DO.RETURN_ORDER;
+        RequestParams params = new RequestParams(URL);
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
+
+        params.addBodyParameter("rec_id", rec_id);
+        params.addBodyParameter("comment", comment);
+        params.addBodyParameter("Score", scor);
+        params.addBodyParameter("images", img);
+
+        x.http().get(params, call);
+    }
+
 
     /**
      * 通过Base32将Bitmap转换成Base64字符串

@@ -1,50 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.liuge.TMShop">
+    package="com.liuge.TMShop">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.liuge.TMShop.utils.MyProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
         <activity
             android:name=".ui.IndexActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.GoodsDetailsActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.PaimaiDetailsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ui.GoodsClassActivity">
-        </activity>
-        <activity android:name=".ui.TuangouDetailsActivity">
-        </activity>
-        <activity android:name=".ui.GoodsMiaoshaActivity">
-        </activity>
-        <activity android:name=".ui.MallActivity">
-        </activity>
-        <activity android:name=".ui.TixianRecordActivity">
-        </activity>
-        <activity android:name=".ui.ShouyiRecordActivity">
-        </activity>
-        <activity android:name=".ui.AddressActivity">
-        </activity>
-        <activity android:name=".ui.EditAddressActivity">
-        </activity>
-        <activity android:name=".ui.IndexFragmentActivity">
-        </activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.GoodsClassActivity" />
+        <activity android:name=".ui.TuangouDetailsActivity" />
+        <activity android:name=".ui.GoodsMiaoshaActivity" />
+        <activity android:name=".ui.MallActivity" />
+        <activity android:name=".ui.TixianRecordActivity" />
+        <activity android:name=".ui.ShouyiRecordActivity" />
+        <activity android:name=".ui.AddressActivity" />
+        <activity android:name=".ui.EditAddressActivity" />
+        <activity android:name=".ui.IndexFragmentActivity" />
+        <activity android:name=".ui.CollectActivity" />
+        <activity android:name=".ui.SearchActivity" />
+        <activity android:name=".ui.SubmitOrderActivity" />
+        <activity android:name=".ui.MineOrderActivity" />
+        <activity android:name=".ui.OrderPayActivity" />
+        <activity android:name=".ui.ApplyTixianActivity" />
+        <activity android:name=".ui.AccountManagerActivity" />
+        <activity android:name=".ui.TuiHuanHuoActivity" />
+        <activity android:name=".ui.CommentActivity"></activity>
     </application>
 
 </manifest>

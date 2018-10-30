@@ -8,10 +8,11 @@ import java.util.List;
 
 public class BannerEntity {
 
+
     /**
      * status : success
      * msg : 获取成功
-     * data : {"banner":[{"id":"8","name":"1","type":"","position":"0","url":"","content":null,"start_time":"1532966400","close_time":"1535644800","status":"1","litpic":"http://shop.dktoo.com/application/lee/uploads/lee/20180905/0ba4d88875169a6e805a58abfd5c6acf.png"},{"id":"7","name":"1","type":"image","position":"0","url":"","content":null,"start_time":"1532880000","close_time":"1537977600","status":"1","litpic":"http://shop.dktoo.com/application/lee/uploads/lee/20180905/226c667b8e3fedf82a4904016b3bb606.png"}],"category":[{"id":"151","pid":"0","name":"女装","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/4f14a2af447f030edb4954131d4a4bf9.png"},{"id":"150","pid":"0","name":"食品","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/8023281aa0d48f7a2e4d9a41ff7d3204.png"},{"id":"149","pid":"0","name":"鞋帽","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/bdd77876575068e719e79a55122b3674.png"},{"id":"147","pid":"0","name":"百货","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/0b2a6ab68cc627880f3141f47e3f2d82.png"},{"id":"146","pid":"0","name":"童装","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/77a5fd154c9c1b10e72cc1b903ceca64.png"},{"id":"144","pid":"0","name":"美妆","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/0db290cc4180b617e69a0e2ee574cf07.png"},{"id":"164","pid":"0","name":"家电","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/633369412488d639b209ae565f8f5c68.png"},{"id":"165","pid":"0","name":"文具","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/75744022d3fbdd832c17a8bf28a54b69.png"}],"spike":[{"act_id":"88","act_type":"4","goods_id":"554","goods_name":"运动鞋","start_time":"1533571200","end_time":"1538236800","is_finished":"0","ext_info":null,"total":"9999","number":"9","price":"1.90","spec_id":"749","spec_name":"","num":"0","pid":"1","markups":"0.00","maxprice":"0.00","sid":"10","type":"4","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/06a440634b57677a12e24c2ac693078f.jpg","onum":0},{"act_id":"86","act_type":"4","goods_id":"540","goods_name":"测试123456","start_time":"1533571200","end_time":"1538236800","is_finished":"0","ext_info":null,"total":"10","number":"1","price":"299.00","spec_id":"732","spec_name":"L","num":"0","pid":"1","markups":"0.00","maxprice":"0.00","sid":"10","type":"4","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/80607de91b145f55de41ade365f6556d.jpg","onum":0}],"groupbuy":[{"act_id":"83","act_type":"1","goods_id":"540","goods_name":"测试123456","start_time":"1533571200","end_time":"1538236800","is_finished":"0","ext_info":null,"total":"100","number":"5","price":"50.00","spec_id":"732","spec_name":"进口","num":"10","pid":"7","markups":"0.00","maxprice":"0.00","sid":"10","type":"1","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/80607de91b145f55de41ade365f6556d.jpg","onum":0},{"act_id":"76","act_type":"1","goods_id":"542","goods_name":"鸡嘎嘎","start_time":"1533571200","end_time":"1536508800","is_finished":"1","ext_info":null,"total":"100","number":"5","price":"2.00","spec_id":"735","spec_name":"鸡肉","num":"2","pid":"7","markups":"0.00","maxprice":"0.00","sid":"10","type":"1","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/5010e8ad85b4b9a5a35f8ce61659a413.jpg","onum":0}],"auction":[{"act_id":"87","act_type":"2","goods_id":"560","goods_name":"太阳帽","start_time":"1533571200","end_time":"1538236800","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"1.20","spec_id":"757","spec_name":"","num":"0","pid":"5","markups":"1.30","maxprice":"9.90","sid":"10","type":"2","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","onum":0},{"act_id":"82","act_type":"2","goods_id":"547","goods_name":"飞飞哥忽悠鬼","start_time":"1533571200","end_time":"1538236800","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"1.00","spec_id":"741","spec_name":"进口","num":"0","pid":"5","markups":"1.00","maxprice":"30.00","sid":"10","type":"2","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/c6c7ad1c459457ef495546b8a6b73b6e.jpg","onum":0}],"isbest":[{"goods_id":"539","goods_sn":"002","goods_name":"ONLY2018秋季新款毛边高腰九分牛仔裤","goods_number":"599","cate_id":"159","brand":"","spec_qty":"1","spec_name_1":"颜色","spec_name_2":"","goods_weight":"1.000","status":"1","add_time":"1536741269","goods_type":"42","last_update":"1536741269","default_spec":"731","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/73b0ec746b6c43b452e4a40eb7c79ff6.jpg","is_best":"1","is_new":"0","is_hot":"0","is_promote":"0","market_price":"117.60","price":"98.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"-1","rank_integral":"-1","integral":"2","is_check":"1","seo_keys":"百搭,纯棉,微喇,超短,长袖,常规,立领,大众","seo_desc":"","from":"0","sid":"10","is_del":"0","views":"45","collects":"2","carts":"8","orders":"4","sales":"0","comments":"0"}],"bestshop":[{"id":"1","shopname":"童城之星高新店","banner":"","logo":"","sales":200,"total":0},{"id":"7","shopname":"琉璃服务点","banner":"","logo":"","sales":148,"total":0},{"id":"8","shopname":"oppo旗舰店","banner":"","logo":"","sales":106,"total":1},{"id":"10","shopname":"郭","banner":"","logo":"","sales":108,"total":11},{"id":"11","shopname":"虞大仙","banner":"","logo":"","sales":181,"total":0}]}
+     * data : {"banner":[{"id":"8","name":"1","type":"","position":"0","url":"","content":null,"start_time":"1532966400","close_time":"1535644800","status":"1","litpic":"http://shop.dktoo.com/application/lee/uploads/lee/20180927/3f3a60e8514a91262155f3f7b3364fa4.png"},{"id":"7","name":"1","type":"image","position":"0","url":"","content":null,"start_time":"1532880000","close_time":"1537977600","status":"1","litpic":"http://shop.dktoo.com/application/lee/uploads/lee/20180905/226c667b8e3fedf82a4904016b3bb606.png"},{"id":"9","name":"123123","type":"","position":"0","url":"","content":null,"start_time":"1537977600","close_time":"1538582400","status":"1","litpic":"http://shop.dktoo.com/application/lee/uploads/lee/20180927/5375a3ed8b82c730c56fcfd95ce60027.png"}],"category":[{"id":"151","pid":"0","name":"女装","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/4f14a2af447f030edb4954131d4a4bf9.png"},{"id":"150","pid":"0","name":"食品","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/8023281aa0d48f7a2e4d9a41ff7d3204.png"},{"id":"149","pid":"0","name":"鞋帽","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/bdd77876575068e719e79a55122b3674.png"},{"id":"147","pid":"0","name":"百货","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/0b2a6ab68cc627880f3141f47e3f2d82.png"},{"id":"146","pid":"0","name":"童装","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/77a5fd154c9c1b10e72cc1b903ceca64.png"},{"id":"144","pid":"0","name":"美妆","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/0db290cc4180b617e69a0e2ee574cf07.png"},{"id":"164","pid":"0","name":"家电","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/633369412488d639b209ae565f8f5c68.png"},{"id":"165","pid":"0","name":"文具","image":"http://shop.dktoo.com/application/lee/uploads/lee/20180903/75744022d3fbdd832c17a8bf28a54b69.png"}],"spike":[{"act_id":"108","act_type":"4","goods_id":"571","goods_name":"新卫衣@","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":"10","number":"2","price":"68.00","spec_id":"783","spec_name":"卫衣","num":"0","pid":"1","markups":"0.00","maxprice":"0.00","sid":"10","type":"4","default_image":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","onum":0},{"act_id":"94","act_type":"4","goods_id":"540","goods_name":"Lilbetter卫衣男 秋装连帽上衣","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":"28","number":"2","price":"10.00","spec_id":"768","spec_name":"M","num":"0","pid":"1","markups":"0.00","maxprice":"0.00","sid":"10","type":"4","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/80607de91b145f55de41ade365f6556d.jpg","onum":0}],"groupbuy":[{"act_id":"107","act_type":"1","goods_id":"540","goods_name":"Lilbetter卫衣男 秋装连帽上衣","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":"1000","number":"1","price":"99.99","spec_id":"778","spec_name":"李咯","num":"80","pid":"7","markups":"0.00","maxprice":"0.00","sid":"10","type":"1","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/80607de91b145f55de41ade365f6556d.jpg","onum":0},{"act_id":"106","act_type":"1","goods_id":"569","goods_name":"李咯","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":"10","number":"1","price":"2.00","spec_id":"778","spec_name":"卫衣","num":"100","pid":"7","markups":"0.00","maxprice":"0.00","sid":"10","type":"1","default_image":"","onum":0}],"auction":[{"act_id":"109","act_type":"2","goods_id":"571","goods_name":"新卫衣@","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"58.00","spec_id":"782","spec_name":"卫衣","num":"0","pid":"5","markups":"2.00","maxprice":"200.00","sid":"10","type":"2","default_image":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","new_price":"109.00","onum":2},{"act_id":"105","act_type":"2","goods_id":"553","goods_name":"铅笔","start_time":"1538928000","end_time":"1540915200","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"1.00","spec_id":"748","spec_name":"文具","num":"0","pid":"5","markups":"1.00","maxprice":"10.00","sid":"10","type":"2","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/1fd6f32cad622de30cf5297267b58d75.jpg","new_price":"2.00","onum":1}],"isbest":[{"goods_id":"552","goods_sn":"123463","goods_name":"口红","goods_number":"98","cate_id":"144","brand":"","spec_qty":"1","spec_name_1":"颜色","spec_name_2":"","goods_weight":"1.000","status":"1","add_time":"1539664178","goods_type":"0","last_update":"1539664178","default_spec":"747","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/e50c6bb4ad548d9eede82fed0017aeff.jpg","is_best":"1","is_new":"0","is_hot":"0","is_promote":"0","market_price":"23.88","price":"19.90","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"6","rank_integral":"-1","integral":"10","is_check":"1","seo_keys":"","seo_desc":"","from":"0","sid":"10","is_del":"0","views":"0","collects":"1","carts":"13","orders":"2","sales":"0","comments":"1","pay_number":2},{"goods_id":"539","goods_sn":"002","goods_name":"ONLY2018秋季新款毛边高腰九分牛仔裤","goods_number":"595","cate_id":"159","brand":"","spec_qty":"1","spec_name_1":"颜色","spec_name_2":"","goods_weight":"1.000","status":"1","add_time":"1539920583","goods_type":"42","last_update":"1539920583","default_spec":"731","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/73b0ec746b6c43b452e4a40eb7c79ff6.jpg","is_best":"1","is_new":"0","is_hot":"0","is_promote":"0","market_price":"117.60","price":"98.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"111","rank_integral":"-1","integral":"2","is_check":"1","seo_keys":"百搭,纯棉,微喇,超短,长袖,常规,立领,大众","seo_desc":"","from":"0","sid":"10","is_del":"0","views":"47","collects":"3","carts":"12","orders":"6","sales":"0","comments":"0","pay_number":6}],"bestshop":[{"id":"1","shopname":"童城之星高新店","banner":"","logo":"","sales":140,"total":0},{"id":"7","shopname":"琉璃服务点","banner":"","logo":"","sales":100,"total":0},{"id":"8","shopname":"oppo旗舰店","banner":"","logo":"","sales":173,"total":2},{"id":"10","shopname":"郭","banner":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/seller/20181019/892c978fabc128461b68fd1922d15f9e.png","logo":"http://shop.dktoo.com/application/lee/uploads/lee/20180927/f736590094161fb35bfd1040790dc772.jpeg","sales":199,"total":20},{"id":"11","shopname":"虞大仙","banner":"","logo":"","sales":107,"total":0}]}
      */
 
     private String status;
@@ -47,7 +48,7 @@ public class BannerEntity {
         private List<CategoryBean> category;
         private List<SpikeBean> spike;
         private List<GroupbuyBean> groupbuy;
-        private List<AuctionBean> auction;//拍卖
+        private List<AuctionBean> auction;
         private List<IsbestBean> isbest;
         private List<BestshopBean> bestshop;
 
@@ -118,7 +119,7 @@ public class BannerEntity {
              * start_time : 1532966400
              * close_time : 1535644800
              * status : 1
-             * litpic : http://shop.dktoo.com/application/lee/uploads/lee/20180905/0ba4d88875169a6e805a58abfd5c6acf.png
+             * litpic : http://shop.dktoo.com/application/lee/uploads/lee/20180927/3f3a60e8514a91262155f3f7b3364fa4.png
              */
 
             private String id;
@@ -261,26 +262,26 @@ public class BannerEntity {
 
         public static class SpikeBean {
             /**
-             * act_id : 88
+             * act_id : 108
              * act_type : 4
-             * goods_id : 554
-             * goods_name : 运动鞋
-             * start_time : 1533571200
-             * end_time : 1538236800
+             * goods_id : 571
+             * goods_name : 新卫衣@
+             * start_time : 1538928000
+             * end_time : 1540915200
              * is_finished : 0
              * ext_info : null
-             * total : 9999
-             * number : 9
-             * price : 1.90
-             * spec_id : 749
-             * spec_name :
+             * total : 10
+             * number : 2
+             * price : 68.00
+             * spec_id : 783
+             * spec_name : 卫衣
              * num : 0
              * pid : 1
              * markups : 0.00
              * maxprice : 0.00
              * sid : 10
              * type : 4
-             * default_image : http://shop.dktoo.com/application/lee/uploads/lee/20180912/06a440634b57677a12e24c2ac693078f.jpg
+             * default_image : http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png
              * onum : 0
              */
 
@@ -477,20 +478,20 @@ public class BannerEntity {
 
         public static class GroupbuyBean {
             /**
-             * act_id : 83
+             * act_id : 107
              * act_type : 1
              * goods_id : 540
-             * goods_name : 测试123456
-             * start_time : 1533571200
-             * end_time : 1538236800
+             * goods_name : Lilbetter卫衣男 秋装连帽上衣
+             * start_time : 1538928000
+             * end_time : 1540915200
              * is_finished : 0
              * ext_info : null
-             * total : 100
-             * number : 5
-             * price : 50.00
-             * spec_id : 732
-             * spec_name : 进口
-             * num : 10
+             * total : 1000
+             * number : 1
+             * price : 99.99
+             * spec_id : 778
+             * spec_name : 李咯
+             * num : 80
              * pid : 7
              * markups : 0.00
              * maxprice : 0.00
@@ -507,7 +508,7 @@ public class BannerEntity {
             private String start_time;
             private String end_time;
             private String is_finished;
-            private String ext_info;
+            private Object ext_info;
             private String total;
             private String number;
             private String price;
@@ -578,11 +579,11 @@ public class BannerEntity {
                 this.is_finished = is_finished;
             }
 
-            public String getExt_info() {
+            public Object getExt_info() {
                 return ext_info;
             }
 
-            public void setExt_info(String ext_info) {
+            public void setExt_info(Object ext_info) {
                 this.ext_info = ext_info;
             }
 
@@ -693,27 +694,28 @@ public class BannerEntity {
 
         public static class AuctionBean {
             /**
-             * act_id : 87
+             * act_id : 109
              * act_type : 2
-             * goods_id : 560
-             * goods_name : 太阳帽
-             * start_time : 1533571200
-             * end_time : 1538236800
+             * goods_id : 571
+             * goods_name : 新卫衣@
+             * start_time : 1538928000
+             * end_time : 1540915200
              * is_finished : 0
              * ext_info : null
              * total : null
              * number : 0
-             * price : 1.20
-             * spec_id : 757
-             * spec_name :
+             * price : 58.00
+             * spec_id : 782
+             * spec_name : 卫衣
              * num : 0
              * pid : 5
-             * markups : 1.30
-             * maxprice : 9.90
+             * markups : 2.00
+             * maxprice : 200.00
              * sid : 10
              * type : 2
-             * default_image : http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg
-             * onum : 0
+             * default_image : http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png
+             * new_price : 109.00
+             * onum : 2
              */
 
             private String act_id;
@@ -736,6 +738,7 @@ public class BannerEntity {
             private String sid;
             private String type;
             private String default_image;
+            private String new_price;
             private int onum;
 
             public String getAct_id() {
@@ -898,6 +901,14 @@ public class BannerEntity {
                 this.default_image = default_image;
             }
 
+            public String getNew_price() {
+                return new_price;
+            }
+
+            public void setNew_price(String new_price) {
+                this.new_price = new_price;
+            }
+
             public int getOnum() {
                 return onum;
             }
@@ -909,28 +920,28 @@ public class BannerEntity {
 
         public static class IsbestBean {
             /**
-             * goods_id : 539
-             * goods_sn : 002
-             * goods_name : ONLY2018秋季新款毛边高腰九分牛仔裤
-             * goods_number : 599
-             * cate_id : 159
+             * goods_id : 552
+             * goods_sn : 123463
+             * goods_name : 口红
+             * goods_number : 98
+             * cate_id : 144
              * brand :
              * spec_qty : 1
              * spec_name_1 : 颜色
              * spec_name_2 :
              * goods_weight : 1.000
              * status : 1
-             * add_time : 1536741269
-             * goods_type : 42
-             * last_update : 1536741269
-             * default_spec : 731
-             * default_image : http://shop.dktoo.com/application/lee/uploads/lee/20180912/73b0ec746b6c43b452e4a40eb7c79ff6.jpg
+             * add_time : 1539664178
+             * goods_type : 0
+             * last_update : 1539664178
+             * default_spec : 747
+             * default_image : http://shop.dktoo.com/application/lee/uploads/lee/20180912/e50c6bb4ad548d9eede82fed0017aeff.jpg
              * is_best : 1
              * is_new : 0
              * is_hot : 0
              * is_promote : 0
-             * market_price : 117.60
-             * price : 98.00
+             * market_price : 23.88
+             * price : 19.90
              * cost_price : 0.00
              * promote_price : 0.00
              * promote_start_date : 0
@@ -938,21 +949,22 @@ public class BannerEntity {
              * click_count : 0
              * is_shipping : 0
              * sort : 50
-             * give_integral : -1
+             * give_integral : 6
              * rank_integral : -1
-             * integral : 2
+             * integral : 10
              * is_check : 1
-             * seo_keys : 百搭,纯棉,微喇,超短,长袖,常规,立领,大众
+             * seo_keys :
              * seo_desc :
              * from : 0
              * sid : 10
              * is_del : 0
-             * views : 45
-             * collects : 2
-             * carts : 8
-             * orders : 4
+             * views : 0
+             * collects : 1
+             * carts : 13
+             * orders : 2
              * sales : 0
-             * comments : 0
+             * comments : 1
+             * pay_number : 2
              */
 
             private String goods_id;
@@ -999,6 +1011,7 @@ public class BannerEntity {
             private String orders;
             private String sales;
             private String comments;
+            private int pay_number;
 
             public String getGoods_id() {
                 return goods_id;
@@ -1351,6 +1364,14 @@ public class BannerEntity {
             public void setComments(String comments) {
                 this.comments = comments;
             }
+
+            public int getPay_number() {
+                return pay_number;
+            }
+
+            public void setPay_number(int pay_number) {
+                this.pay_number = pay_number;
+            }
         }
 
         public static class BestshopBean {
@@ -1359,7 +1380,7 @@ public class BannerEntity {
              * shopname : 童城之星高新店
              * banner :
              * logo :
-             * sales : 200
+             * sales : 140
              * total : 0
              */
 

@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -21,7 +22,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.bumptech.glide.Glide;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.BaseEntity;
-import com.liuge.TMShop.entity.GoodsDetailsEntity;
 import com.liuge.TMShop.entity.MiaoshaEntity;
 import com.liuge.TMShop.network.ApiManager;
 import com.liuge.TMShop.network.SixGridContext;
@@ -48,7 +48,10 @@ public class AddBuyMiaoshaPop extends PopupWindow {
     static List<String> guige;
     static List<String> color;
     static MiaoshaEntity entity;
-    static int tags=0;
+    static int tags = 0;
+
+    int color_id = 0;
+    String guige_id = "0";
 
     public interface ChooseListener {
         public void chooseClick(int position);
@@ -85,8 +88,12 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         color = new ArrayList<>();
         for (int x = 0; x < entity.getData().getGoods().get_specs_all().size(); x++) {
             guige.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_1());
-            color.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_1());
+            color.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_2());
         }
+
+//        for(){
+//
+//        }
 
 //        for (int x = 0; x < entity.getData().getAttr().size(); x++) {
 //
@@ -107,6 +114,14 @@ public class AddBuyMiaoshaPop extends PopupWindow {
                 rb.setGravity(Gravity.CENTER);
                 rb.setClickable(true);
                 vh.rg_guige.addView(rb);
+
+                final int finalX = x;
+                rb.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        guige_id = entity.getData().getGoods().get_specs_all().get(finalX).getSpec_id();
+                    }
+                });
             }
         }
         if (color != null) {
@@ -123,13 +138,16 @@ public class AddBuyMiaoshaPop extends PopupWindow {
                 params.setMargins(10, 0, 10, 0);
                 rb.setLayoutParams(params);
                 rb.setClickable(true);
+
                 vh.rg_shuliang.addView(rb);
             }
         }
 
-        vh.tv_price.setText(SixGridContext.RMB+entity.getData().getGoods().getPrice());
+        vh.ll_guige.setVisibility(View.GONE);
+
+        vh.tv_price.setText(SixGridContext.RMB + entity.getData().getStore().getPrice());
         vh.tv_goods_name.setText(entity.getData().getGoods().getGoods_name());
-        Glide.with(mContext).load(SixGridContext.IMG+entity.getData().getGoods().getDefault_image()).into(vh.iv_img);
+        Glide.with(mContext).load(entity.getData().getGoods().getDefault_image()).into(vh.iv_img);
 
         vh.tv_close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,11 +173,13 @@ public class AddBuyMiaoshaPop extends PopupWindow {
                 }
             }
         });
-        if(tags==0){
+
+
+        if (tags == 0) {
             vh.bt_cart.setVisibility(View.VISIBLE);
             vh.bt_buy.setVisibility(View.GONE);
         }
-        if(tags==1){
+        if (tags == 1) {
             vh.bt_buy.setVisibility(View.VISIBLE);
             vh.bt_cart.setVisibility(View.GONE);
         }
@@ -196,11 +216,11 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         mContext.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
     }
 
-    public static void showDialog(Activity context, MiaoshaEntity e,int tag, View parent) {
+    public static void showDialog(Activity context, MiaoshaEntity e, int tag, View parent) {
         mContext = context;
 
         entity = e;
-        tags=tag;
+        tags = tag;
 
         lightoff(true);
         if (mContext != null) {
@@ -208,7 +228,7 @@ public class AddBuyMiaoshaPop extends PopupWindow {
                 dialog = new AddBuyMiaoshaPop(mContext);
                 dialog.showAtLocation(parent, Gravity.BOTTOM, 0, 0);
             } else {
-                dialog=null;
+                dialog = null;
                 dialog = new AddBuyMiaoshaPop(mContext);
                 dialog.showAtLocation(parent, Gravity.BOTTOM, 0, 0);
             }
@@ -228,13 +248,14 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         }
     }
 
-    private void addCart(String num){
+    private void addCart(String num) {
         LoadDialog.show(mContext);
-        new ApiManager().addCart(entity.getData().getGoods().getGoods_id(),num, new Callback.CommonCallback<String>() {
+        new ApiManager().addCart(entity.getData().getGoods().getGoods_id(), num, guige_id, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                BaseEntity base= JSONObject.parseObject(result,BaseEntity.class);
-                NToast.shortToast(mContext,base.getMsg());
+                BaseEntity base = JSONObject.parseObject(result, BaseEntity.class);
+                NToast.shortToast(mContext, base.getMsg());
+                CancelDialog();
             }
 
             @Override
@@ -254,14 +275,14 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         });
     }
 
-    private void toBuy(String num){
+    private void toBuy(String num) {
         LoadDialog.show(mContext);
-        new ApiManager().toBuy(entity.getData().getGoods().getGoods_id(),num, new Callback.CommonCallback<String>() {
+        new ApiManager().miaoshaBuy(entity.getData().getGoods().getGoods_id(), num, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: "+result);
-                BaseEntity base= JSONObject.parseObject(result,BaseEntity.class);
-                NToast.shortToast(mContext,base.getMsg());
+                Log.d(TAG, "onSuccess: " + result);
+                BaseEntity base = JSONObject.parseObject(result, BaseEntity.class);
+                NToast.shortToast(mContext, base.getMsg());
             }
 
             @Override
@@ -292,8 +313,10 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         public ImageView iv_img;
         public TextView tv_goods_name;
         public TextView tv_price;
+        public LinearLayout ll_head;
         public RadioGroup rg_guige;
         public RadioGroup rg_shuliang;
+        public LinearLayout ll_guige;
         public Button bt_sub;
         public TextView ed_num;
         public Button bt_add;
@@ -306,8 +329,10 @@ public class AddBuyMiaoshaPop extends PopupWindow {
             this.iv_img = (ImageView) rootView.findViewById(R.id.iv_img);
             this.tv_goods_name = (TextView) rootView.findViewById(R.id.tv_goods_name);
             this.tv_price = (TextView) rootView.findViewById(R.id.tv_price);
+            this.ll_head = (LinearLayout) rootView.findViewById(R.id.ll_head);
             this.rg_guige = (RadioGroup) rootView.findViewById(R.id.rg_guige);
             this.rg_shuliang = (RadioGroup) rootView.findViewById(R.id.rg_shuliang);
+            this.ll_guige = (LinearLayout) rootView.findViewById(R.id.ll_guige);
             this.bt_sub = (Button) rootView.findViewById(R.id.bt_sub);
             this.ed_num = (TextView) rootView.findViewById(R.id.ed_num);
             this.bt_add = (Button) rootView.findViewById(R.id.bt_add);

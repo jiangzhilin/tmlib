@@ -9,11 +9,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.ui.AddressActivity;
+import com.liuge.TMShop.ui.CollectActivity;
+import com.liuge.TMShop.ui.MineOrderActivity;
 import com.liuge.TMShop.ui.ShouyiRecordActivity;
 import com.liuge.TMShop.ui.TixianRecordActivity;
 import com.liuge.TMShop.utils.StatusBarUtil;
+import com.tenma.ventures.bean.TMUser;
+import com.tenma.ventures.bean.utils.TMSharedPUtil;
 
 /**
  * Created by Administrator on 2018/8/21.
@@ -89,6 +95,29 @@ public class MineFragment extends BaseFragment {
                 startActivity(intent);
             }
         });
+        vh.ll_collect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),CollectActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        vh.ll_vip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),MineOrderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TMUser user=TMSharedPUtil.getTMUser(getActivity());
+
+        RequestOptions requestOptions = RequestOptions.circleCropTransform();
+        Glide.with(this).load(user.getHead_pic()).apply(requestOptions).into(vh.iv_head);
+
+        vh.tv_name.setText(user.getMember_name());
+
     }
 
     class ViewHolder {
@@ -100,6 +129,7 @@ public class MineFragment extends BaseFragment {
         public LinearLayout ll_shouyi;
         public LinearLayout ll_tixianjilu;
         public LinearLayout ll_bar;
+        public LinearLayout ll_collect;
 
         public ViewHolder(View rootView) {
             this.rootView = rootView;
@@ -110,6 +140,7 @@ public class MineFragment extends BaseFragment {
             this.ll_tixianjilu = (LinearLayout) rootView.findViewById(R.id.ll_tixianjilu);
             this.tv_name = (TextView) rootView.findViewById(R.id.tv_nickname);
             this.ll_bar = (LinearLayout) rootView.findViewById(R.id.ll_bar);
+            this.ll_collect = (LinearLayout) rootView.findViewById(R.id.ll_collect);
         }
 
     }

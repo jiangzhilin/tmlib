@@ -12,7 +12,7 @@ public class PaimaiDetailsEntity {
     /**
      * status : success
      * msg : 获取成功
-     * data : {"store":{"act_id":"87","act_type":"2","goods_id":"560","goods_name":"太阳帽","start_time":"2018-08-07 00:00:00","end_time":"2018-09-30 00:00:00","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"1.20","spec_id":"757","spec_name":"","num":"0","pid":"5","markups":"1.30","maxprice":"9.90","sid":"10","type":"2","new_price":"1.20"},"onum":0,"goods":{"goods_id":"560","goods_sn":"147258","goods_name":"太阳帽","goods_number":"303","description":"<p>\r\n\t遮阳帽11122\r\n<\/p>\r\n<p style=\"text-align:center;\">\r\n\t<img src=\"/application/lee/uploads/image/20180912/20180912060606_67979.jpg\" alt=\"\" /> \r\n<\/p>","cate_id":"149","brand":"","spec_qty":"1","spec_name_1":"颜色","spec_name_2":"","goods_weight":"1.000","status":"1","add_time":"1536736747","goods_type":"0","last_update":"1536736747","default_spec":"758","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","is_best":"0","is_new":"0","is_hot":"0","is_promote":"0","market_price":"147.60","price":"123.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"-1","rank_integral":"-1","integral":"100","is_check":"1","seo_keys":"","seo_desc":"","from":"0","sid":"10","is_del":"0","_specs_all":[{"spec_id":"758","goods_id":"560","spec_1":"灰色","spec_2":"","color_rgb":"","price":"123.00","stock":"144","sku":"147258"},{"spec_id":"757","goods_id":"560","spec_1":"红色","spec_2":"","color_rgb":"","price":"147.00","stock":"158","sku":"156"}],"_images":[{"id":"1755","gid":"560","url":"application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","thumb":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","sort":"1","fid":"954"}],"_statistics":{"goods_id":"560","views":"26","collects":"0","carts":"2","orders":"1","sales":"0","comments":"0"},"cate_name":"鞋帽","attr":null},"auctionlog":[],"phone":"13183872174","pay_fee":null}
+     * data : {"store":{"act_id":"109","act_type":"2","goods_id":"571","goods_name":"新卫衣@","start_time":"2018-10-08 00:00:00","end_time":"2018-10-31 00:00:00","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"58.00","spec_id":"782","spec_name":"卫衣","num":"0","pid":"5","markups":"2.00","maxprice":"200.00","sid":"10","type":"2","new_price":"60.00"},"onum":0,"goods":{"goods_id":"571","goods_sn":"0008","goods_name":"新卫衣@","goods_number":"327","description":"东莞宾馆恍恍惚惚火锅不发个好好回忆","cate_id":"158","brand":null,"spec_qty":"2","spec_name_1":"颜色","spec_name_2":"尺寸","goods_weight":"0.000","status":"1","add_time":"1540170918","goods_type":"0","last_update":"1540170918","default_spec":"785","default_image":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","is_best":"0","is_new":"0","is_hot":"0","is_promote":"0","market_price":"147.60","price":"123.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"18","rank_integral":"-1","integral":"5","is_check":"1","seo_keys":"","seo_desc":"","from":"0","sid":"10","is_del":"0","_specs_all":[{"spec_id":"785","goods_id":"571","spec_1":"M","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"108","sku":"0006"},{"spec_id":"782","goods_id":"571","spec_1":"L","spec_2":"白色","color_rgb":"","price":"123.00","stock":"100","sku":"0008"},{"spec_id":"783","goods_id":"571","spec_1":"M","spec_2":"白色","color_rgb":"","price":"123.00","stock":"60","sku":"0009"},{"spec_id":"784","goods_id":"571","spec_1":"L","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"58","sku":"0007"}],"_images":[{"id":"1814","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","sort":"255","fid":"1035"},{"id":"1815","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","sort":"255","fid":"1036"}],"_statistics":{"goods_id":"571","views":"6","collects":"0","carts":"0","orders":"1","sales":"0","comments":"0"},"cate_name":"卫衣","attr":null},"auctionlog":[{"id":"19","act_id":"109","tel":"157****6882","bid_user":"3","bid_price":"60.00","bid_time":"1540171682"}],"phone":"13183872174","pay_fee":null}
      */
 
     private String status;
@@ -45,10 +45,10 @@ public class PaimaiDetailsEntity {
 
     public static class DataBean {
         /**
-         * store : {"act_id":"87","act_type":"2","goods_id":"560","goods_name":"太阳帽","start_time":"2018-08-07 00:00:00","end_time":"2018-09-30 00:00:00","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"1.20","spec_id":"757","spec_name":"","num":"0","pid":"5","markups":"1.30","maxprice":"9.90","sid":"10","type":"2","new_price":"1.20"}
+         * store : {"act_id":"109","act_type":"2","goods_id":"571","goods_name":"新卫衣@","start_time":"2018-10-08 00:00:00","end_time":"2018-10-31 00:00:00","is_finished":"0","ext_info":null,"total":null,"number":"0","price":"58.00","spec_id":"782","spec_name":"卫衣","num":"0","pid":"5","markups":"2.00","maxprice":"200.00","sid":"10","type":"2","new_price":"60.00"}
          * onum : 0
-         * goods : {"goods_id":"560","goods_sn":"147258","goods_name":"太阳帽","goods_number":"303","description":"<p>\r\n\t遮阳帽11122\r\n<\/p>\r\n<p style=\"text-align:center;\">\r\n\t<img src=\"/application/lee/uploads/image/20180912/20180912060606_67979.jpg\" alt=\"\" /> \r\n<\/p>","cate_id":"149","brand":"","spec_qty":"1","spec_name_1":"颜色","spec_name_2":"","goods_weight":"1.000","status":"1","add_time":"1536736747","goods_type":"0","last_update":"1536736747","default_spec":"758","default_image":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","is_best":"0","is_new":"0","is_hot":"0","is_promote":"0","market_price":"147.60","price":"123.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"-1","rank_integral":"-1","integral":"100","is_check":"1","seo_keys":"","seo_desc":"","from":"0","sid":"10","is_del":"0","_specs_all":[{"spec_id":"758","goods_id":"560","spec_1":"灰色","spec_2":"","color_rgb":"","price":"123.00","stock":"144","sku":"147258"},{"spec_id":"757","goods_id":"560","spec_1":"红色","spec_2":"","color_rgb":"","price":"147.00","stock":"158","sku":"156"}],"_images":[{"id":"1755","gid":"560","url":"application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","thumb":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","sort":"1","fid":"954"}],"_statistics":{"goods_id":"560","views":"26","collects":"0","carts":"2","orders":"1","sales":"0","comments":"0"},"cate_name":"鞋帽","attr":null}
-         * auctionlog : []
+         * goods : {"goods_id":"571","goods_sn":"0008","goods_name":"新卫衣@","goods_number":"327","description":"东莞宾馆恍恍惚惚火锅不发个好好回忆","cate_id":"158","brand":null,"spec_qty":"2","spec_name_1":"颜色","spec_name_2":"尺寸","goods_weight":"0.000","status":"1","add_time":"1540170918","goods_type":"0","last_update":"1540170918","default_spec":"785","default_image":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","is_best":"0","is_new":"0","is_hot":"0","is_promote":"0","market_price":"147.60","price":"123.00","cost_price":"0.00","promote_price":"0.00","promote_start_date":"0","promote_end_date":"0","click_count":"0","is_shipping":"0","sort":"50","give_integral":"18","rank_integral":"-1","integral":"5","is_check":"1","seo_keys":"","seo_desc":"","from":"0","sid":"10","is_del":"0","_specs_all":[{"spec_id":"785","goods_id":"571","spec_1":"M","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"108","sku":"0006"},{"spec_id":"782","goods_id":"571","spec_1":"L","spec_2":"白色","color_rgb":"","price":"123.00","stock":"100","sku":"0008"},{"spec_id":"783","goods_id":"571","spec_1":"M","spec_2":"白色","color_rgb":"","price":"123.00","stock":"60","sku":"0009"},{"spec_id":"784","goods_id":"571","spec_1":"L","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"58","sku":"0007"}],"_images":[{"id":"1814","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","sort":"255","fid":"1035"},{"id":"1815","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","sort":"255","fid":"1036"}],"_statistics":{"goods_id":"571","views":"6","collects":"0","carts":"0","orders":"1","sales":"0","comments":"0"},"cate_name":"卫衣","attr":null}
+         * auctionlog : [{"id":"19","act_id":"109","tel":"157****6882","bid_user":"3","bid_price":"60.00","bid_time":"1540171682"}]
          * phone : 13183872174
          * pay_fee : null
          */
@@ -58,7 +58,7 @@ public class PaimaiDetailsEntity {
         private GoodsBean goods;
         private String phone;
         private Object pay_fee;
-        private List<String> auctionlog;
+        private List<AuctionlogBean> auctionlog;
 
         public StoreBean getStore() {
             return store;
@@ -100,36 +100,36 @@ public class PaimaiDetailsEntity {
             this.pay_fee = pay_fee;
         }
 
-        public List<String> getAuctionlog() {
+        public List<AuctionlogBean> getAuctionlog() {
             return auctionlog;
         }
 
-        public void setAuctionlog(List<String> auctionlog) {
+        public void setAuctionlog(List<AuctionlogBean> auctionlog) {
             this.auctionlog = auctionlog;
         }
 
         public static class StoreBean {
             /**
-             * act_id : 87
+             * act_id : 109
              * act_type : 2
-             * goods_id : 560
-             * goods_name : 太阳帽
-             * start_time : 2018-08-07 00:00:00
-             * end_time : 2018-09-30 00:00:00
+             * goods_id : 571
+             * goods_name : 新卫衣@
+             * start_time : 2018-10-08 00:00:00
+             * end_time : 2018-10-31 00:00:00
              * is_finished : 0
              * ext_info : null
              * total : null
              * number : 0
-             * price : 1.20
-             * spec_id : 757
-             * spec_name :
+             * price : 58.00
+             * spec_id : 782
+             * spec_name : 卫衣
              * num : 0
              * pid : 5
-             * markups : 1.30
-             * maxprice : 9.90
+             * markups : 2.00
+             * maxprice : 200.00
              * sid : 10
              * type : 2
-             * new_price : 1.20
+             * new_price : 60.00
              */
 
             private String act_id;
@@ -316,28 +316,23 @@ public class PaimaiDetailsEntity {
 
         public static class GoodsBean {
             /**
-             * goods_id : 560
-             * goods_sn : 147258
-             * goods_name : 太阳帽
-             * goods_number : 303
-             * description : <p>
-             遮阳帽11122
-             </p>
-             <p style="text-align:center;">
-             <img src="/application/lee/uploads/image/20180912/20180912060606_67979.jpg" alt="" />
-             </p>
-             * cate_id : 149
-             * brand :
-             * spec_qty : 1
+             * goods_id : 571
+             * goods_sn : 0008
+             * goods_name : 新卫衣@
+             * goods_number : 327
+             * description : 东莞宾馆恍恍惚惚火锅不发个好好回忆
+             * cate_id : 158
+             * brand : null
+             * spec_qty : 2
              * spec_name_1 : 颜色
-             * spec_name_2 :
-             * goods_weight : 1.000
+             * spec_name_2 : 尺寸
+             * goods_weight : 0.000
              * status : 1
-             * add_time : 1536736747
+             * add_time : 1540170918
              * goods_type : 0
-             * last_update : 1536736747
-             * default_spec : 758
-             * default_image : http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg
+             * last_update : 1540170918
+             * default_spec : 785
+             * default_image : http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png
              * is_best : 0
              * is_new : 0
              * is_hot : 0
@@ -351,19 +346,19 @@ public class PaimaiDetailsEntity {
              * click_count : 0
              * is_shipping : 0
              * sort : 50
-             * give_integral : -1
+             * give_integral : 18
              * rank_integral : -1
-             * integral : 100
+             * integral : 5
              * is_check : 1
              * seo_keys :
              * seo_desc :
              * from : 0
              * sid : 10
              * is_del : 0
-             * _specs_all : [{"spec_id":"758","goods_id":"560","spec_1":"灰色","spec_2":"","color_rgb":"","price":"123.00","stock":"144","sku":"147258"},{"spec_id":"757","goods_id":"560","spec_1":"红色","spec_2":"","color_rgb":"","price":"147.00","stock":"158","sku":"156"}]
-             * _images : [{"id":"1755","gid":"560","url":"application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","thumb":"http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg","sort":"1","fid":"954"}]
-             * _statistics : {"goods_id":"560","views":"26","collects":"0","carts":"2","orders":"1","sales":"0","comments":"0"}
-             * cate_name : 鞋帽
+             * _specs_all : [{"spec_id":"785","goods_id":"571","spec_1":"M","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"108","sku":"0006"},{"spec_id":"782","goods_id":"571","spec_1":"L","spec_2":"白色","color_rgb":"","price":"123.00","stock":"100","sku":"0008"},{"spec_id":"783","goods_id":"571","spec_1":"M","spec_2":"白色","color_rgb":"","price":"123.00","stock":"60","sku":"0009"},{"spec_id":"784","goods_id":"571","spec_1":"L","spec_2":"黑色","color_rgb":"","price":"123.00","stock":"58","sku":"0007"}]
+             * _images : [{"id":"1814","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png","sort":"255","fid":"1035"},{"id":"1815","gid":"571","url":"application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","thumb":"http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/f1848d65e262c4a11a58d190de0f8808.png","sort":"255","fid":"1036"}]
+             * _statistics : {"goods_id":"571","views":"6","collects":"0","carts":"0","orders":"1","sales":"0","comments":"0"}
+             * cate_name : 卫衣
              * attr : null
              */
 
@@ -373,7 +368,7 @@ public class PaimaiDetailsEntity {
             private String goods_number;
             private String description;
             private String cate_id;
-            private String brand;
+            private Object brand;
             private String spec_qty;
             private String spec_name_1;
             private String spec_name_2;
@@ -460,11 +455,11 @@ public class PaimaiDetailsEntity {
                 this.cate_id = cate_id;
             }
 
-            public String getBrand() {
+            public Object getBrand() {
                 return brand;
             }
 
-            public void setBrand(String brand) {
+            public void setBrand(Object brand) {
                 this.brand = brand;
             }
 
@@ -766,10 +761,10 @@ public class PaimaiDetailsEntity {
 
             public static class StatisticsBean {
                 /**
-                 * goods_id : 560
-                 * views : 26
+                 * goods_id : 571
+                 * views : 6
                  * collects : 0
-                 * carts : 2
+                 * carts : 0
                  * orders : 1
                  * sales : 0
                  * comments : 0
@@ -842,14 +837,14 @@ public class PaimaiDetailsEntity {
 
             public static class SpecsAllBean {
                 /**
-                 * spec_id : 758
-                 * goods_id : 560
-                 * spec_1 : 灰色
-                 * spec_2 :
+                 * spec_id : 785
+                 * goods_id : 571
+                 * spec_1 : M
+                 * spec_2 : 黑色
                  * color_rgb :
                  * price : 123.00
-                 * stock : 144
-                 * sku : 147258
+                 * stock : 108
+                 * sku : 0006
                  */
 
                 private String spec_id;
@@ -928,12 +923,12 @@ public class PaimaiDetailsEntity {
 
             public static class ImagesBean {
                 /**
-                 * id : 1755
-                 * gid : 560
-                 * url : application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg
-                 * thumb : http://shop.dktoo.com/application/lee/uploads/lee/20180912/3c97b12cde5592355891d7a969347a2f.jpg
-                 * sort : 1
-                 * fid : 954
+                 * id : 1814
+                 * gid : 571
+                 * url : application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png
+                 * thumb : http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181022/aa4302c4acc4bce295fc9835dfe52be9.png
+                 * sort : 255
+                 * fid : 1035
                  */
 
                 private String id;
@@ -990,6 +985,72 @@ public class PaimaiDetailsEntity {
                 public void setFid(String fid) {
                     this.fid = fid;
                 }
+            }
+        }
+
+        public static class AuctionlogBean {
+            /**
+             * id : 19
+             * act_id : 109
+             * tel : 157****6882
+             * bid_user : 3
+             * bid_price : 60.00
+             * bid_time : 1540171682
+             */
+
+            private String id;
+            private String act_id;
+            private String tel;
+            private String bid_user;
+            private String bid_price;
+            private String bid_time;
+
+            public String getId() {
+                return id;
+            }
+
+            public void setId(String id) {
+                this.id = id;
+            }
+
+            public String getAct_id() {
+                return act_id;
+            }
+
+            public void setAct_id(String act_id) {
+                this.act_id = act_id;
+            }
+
+            public String getTel() {
+                return tel;
+            }
+
+            public void setTel(String tel) {
+                this.tel = tel;
+            }
+
+            public String getBid_user() {
+                return bid_user;
+            }
+
+            public void setBid_user(String bid_user) {
+                this.bid_user = bid_user;
+            }
+
+            public String getBid_price() {
+                return bid_price;
+            }
+
+            public void setBid_price(String bid_price) {
+                this.bid_price = bid_price;
+            }
+
+            public String getBid_time() {
+                return bid_time;
+            }
+
+            public void setBid_time(String bid_time) {
+                this.bid_time = bid_time;
             }
         }
     }

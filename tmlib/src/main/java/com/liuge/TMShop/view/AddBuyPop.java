@@ -49,6 +49,8 @@ public class AddBuyPop extends PopupWindow {
     static GoodsDetailsEntity entity;
     static int tags=0;
 
+    String guige_id="0";
+
     public interface ChooseListener {
         public void chooseClick(int position);
     }
@@ -85,8 +87,9 @@ public class AddBuyPop extends PopupWindow {
             guige.add(entity.getData().get_specs().get(x).getSpec_1());
         }
         color = new ArrayList<>();
-        for (int x = 0; x < entity.getData().getAttr().size(); x++) {
-            color.add(entity.getData().getAttr().get(x).getAttr_name());
+        for (int x = 0; x < entity.getData().get_specs().size(); x++) {
+//            color.add(entity.getData().getAttr().get(x).getAttr_name());
+            color.add(entity.getData().get_specs().get(x).getSpec_2());
         }
         if (guige != null) {
             for (int x = 0; x < guige.size(); x++) {
@@ -104,6 +107,14 @@ public class AddBuyPop extends PopupWindow {
                 rb.setGravity(Gravity.CENTER);
                 rb.setClickable(true);
                 vh.rg_guige.addView(rb);
+
+                final int finalX = x;
+                rb.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        guige_id=entity.getData().get_specs().get(finalX).getSpec_id();
+                    }
+                });
             }
         }
         if (color != null) {
@@ -126,7 +137,7 @@ public class AddBuyPop extends PopupWindow {
 
         vh.tv_price.setText(SixGridContext.RMB+entity.getData().getPrice());
         vh.tv_goods_name.setText(entity.getData().getGoods_name());
-        Glide.with(mContext).load(SixGridContext.IMG+entity.getData().getDefault_image()).into(vh.iv_img);
+        Glide.with(mContext).load(entity.getData().getDefault_image()).into(vh.iv_img);
 
         vh.tv_close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -227,11 +238,12 @@ public class AddBuyPop extends PopupWindow {
 
     private void addCart(String num){
         LoadDialog.show(mContext);
-        new ApiManager().addCart(entity.getData().getGoods_id(),num, new Callback.CommonCallback<String>() {
+        new ApiManager().addCart(entity.getData().getGoods_id(),num,guige_id, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
                 BaseEntity base= JSONObject.parseObject(result,BaseEntity.class);
                 NToast.shortToast(mContext,base.getMsg());
+                CancelDialog();
             }
 
             @Override

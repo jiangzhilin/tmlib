@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.GoodsComentEntity;
 import com.liuge.TMShop.view.NoScroGridView;
@@ -69,6 +71,9 @@ public class CommentAdapter extends BaseAdapter {
 
         CommentReplyAdapter reply=new CommentReplyAdapter(mContext);
         vh.listReply.setAdapter(reply);
+
+        RequestOptions requestOptions = RequestOptions.circleCropTransform();
+        Glide.with(mContext).load(mList.get(i).getHead_pic()).apply(requestOptions).into(vh.ivHead);
 
         return view;
     }

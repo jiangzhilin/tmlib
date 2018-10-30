@@ -62,6 +62,7 @@ public class IndexHotGoodsAdapter extends BaseAdapter {
         Glide.with(mContext).load(mList.get(i).getDefault_image()).into(vh.iv_xianshi_img_1);
         vh.tv_xianshi_name_1.setText(mList.get(i).getGoods_name());
         vh.tv_xianshi_detail_1.setText(mList.get(i).getDescription());
+        vh.tv_xianshi_detail_1.setVisibility(View.GONE);
         vh.tv_xianshi_price_1.setText(mList.get(i).getPrice());
         vh.tv_pay_num_1.setText(mList.get(i).getGoods_number()+"人付款");
         return view;

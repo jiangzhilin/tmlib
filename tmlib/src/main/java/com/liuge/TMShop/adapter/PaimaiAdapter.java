@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.BannerEntity;
+import com.liuge.TMShop.utils.TimeUtils;
 
 import java.util.List;
 
@@ -58,12 +59,23 @@ public class PaimaiAdapter extends BaseAdapter {
 
         Glide.with(mContext).load(mList.get(i).getDefault_image()).into(vh.iv_xianshi_img_1);
         vh.tv_xianshi_name_1.setText(mList.get(i).getGoods_name());
-        vh.tv_jingpai_num_1.setText(mList.get(i).getNumber() + "人竞拍");
+        vh.tv_jingpai_num_1.setText(mList.get(i).getOnum() + "人竞拍");
         vh.tv_xianshi_detail_1.setText(mList.get(i).getExt_info());
-        vh.tv_xianshi_price_1.setText(mList.get(i).getPrice());
+        vh.tv_xianshi_price_1.setText(mList.get(i).getNew_price());
         vh.tv_pay_num_1.setText(mList.get(i).getNum() + "人付款");
         vh.tv_shengyu_1.setText("剩余宝贝" + mList.get(i).getOnum() + "件");
         vh.rl_bottom.setVisibility(View.GONE);
+        vh.ll_time.setVisibility(View.GONE);
+        vh.tv_data.setVisibility(View.VISIBLE);
+        System.out.println("时间："+mList.get(i).getEnd_time());
+        if(mList.get(i).getEnd_time()!=null) {
+            TimeUtils.getReturnTime(mList.get(i).getEnd_time(), vh.tv_data);
+        }else{
+            vh.tv_data.setText("未设置结束时间");
+        }
+
+        mList.get(i).getEnd_time();
+
         return view;
     }
 
@@ -75,10 +87,13 @@ public class PaimaiAdapter extends BaseAdapter {
         public LinearLayout ll_jingpai;
         public TextView tv_xianshi_name_1;
         public TextView tv_xianshi_detail_1;
+        public TextView tv_price_txt;
         public TextView tv_xianshi_price_1;
         public TextView tv_xianshi_time_h_1;
         public TextView tv_xianshi_time_m_1;
         public TextView tv_xianshi_time_s_1;
+        public LinearLayout ll_time;
+        public TextView tv_data;
         public TextView tv_pay_num_1;
         public TextView tv_shengyu_1;
         public RelativeLayout rl_bottom;
@@ -91,10 +106,13 @@ public class PaimaiAdapter extends BaseAdapter {
             this.ll_jingpai = (LinearLayout) rootView.findViewById(R.id.ll_jingpai);
             this.tv_xianshi_name_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_name_1);
             this.tv_xianshi_detail_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_detail_1);
+            this.tv_price_txt = (TextView) rootView.findViewById(R.id.tv_price_txt);
             this.tv_xianshi_price_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_price_1);
             this.tv_xianshi_time_h_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_time_h_1);
             this.tv_xianshi_time_m_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_time_m_1);
             this.tv_xianshi_time_s_1 = (TextView) rootView.findViewById(R.id.tv_xianshi_time_s_1);
+            this.ll_time = (LinearLayout) rootView.findViewById(R.id.ll_time);
+            this.tv_data = (TextView) rootView.findViewById(R.id.tv_data);
             this.tv_pay_num_1 = (TextView) rootView.findViewById(R.id.tv_pay_num_1);
             this.tv_shengyu_1 = (TextView) rootView.findViewById(R.id.tv_shengyu_1);
             this.rl_bottom = (RelativeLayout) rootView.findViewById(R.id.rl_bottom);

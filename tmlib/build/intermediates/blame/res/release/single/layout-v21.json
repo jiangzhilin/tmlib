@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     }
 ]

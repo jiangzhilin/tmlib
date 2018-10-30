@@ -28,8 +28,8 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/alipaySdk-20180403.jar')
 
     compile 'com.android.support:support-v4:26.0.0-alpha1'
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
@@ -56,5 +56,9 @@ dependencies {
     compile 'com.github.dkzwm:SmoothRefreshLayout:1.3.5.1'
     compile 'com.heaven7.android.dragflowlayout:dragflowlayout:1.0.6'
     compile 'liji.library.dev:citypickerview:3.1.13'
+    compile 'com.tenma.ventures:tm_share_ss:1.0.16'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    compile 'com.github.YancyYe:GalleryPick:1.2.1'
 }
 

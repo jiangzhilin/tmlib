@@ -21,10 +21,12 @@ import com.liuge.TMShop.adapter.IndexHotMallAdapter;
 import com.liuge.TMShop.adapter.IndexListAdapter;
 import com.liuge.TMShop.entity.BannerEntity;
 import com.liuge.TMShop.entity.GoodsClassEntity;
+import com.liuge.TMShop.entity.GoodsListEntity;
 import com.liuge.TMShop.network.ApiManager;
 import com.liuge.TMShop.ui.GoodsClassActivity;
 import com.liuge.TMShop.ui.GoodsDetailsActivity;
 import com.liuge.TMShop.ui.MallActivity;
+import com.liuge.TMShop.ui.SearchActivity;
 import com.liuge.TMShop.utils.GlideImageLoader;
 import com.liuge.TMShop.utils.StatusBarUtil;
 import com.liuge.TMShop.view.LoadDialog;
@@ -104,6 +106,8 @@ public class IndexFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.VISIBLE);
                 vh.rb_xinpin_2.setChecked(false);
                 vh.ll_line_2.setVisibility(View.INVISIBLE);
+
+                getClaGoods(0);
             }
         });
         vh.ll_rexiao.setOnClickListener(new View.OnClickListener() {
@@ -113,9 +117,20 @@ public class IndexFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.INVISIBLE);
                 vh.rb_xinpin_2.setChecked(true);
                 vh.ll_line_2.setVisibility(View.VISIBLE);
+
+                getClaGoods(1);
             }
         });
 
+        vh.ed_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        getClaGoods(0);
         getBanner();
     }
     private void getBanner(){
@@ -123,6 +138,9 @@ public class IndexFragment extends BaseFragment {
         new ApiManager().getBanner(new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
+
+                Log.d(TAG, "onSuccess: "+result);
+
                 final BannerEntity entity=JSONObject.parseObject(result,BannerEntity.class);
 
                 mBannerData = new ArrayList<>();
@@ -178,6 +196,50 @@ public class IndexFragment extends BaseFragment {
                 LoadDialog.dismiss(getActivity());
             }
         });
+    }
+
+    private void getClaGoods(int type){
+        LoadDialog.show(getActivity());
+        new ApiManager().getGoodsList(null, null, null, null, null, type==0?null:"1", new Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String result) {
+                final GoodsListEntity goodsList=JSONObject.parseObject(result,GoodsListEntity.class);
+                IndexHotGoodsAdapter adapter=new IndexHotGoodsAdapter(getActivity());
+                vh.new_goods.setAdapter(adapter);
+                adapter.setList(goodsList.getData().getResult());
+
+                vh.new_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent=new Intent(getActivity(),GoodsDetailsActivity.class);
+                        intent.putExtra("goods_id",goodsList.getData().getResult().get(position).getGoods_id());
+                        startActivity(intent);
+                    }
+                });
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+
+            }
+
+            @Override
+            public void onCancelled(CancelledException cex) {
+
+            }
+
+            @Override
+            public void onFinished() {
+                LoadDialog.dismiss(getActivity());
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getClaGoods(0);
+        getBanner();
     }
 
     class ViewHolder {

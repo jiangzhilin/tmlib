@@ -60,5 +60,8 @@
     <string name="sr_release_to_load">释放加载</string>
     <string name="sr_release_to_refresh">释放刷新</string>
     <string name="sr_seconds_ago"> 秒之前</string>
+    <string name="ucrop_label_edit_photo">裁剪</string>
+    <string name="ucrop_label_original">原始比例</string>
+    <string name="ucrop_menu_crop">裁剪</string>
     <string name="waiting">等待…</string>
 </resources>

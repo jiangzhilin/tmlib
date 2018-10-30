@@ -1,29 +1,39 @@
 package com.liuge.TMShop.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSONObject;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.adapter.CommentAdapter;
-import com.liuge.TMShop.adapter.GoodsDetailsImgAdapter;
 import com.liuge.TMShop.entity.BaseEntity;
 import com.liuge.TMShop.entity.GoodsComentEntity;
 import com.liuge.TMShop.entity.GoodsDetailsEntity;
 import com.liuge.TMShop.network.ApiManager;
+import com.liuge.TMShop.network.SixGridContext;
 import com.liuge.TMShop.utils.GlideImageLoader;
 import com.liuge.TMShop.utils.NToast;
 import com.liuge.TMShop.utils.StatusBarUtil;
 import com.liuge.TMShop.view.AddBuyPop;
 import com.liuge.TMShop.view.LoadDialog;
+import com.liuge.TMShop.view.NoScroGridView;
 import com.liuge.TMShop.view.NoScroListView;
+import com.tencent.smtt.sdk.WebSettings;
+import com.tencent.smtt.sdk.WebView;
+import com.tenma.ventures.share.bean.TMTextShare;
+import com.tenma.ventures.share.util.TMShareUtil;
+import com.tenma.ventures.tools.TMApp;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 
@@ -71,17 +81,22 @@ public class GoodsDetailsActivity extends FragmentActivity {
     private Context mContext;
 
     String id;
+    private TextView tv_time;
+    private LinearLayout ll_time;
+    private WebView web;
+    private NoScroGridView nogrid;
+    private LinearLayout ll_jifen;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatusBarUtil.setStatusBarColor(this,R.color.transparent);
+        StatusBarUtil.setStatusBarColor(this, R.color.transparent);
         StatusBarUtil.StatusBarLightMode(this);
         setContentView(R.layout.activity_goods_details);
-        id=getIntent().getStringExtra("goods_id");
-        mContext=this;
         initView();
+        id = getIntent().getStringExtra("goods_id");
+        mContext = this;
         initData();
     }
 
@@ -95,6 +110,28 @@ public class GoodsDetailsActivity extends FragmentActivity {
 
         getGoods();
         getComment();
+
+        ll_collect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toCollect(id);
+            }
+        });
+
+        iv_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        iv_share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TMTextShare share = new TMTextShare();
+                share.setContent("分享信息");
+                TMShareUtil.getInstance(mContext).shareText(share);
+            }
+        });
     }
 
     private void initView() {
@@ -132,20 +169,95 @@ public class GoodsDetailsActivity extends FragmentActivity {
         tv_to_buy = (TextView) findViewById(R.id.tv_to_buy);
 //        tv_to_buy.setOnClickListener(this);
         ll_title_bar = (LinearLayout) findViewById(R.id.ll_title_bar);
+
+
+        tv_time = (TextView) findViewById(R.id.tv_time);
+        ll_time = (LinearLayout) findViewById(R.id.ll_time);
+        web = (WebView) findViewById(R.id.web);
+
+        WebSettings webSettings = web.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        // User settings
+
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+        webSettings.setUseWideViewPort(true);//关键点
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+        webSettings.setDisplayZoomControls(false);
+        webSettings.setJavaScriptEnabled(true); // 设置支持javascript脚本
+        webSettings.setAllowFileAccess(true); // 允许访问文件
+        webSettings.setBuiltInZoomControls(true); // 设置显示缩放按钮
+        webSettings.setSupportZoom(true); // 支持缩放
+        webSettings.setLoadWithOverviewMode(true);
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int mDensity = metrics.densityDpi;
+        Log.d("maomao", "densityDpi = " + mDensity);
+        if (mDensity == 240) {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+        } else if (mDensity == 160) {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
+        } else if (mDensity == 120) {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.CLOSE);
+        } else if (mDensity == DisplayMetrics.DENSITY_XHIGH) {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+        } else if (mDensity == DisplayMetrics.DENSITY_TV) {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+        } else {
+            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
+        }
+        /**
+         * 用WebView显示图片，可使用这个参数 设置网页布局类型： 1、LayoutAlgorithm.NARROW_COLUMNS ：
+         * 适应内容大小 2、LayoutAlgorithm.SINGLE_COLUMN:适应屏幕，内容将自动缩放
+         */
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
+        nogrid = (NoScroGridView) findViewById(R.id.nogrid);
+        ll_jifen = (LinearLayout) findViewById(R.id.ll_jifen);
     }
 
-    private void getGoods(){
+    private void toCollect(String id) {
+        LoadDialog.show(mContext);
+        new ApiManager().collect(id, "1", new Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String result) {
+                BaseEntity base = JSONObject.parseObject(result, BaseEntity.class);
+                if (base.getStatus().equals("success")) {
+                    NToast.shortToast(mContext, base.getMsg());
+                } else {
+                    NToast.shortToast(mContext, base.getMsg());
+                }
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+
+            }
+
+            @Override
+            public void onCancelled(CancelledException cex) {
+
+            }
+
+            @Override
+            public void onFinished() {
+                LoadDialog.dismiss(mContext);
+            }
+        });
+    }
+
+
+    private void getGoods() {
         LoadDialog.show(this);
         new ApiManager().getGoodsDetails(id, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: "+result);
-                final GoodsDetailsEntity entity= JSONObject.parseObject(result,GoodsDetailsEntity.class);
-                if(entity.getStatus().equals("success")){
+                Log.d(TAG, "onSuccess: " + result);
+                final GoodsDetailsEntity entity = JSONObject.parseObject(result, GoodsDetailsEntity.class);
+                if (entity.getStatus().equals("success")) {
 
                     mBannerData = new ArrayList<>();
-                    List<String>imgs=new ArrayList<String>();
-                    for(GoodsDetailsEntity.DataBean.ImagesBean img:entity.getData().get_images()){
+                    List<String> imgs = new ArrayList<String>();
+                    for (GoodsDetailsEntity.DataBean.ImagesBean img : entity.getData().get_images()) {
                         imgs.add(img.getThumb());
                         mBannerData.add(img.getThumb());
                     }
@@ -154,31 +266,68 @@ public class GoodsDetailsActivity extends FragmentActivity {
                             .setIndicatorGravity(BannerConfig.RIGHT)
                             .setDelayTime(4000)
                             .start();
-                    GoodsDetailsImgAdapter imgAdapter = new GoodsDetailsImgAdapter(GoodsDetailsActivity.this, imgs);
-                    list_details.setAdapter(imgAdapter);
+//                    GoodsDetailsImgAdapter imgAdapter = new GoodsDetailsImgAdapter(GoodsDetailsActivity.this, imgs);
+//                    list_details.setAdapter(imgAdapter);
 
                     tv_goods_name.setText(entity.getData().getGoods_name());
                     tv_goods_detail.setText(entity.getData().getDescription());
-                    tv_ac_num.setText("秒杀数量："+entity.getData().getClick_count()+"件");
-                    tv_shengyu_num.setText("剩余宝贝："+entity.getData().getGoods_number()+"件");
-                    tv_price.setText(entity.getData().getPromote_price());
-                    tv_yuanjia.setText("原价 "+entity.getData().getMarket_price());
+                    tv_goods_detail.setVisibility(View.GONE);
+
+                    tv_ac_num.setText("数量：" + entity.getData().getClick_count() + "件");
+                    tv_shengyu_num.setText("剩余宝贝：" + entity.getData().getGoods_number() + "件");
+                    tv_price_detail.setText("价格");
+                    tv_price.setText(entity.getData().getPrice());
+                    tv_yuanjia.setText("原价 " + entity.getData().getPrice());
+                    tv_yuanjia.setVisibility(View.GONE);
+
+                    tv_jifen_num.setText(entity.getData().getGive_integral());
+                    tv_shiyongjifen_num.setText(entity.getData().getIntegral());
 
                     tv_add_cart.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
 //                addCart();
-                            AddBuyPop.showDialog(GoodsDetailsActivity.this,entity,0,tv_add_cart);
+                            AddBuyPop.showDialog(GoodsDetailsActivity.this, entity, 0, tv_add_cart);
                         }
                     });
 
                     tv_to_buy.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            AddBuyPop.showDialog(GoodsDetailsActivity.this,entity,1,tv_add_cart);
+                            AddBuyPop.showDialog(GoodsDetailsActivity.this, entity, 1, tv_add_cart);
                         }
                     });
 
+                    ll_into_mall.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(mContext, MallActivity.class);
+                            intent.putExtra("sid", entity.getData().getSid());
+                            startActivity(intent);
+                        }
+                    });
+
+                    ll_into_kefu.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            TMApp.call(mContext, entity.getData().getPhone());
+                        }
+                    });
+
+                    web.loadDataWithBaseURL(SixGridContext.HOST, entity.getData().getDescription(), "text/html", "UTF-8", null);
+
+                    if(entity.getData().getAttr()!=null) {
+                        nogrid.setVisibility(View.VISIBLE);
+                        List<String>date=new ArrayList<String>();
+                        for (int x = 0; x < entity.getData().getAttr().size(); x++) {
+                            date.add(entity.getData().getAttr().get(x).getAttr_name()+":"+entity.getData().getAttr().get(x).getValue());
+                        }
+//                        SimpleAdapter simple = new SimpleAdapter(mContext,date,android.R.layout.simple_list_item_1)
+                        ArrayAdapter adapter=new ArrayAdapter(mContext,R.layout.item_attr_layout,date);
+                        nogrid.setAdapter(adapter);
+                    }else{
+                        nogrid.setVisibility(View.GONE);
+                    }
                 }
             }
 
@@ -198,14 +347,15 @@ public class GoodsDetailsActivity extends FragmentActivity {
             }
         });
     }
-    private void getComment(){
+
+    private void getComment() {
         LoadDialog.show(this);
         new ApiManager().getGoodsCom(id, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: "+result);
-                GoodsComentEntity entity=JSONObject.parseObject(result,GoodsComentEntity.class);
-                CommentAdapter mAdapter = new CommentAdapter(GoodsDetailsActivity.this,entity.getData().getResult());
+                Log.d(TAG, "onSuccess: " + result);
+                GoodsComentEntity entity = JSONObject.parseObject(result, GoodsComentEntity.class);
+                CommentAdapter mAdapter = new CommentAdapter(GoodsDetailsActivity.this, entity.getData().getResult());
                 list_pinglun.setAdapter(mAdapter);
             }
 

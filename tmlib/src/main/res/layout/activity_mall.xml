@@ -14,7 +14,8 @@
         android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -48,7 +49,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:id="@+id/iv_head"/>
+                            android:id="@+id/iv_head_user"/>
                     </LinearLayout>
                     <TextView
                         android:id="@+id/tv_nickname"
@@ -76,7 +77,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
                     <android.support.design.widget.TabLayout
                         android:id="@+id/tab"
                         android:layout_width="match_parent"

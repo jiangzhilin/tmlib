@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

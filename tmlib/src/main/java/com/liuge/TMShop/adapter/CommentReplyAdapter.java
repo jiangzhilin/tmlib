@@ -9,12 +9,20 @@ import android.widget.TextView;
 
 import com.liuge.TMShop.R;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2018/8/22.
  */
 
 public class CommentReplyAdapter extends BaseAdapter {
     Context mContext;
+    List<String>mList;
+
+    public void setmList(List<String> mList) {
+        this.mList = mList;
+        this.notifyDataSetChanged();
+    }
 
     public CommentReplyAdapter(Context mContext) {
         this.mContext = mContext;
@@ -22,7 +30,7 @@ public class CommentReplyAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return mList==null?0:mList.size();
     }
 
     @Override

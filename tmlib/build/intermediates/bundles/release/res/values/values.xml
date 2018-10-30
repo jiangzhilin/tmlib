@@ -25,6 +25,7 @@
     <color name="colorRed">#FF0000</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorlGrey">#EDEDED</color>
+    <color name="gallery_blue">#33b5e5</color>
     <color name="transparent">#00ffffff</color>
     <declare-styleable name="ArcImageView"><attr format="dimension" name="arcHeight"/><attr format="boolean" name="arcOutOrIn"/></declare-styleable>
     <declare-styleable name="BubbleLayout"><attr format="reference" name="bldrawable"/><attr format="dimension" name="blarcHeight"/><attr format="boolean" name="blarcOutOrIn"/></declare-styleable>
@@ -38,11 +39,8 @@
     <declare-styleable name="androidWheelView"><attr format="integer" name="awv_textsize"/><attr format="float" name="awv_lineSpace"/><attr format="integer" name="awv_centerTextColor"/><attr format="integer" name="awv_outerTextColor"/><attr format="integer" name="awv_dividerTextColor"/><attr format="integer" name="awv_itemsVisibleCount"/><attr format="boolean" name="awv_isLoop"/><attr format="integer" name="awv_initialPosition"/><attr format="float" name="awv_scaleX"/></declare-styleable>
     <string name="app_name">tmlib</string>
     <style name="ACTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-<!--        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorButtonNormal">@color/colorBlue</item>-->
+        
+
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -53,11 +51,8 @@
         <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
     </style>
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-<!--        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorButtonNormal">@color/colorBlue</item>-->
+        
+
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -66,6 +61,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="TranslucentTheme" parent="AppTheme">
-        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+        
     </style>
 </resources>

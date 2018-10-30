@@ -1,394 +1,422 @@
 [
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\tooltip_frame_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\tooltip_frame_dark.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\no_banner.png",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\72680fff6eef49575cb0da11143dac2f9d83ec20\\output\\res\\drawable\\no_banner.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw13.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\bg_draw13.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\62afc50bc93d3c16061417abf0052654a463c28f\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\cp_overlay_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\60217cdf2fe9878f6b926bcfc62cba5be37d833f\\output\\res\\drawable\\cp_overlay_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_20_search_ed.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_20_search_ed.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_grid_camera_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\selector_grid_camera_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_shouyi_c.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_shouyi_c.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_normal.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\edittext_normal.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw15.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\bg_draw15.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\choose_txt_slector.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\choose_txt_slector.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_mine_c.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_mine_c.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\picker_actionbar_translucent.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\picker_actionbar_translucent.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\62afc50bc93d3c16061417abf0052654a463c28f\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_mine.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_mine.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_cart.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_cart.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_mine.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_mine.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_goods.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_goods.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\circle_text.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\circle_text.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_mine_c.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_mine_c.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_grid_camera_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\selector_grid_camera_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_head_bg.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_head_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\city_bg_l.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\city_bg_l.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\picker_photogrid_selector.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\picker_photogrid_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_top_ok.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\selector_top_ok.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\62afc50bc93d3c16061417abf0052654a463c28f\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw1.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\bg_draw1.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\62afc50bc93d3c16061417abf0052654a463c28f\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_index.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_index.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\wheel_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\cp_search_box_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\60217cdf2fe9878f6b926bcfc62cba5be37d833f\\output\\res\\drawable\\cp_search_box_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_goods.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_goods.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\sidebar_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\sidebar_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_val.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\wheel_val.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edit_bg_cart.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\edit_bg_cart.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_cart.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_cart.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\mis_action_btn.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\mis_action_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_focused.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\edittext_focused.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\saixuan_txt_slector.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\saixuan_txt_slector.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_back_press.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\selector_back_press.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\wheel_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\tooltip_frame_dark.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\tooltip_frame_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\rc_bg_toast.9.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\rc_bg_toast.9.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\black_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b202f876e6742193951580c8d29018b008b83287\\output\\res\\drawable\\black_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_index.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_index.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\white_radius.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\72680fff6eef49575cb0da11143dac2f9d83ec20\\output\\res\\drawable\\white_radius.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\mis_action_btn.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\mis_action_btn.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\62afc50bc93d3c16061417abf0052654a463c28f\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_back_press.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\selector_back_press.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_dark_line_bt_5.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_dark_line_bt_5.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\saixuan_txt_slector.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\saixuan_txt_slector.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\menu_click_selector.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\menu_click_selector.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\tooltip_frame_light.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_item_checked.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\selector_item_checked.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_focused.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\edittext_focused.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_goods_c.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_goods_c.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_index_c.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_index_c.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\edittext_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\drawable\\design_password_eye.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_blue_bt_gb.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_blue_bt_gb.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ucrop_vector_loader.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\2cf31d3deae4dde58f05471b8340be473ce1d980\\output\\res\\drawable\\ucrop_vector_loader.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\wheel_val.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\wheel_val.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_dark_line_bt.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_dark_line_bt.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\main_txt_slector.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\main_txt_slector.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\gray_radius.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b202f876e6742193951580c8d29018b008b83287\\output\\res\\drawable\\gray_radius.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\menu_click_selector.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\menu_click_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_normal.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\edittext_normal.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_index.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_index.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ucrop_shadow_upside.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\2cf31d3deae4dde58f05471b8340be473ce1d980\\output\\res\\drawable\\ucrop_shadow_upside.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_head_bg_dark.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_head_bg_dark.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_mine.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_mine.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_mine.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_mine.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\no_banner.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b202f876e6742193951580c8d29018b008b83287\\output\\res\\drawable\\no_banner.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw13.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\bg_draw13.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\share_platform_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\d61171d8c543b04ad4d8974a2e9dc7389840b225\\output\\res\\drawable\\share_platform_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\white_radius.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b202f876e6742193951580c8d29018b008b83287\\output\\res\\drawable\\white_radius.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_white_circle.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_white_circle.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_shouyi.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_shouyi.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ssdk_oks_classic_progressbar.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\d61171d8c543b04ad4d8974a2e9dc7389840b225\\output\\res\\drawable\\ssdk_oks_classic_progressbar.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_top_ok.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\selector_top_ok.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\edittext_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\choose_txt_slector.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\choose_txt_slector.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_shouyi.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_shouyi.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ssdk_oks_classic_platform_cell_back.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\d61171d8c543b04ad4d8974a2e9dc7389840b225\\output\\res\\drawable\\ssdk_oks_classic_platform_cell_back.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw1.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\bg_draw1.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\city_bg_l.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\city_bg_l.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\rc_bg_toast.9.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\rc_bg_toast.9.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\bg_draw15.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\bg_draw15.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_cart_c.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_cart_c.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_head_bg.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_head_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ucrop_vector_loader_animated.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\2cf31d3deae4dde58f05471b8340be473ce1d980\\output\\res\\drawable\\ucrop_vector_loader_animated.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_goods.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_goods.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\circle_text.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\circle_text.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_blue_bt_gb.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_blue_bt_gb.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_head_bg_dark.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_head_bg_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\selector_item_checked.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\selector_item_checked.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\gray_radius.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\72680fff6eef49575cb0da11143dac2f9d83ec20\\output\\res\\drawable\\gray_radius.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\picker_photogrid_selector.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\5c595b4b1f1d5f8592c97ab9c2bcab51c15a1fbd\\output\\res\\drawable\\picker_photogrid_selector.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_cart_c.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_cart_c.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_shouyi_c.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_shouyi_c.png"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_goods.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_goods.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\ucrop_vector_ic_crop.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\2cf31d3deae4dde58f05471b8340be473ce1d980\\output\\res\\drawable\\ucrop_vector_ic_crop.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_shape_blue_bg.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_shape_blue_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_shouyi.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_shouyi.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_20_search_ed.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_20_search_ed.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\test_wheel_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\test_wheel_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_cart.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_cart.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\main_txt_slector.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\main_txt_slector.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\cityitem_click.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\cityitem_click.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\picker_actionbar_translucent.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\drawable\\picker_actionbar_translucent.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\d54fedf9c49a9031619f2c6263209b865e1b97cb\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\cityitem_click.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\08b5f2abd5fe1a4671b6e7c9f8c38055ddcd1415\\output\\res\\drawable\\cityitem_click.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\edit_bg_cart.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\edit_bg_cart.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_goods_c.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_goods_c.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\test_wheel_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\test_wheel_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\shape_dark_line_bt.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\shape_dark_line_bt.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\sidebar_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\52366a6ab47d5bd8a989a600deaff5332c948a32\\output\\res\\drawable\\sidebar_background.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_shape_blue_bg.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_shape_blue_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_index.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_index.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\672b37be41a2ffe812161dc3e8bf2cfcc5e5a055\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_index_c.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_index_c.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\tooltip_frame_light.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\drawable\\tooltip_frame_light.xml"
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\icon_shouyi.png",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\icon_shouyi.png"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\radio_cart.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\drawable\\radio_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\black_background.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\72680fff6eef49575cb0da11143dac2f9d83ec20\\output\\res\\drawable\\black_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\16f296f75b824412093f247f36c5637c997451ee\\output\\res\\drawable\\notification_bg.xml"
     }
 ]

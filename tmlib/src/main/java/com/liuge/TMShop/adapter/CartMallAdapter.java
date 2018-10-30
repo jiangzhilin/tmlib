@@ -6,10 +6,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.liuge.TMShop.R;
+import com.liuge.TMShop.entity.CartEntity;
+import com.liuge.TMShop.fragment.CartFragment;
+import com.liuge.TMShop.network.ApiManager;
+import com.liuge.TMShop.view.LoadDialog;
 import com.liuge.TMShop.view.NoScroListView;
+
+import org.xutils.common.Callback;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2018/8/22.
@@ -18,13 +29,47 @@ import com.liuge.TMShop.view.NoScroListView;
 public class CartMallAdapter extends BaseAdapter {
     Context mContext;
 
-    public CartMallAdapter(Context mContext) {
+    CartEntity entity;
+
+    private CheckBox all;
+
+    private boolean isAll=false;
+
+    private Map<Integer,Boolean>map=new HashMap<>();
+
+    public interface choose{
+        public void getPrice(double price);
+    }
+
+    choose choose;
+
+    public void setEntity(CartEntity entity) {
+        this.entity = entity;
+        this.notifyDataSetChanged();
+    }
+
+    public CartMallAdapter(Context mContext,CheckBox all,choose choose) {
         this.mContext = mContext;
+        this.all=all;
+        this.choose=choose;
+    }
+
+    public void setAll(boolean isall){
+        isAll=isall;
+        map.clear();
+        if(isAll){
+            for(int x=0;x<getCount();x++){
+                map.put(x,true);
+            }
+        }else{
+
+        }
+        this.notifyDataSetChanged();
     }
 
     @Override
     public int getCount() {
-        return 5;
+        return entity==null?0:entity.getData().getGoods().size();
     }
 
     @Override
@@ -38,7 +83,7 @@ public class CartMallAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
 
         ViewHolder vh= null;
         if(view==null){
@@ -48,9 +93,78 @@ public class CartMallAdapter extends BaseAdapter {
         }else{
             vh= (ViewHolder) view.getTag();
         }
-        CartMallGoodsAdpater adapter=new CartMallGoodsAdpater(mContext,i+1);
+
+        final CartMallGoodsAdpater adapter=new CartMallGoodsAdpater(mContext,vh.cb_mall,choose);
         vh.list.setAdapter(adapter);
+        adapter.setmList(entity.getData().getGoods().get(i).getResult());
+
+        vh.cb_mall.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    map.put(i,true);
+                }else{
+                    all.setChecked(false);
+                    map.remove(i);
+                }
+                if(map.size()==getCount()){
+                    all.setChecked(true);
+                }else{
+                    all.setChecked(false);
+                }
+//                if(all.isChecked()){
+//                    adapter.setAll(true);
+//                }
+            }
+        });
+
+        if(map!=null&&map.containsKey(i)){
+            vh.cb_mall.setChecked(true);
+        }else{
+            vh.cb_mall.setChecked(false);
+            all.setChecked(false);
+        }
+
+        vh.cb_mall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CheckBox cb=(CheckBox)v;
+//                adapter.setAll(cb.isChecked());
+                if(cb.isChecked()){
+                    chooseAll(entity.getData().getGoods().get(i).getSid(),1);
+                }else{
+                    chooseAll(entity.getData().getGoods().get(i).getSid(),0);
+                }
+            }
+        });
+
+        vh.tv_mall_name.setText(entity.getData().getGoods().get(i).getShopname());
         return view;
+    }
+
+    private void chooseAll(String id,int status){
+        LoadDialog.show(mContext);
+        new ApiManager().chooseAll(id, status, new Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String result) {
+                CartFragment.instance.getCart();
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+
+            }
+
+            @Override
+            public void onCancelled(CancelledException cex) {
+
+            }
+
+            @Override
+            public void onFinished() {
+                LoadDialog.dismiss(mContext);
+            }
+        });
     }
 
     public class ViewHolder {

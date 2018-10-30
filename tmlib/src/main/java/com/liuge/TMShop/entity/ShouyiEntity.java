@@ -9,7 +9,7 @@ import java.util.List;
 public class ShouyiEntity {
 
     /**
-     * status : error
+     * status : success
      * msg : 暂无数据
      * data : {"money":"0.00","result":[],"totalpage":0,"page":1,"wait":0,"ok":0}
      */

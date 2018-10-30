@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.PaimaiDetailsEntity;
+import com.liuge.TMShop.utils.TimeUtils;
 
 import java.util.List;
 
@@ -18,9 +19,9 @@ import java.util.List;
 
 public class JingpaiAdapter extends BaseAdapter {
     Context mContext;
-    List<String> logs;
+   PaimaiDetailsEntity.DataBean logs;
 
-    public JingpaiAdapter(Context mContext, List<String> logs) {
+    public JingpaiAdapter(Context mContext, PaimaiDetailsEntity.DataBean logs) {
         this.mContext = mContext;
         this.logs = logs;
     }
@@ -31,7 +32,7 @@ public class JingpaiAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return logs==null?0:logs.size();
+        return logs==null?0:logs.getAuctionlog().size();
     }
 
     @Override
@@ -54,6 +55,12 @@ public class JingpaiAdapter extends BaseAdapter {
         }else{
             vh= (ViewHolder) view.getTag();
         }
+
+        vh.tv_username.setText(logs.getAuctionlog().get(i).getTel());
+        vh.tv_time.setText(TimeUtils.getStrTime(logs.getAuctionlog().get(i).getBid_time()+"000"));
+        vh.tv_chujia.setText(logs.getStore().getMarkups());
+        vh.tv_jingpaijia.setText(logs.getAuctionlog().get(i).getBid_price());
+
         return view;
     }
 

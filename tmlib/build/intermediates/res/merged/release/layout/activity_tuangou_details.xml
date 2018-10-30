@@ -123,7 +123,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="24px"
                         android:textColor="#ff5029"
-                        android:text="起团价 "/>
+                        android:text="团购价 "/>
                     <TextView
                         android:id="@+id/tv_price"
                         android:layout_width="wrap_content"
@@ -154,7 +154,13 @@
                         android:orientation="vertical"
                         android:gravity="center_vertical|right"
                         android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
                         <LinearLayout
+                            android:visibility="gone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -225,6 +231,7 @@
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:visibility="gone"
                 android:background="@color/colorWhite">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -351,7 +358,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
+                    android:visibility="gone"
                     android:id="@+id/list_details"></com.liuge.TMShop.view.NoScroListView>
+                <com.tencent.smtt.sdk.WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/web"></com.tencent.smtt.sdk.WebView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -469,7 +481,7 @@
                     android:textSize="30px"
                     android:textColor="@color/colorWhite"
                     android:textStyle="bold"
-                    android:text="立即参团"/>
+                    android:text="提交订单"/>
                 <TextView
                     android:id="@+id/tv_peo"
                     android:layout_width="wrap_content"

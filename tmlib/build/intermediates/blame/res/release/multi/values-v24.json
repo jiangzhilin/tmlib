@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Administrator\\Desktop\\SIXGRID\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v24\\values-v24.xml",
+        "outputFile": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v24\\values-v24.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\6dd58ca95f4e832047dbf4643bbd7771a766a4b2\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\79a0dc03a045ecabec728a65d1347435e8f9c91d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 408
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\dd288e2f564423512b269c020f176a4d8ee2289a\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\9786f10739ec85e0bf98917b3a6d23d2956ee09d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\dd288e2f564423512b269c020f176a4d8ee2289a\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\9786f10739ec85e0bf98917b3a6d23d2956ee09d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 535
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\dd288e2f564423512b269c020f176a4d8ee2289a\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\9786f10739ec85e0bf98917b3a6d23d2956ee09d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 602
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\dd288e2f564423512b269c020f176a4d8ee2289a\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\jiang\\.android\\build-cache\\9786f10739ec85e0bf98917b3a6d23d2956ee09d\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,

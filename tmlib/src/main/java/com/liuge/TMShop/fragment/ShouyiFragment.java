@@ -14,6 +14,8 @@ import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.BaseEntity;
 import com.liuge.TMShop.entity.ShouyiEntity;
 import com.liuge.TMShop.network.ApiManager;
+import com.liuge.TMShop.network.SixGridContext;
+import com.liuge.TMShop.ui.ApplyTixianActivity;
 import com.liuge.TMShop.ui.ShouyiRecordActivity;
 import com.liuge.TMShop.ui.TixianRecordActivity;
 import com.liuge.TMShop.utils.NToast;
@@ -96,12 +98,20 @@ public class ShouyiFragment extends BaseFragment {
             }
         });
 
-        getShouyi(1+"");
+        getShouyi(11+"");
         getShouyi(2+"");
+
+        vh.tv_tixian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),ApplyTixianActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
-    private void getShouyi(String type){
+    private void getShouyi(final String type){
         LoadDialog.show(getActivity());
         new ApiManager().getShouyi(type, new Callback.CommonCallback<String>() {
             @Override
@@ -109,6 +119,11 @@ public class ShouyiFragment extends BaseFragment {
                 Log.d(TAG, "onSuccess: "+result);
                 ShouyiEntity base= JSONObject.parseObject(result,ShouyiEntity.class);
                 NToast.shortToast(getActivity(),base.getMsg());
+                if(type.equals("11")){
+                    vh.tv_tixianshouyi.setText(SixGridContext.RMB+base.getData().getMoney());
+                }else{
+                    vh.tv_leijishouyi.setText(SixGridContext.RMB+base.getData().getMoney());
+                }
             }
 
             @Override

@@ -67,6 +67,33 @@ public class GoodsComentEntity {
             this.result = result;
         }
 
+        public class imgBean{
+
+            /**
+             * path : http://shop.dktoo.com/application/z02sckhd_6wqgx/uploads/goods/20181024/2f58ef0e2d1e11e5876ef19c76948973.jpeg
+             * id : 1064
+             */
+
+            private String path;
+            private String id;
+
+            public String getPath() {
+                return path;
+            }
+
+            public void setPath(String path) {
+                this.path = path;
+            }
+
+            public String getId() {
+                return id;
+            }
+
+            public void setId(String id) {
+                this.id = id;
+            }
+        }
+
         public static class ResultBean {
             /**
              * images : null
@@ -79,7 +106,7 @@ public class GoodsComentEntity {
              * add_time : 1970-01-01
              */
 
-            private List<String> images;
+            private List<imgBean> images;
             private int Score;
             private int user_id;
             private String head_pic;
@@ -88,11 +115,11 @@ public class GoodsComentEntity {
             private String member_name;
             private String add_time;
 
-            public List<String> getImages() {
+            public List<imgBean> getImages() {
                 return images;
             }
 
-            public void setImages(List<String> images) {
+            public void setImages(List<imgBean> images) {
                 this.images = images;
             }
 

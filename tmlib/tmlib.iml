@@ -56,13 +56,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
@@ -70,6 +63,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/bundles" />
@@ -77,10 +77,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
@@ -94,6 +92,8 @@
     <orderEntry type="library" exported="" name="cropper-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="tm_core-1.0.23" level="project" />
     <orderEntry type="library" exported="" name="glide-4.6.1" level="project" />
+    <orderEntry type="library" exported="" name="GalleryPick-1.2.1" level="project" />
+    <orderEntry type="library" exported="" name="ucrop-2.2.0" level="project" />
     <orderEntry type="library" exported="" name="rxjava-2.1.7" level="project" />
     <orderEntry type="library" exported="" name="rxandroid-2.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-27.0.2" level="project" />
@@ -110,6 +110,7 @@
     <orderEntry type="library" exported="" name="common-1.0.3" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-27.0.2" level="project" />
     <orderEntry type="library" exported="" name="common-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="tm_share_ss-1.0.16" level="project" />
     <orderEntry type="library" exported="" name="SmoothRefreshLayout-1.3.5.1" level="project" />
     <orderEntry type="library" exported="" name="permission-1.1.2" level="project" />
     <orderEntry type="library" exported="" name="gifdecoder-4.6.1" level="project" />
@@ -118,8 +119,11 @@
     <orderEntry type="library" exported="" name="gson-2.8.1" level="project" />
     <orderEntry type="library" exported="" name="constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="annotations-4.6.1" level="project" />
+    <orderEntry type="library" exported="" name="cardview-v7-26.0.0-alpha1" level="project" />
+    <orderEntry type="library" exported="" name="alipaySdk-20180403" level="project" />
     <orderEntry type="library" exported="" name="support-v4-27.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-compat-27.0.2" level="project" />
+    <orderEntry type="library" exported="" name="wechat-sdk-android-without-mta-5.1.6" level="project" />
     <orderEntry type="library" exported="" name="adapter-rxjava2-2.3.0" level="project" />
     <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="3dmap-5.7.0" level="project" />
@@ -137,6 +141,5 @@
     <orderEntry type="library" exported="" name="logging-interceptor-3.8.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-27.0.2" level="project" />
     <orderEntry type="library" exported="" name="multidex-1.0.3" level="project" />
-    <orderEntry type="library" exported="" name="android-android-26" level="project" />
   </component>
 </module>
