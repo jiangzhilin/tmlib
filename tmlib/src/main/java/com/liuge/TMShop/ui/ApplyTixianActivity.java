@@ -17,17 +17,13 @@ import com.alibaba.fastjson.JSONObject;
 import com.liuge.TMShop.R;
 import com.liuge.TMShop.entity.AccountEntity;
 import com.liuge.TMShop.entity.BaseEntity;
-import com.liuge.TMShop.entity.ShouyiEntity;
 import com.liuge.TMShop.network.ApiManager;
-import com.liuge.TMShop.network.SixGridContext;
 import com.liuge.TMShop.utils.NToast;
 import com.liuge.TMShop.view.LoadDialog;
 
 import org.xutils.common.Callback;
 
 import java.util.ArrayList;
-
-import static android.content.ContentValues.TAG;
 
 public class ApplyTixianActivity extends BaseActivity{
 
@@ -81,42 +77,6 @@ public class ApplyTixianActivity extends BaseActivity{
             }
         });
 
-        getShouyi(""+11);
-        getShouyi(""+2);
-
-
-    }
-
-    private void getShouyi(final String type){
-        LoadDialog.show(mContext);
-        new ApiManager().getShouyi(type, new Callback.CommonCallback<String>() {
-            @Override
-            public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: "+result);
-                ShouyiEntity base= JSONObject.parseObject(result,ShouyiEntity.class);
-                NToast.shortToast(mContext,base.getMsg());
-                if(type.equals("11")){
-                    tv_ketixian.setText(SixGridContext.RMB+base.getData().getMoney());
-                }else{
-                    tv_leiji.setText(SixGridContext.RMB+base.getData().getMoney());
-                }
-            }
-
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-
-            }
-
-            @Override
-            public void onCancelled(CancelledException cex) {
-
-            }
-
-            @Override
-            public void onFinished() {
-                LoadDialog.dismiss(mContext);
-            }
-        });
     }
 
 

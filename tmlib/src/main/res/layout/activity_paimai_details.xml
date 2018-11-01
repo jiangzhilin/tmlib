@@ -67,7 +67,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:textSize="18sp"
+                        android:textSize="30px"
                         android:textColor="#444"
                         android:textStyle="bold"
                         android:text="商品名"/>
@@ -78,7 +78,6 @@
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:textSize="26px"
-                        android:visibility="gone"
                         android:textColor="#666"
                         android:text="商品简介"/>
                     <LinearLayout
@@ -93,7 +92,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="18dp"
                             android:gravity="center_vertical"
-                            android:textSize="14sp"
+                            android:textSize="20px"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:textColor="#666"
@@ -115,14 +114,14 @@
                         android:id="@+id/tv_qipaijia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="24px"
                         android:textColor="#999"
                         android:text="起拍价0"/>
                     <TextView
                         android:id="@+id/tv_jiajia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="24px"
                         android:textColor="#999"
                         android:layout_marginLeft="20dp"
                         android:text="加价0"/>
@@ -130,7 +129,7 @@
                         android:id="@+id/tv_xianjia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="24px"
                         android:textColor="#999"
                         android:layout_marginLeft="20dp"
                         android:text="限价0"/>
@@ -149,14 +148,14 @@
                         android:id="@+id/tv_price_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="24px"
                         android:textColor="#ff5029"
                         android:text="当前拍价 "/>
                     <TextView
                         android:id="@+id/tv_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="32px"
                         android:textColor="#ff5029"
                         android:textStyle="bold"
                         android:text="0"/>
@@ -222,7 +221,7 @@
                         android:gravity="center_vertical"
                         android:text="竞拍记录"
                         android:textColor="#444"
-                        android:textSize="14sp"/>
+                        android:textSize="30px"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -235,14 +234,14 @@
                             android:layout_height="wrap_content"
                             android:text="0人"
                             android:textColor="#ff5029"
-                            android:textSize="14sp"/>
+                            android:textSize="20px"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="参与竞拍"
                             android:textColor="#444"
-                            android:textSize="14sp"/>
+                            android:textSize="20px"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -267,7 +266,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="30px"
                         android:textColor="#444"
                         android:layout_marginLeft="5dp"
                         android:layout_centerVertical="true"
@@ -276,7 +275,7 @@
                         android:id="@+id/tv_show_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="24px"
                         android:textColor="#ff5863"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@+id/iv_all"
@@ -318,7 +317,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16sp"
+                        android:textSize="30px"
                         android:textColor="#444"
                         android:layout_marginLeft="5dp"
                         android:text="商品详情"/>
@@ -344,9 +343,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorBlack"
                 android:textColor="@color/colorWhite"
-                android:textSize="14sp"
+                android:textSize="24px"
                 android:padding="10dp"
-                android:visibility="gone"
                 android:text="提示信息"/>
         </LinearLayout>
     </ScrollView>
@@ -370,14 +368,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="竞拍价格："
-                android:textSize="14sp"/>
+                android:textSize="25px"/>
             <TextView
                 android:id="@+id/tv_paimai"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:textColor="#ff5029"
-                android:textSize="14sp"/>
+                android:textSize="30px"/>
 
         </LinearLayout>
         <LinearLayout
@@ -393,7 +391,7 @@
                 android:background="#ff5029"
                 android:gravity="center"
                 android:textColor="@color/colorWhite"
-                android:textSize="16sp"
+                android:textSize="30px"
                 android:textStyle="bold"
                 android:text="立即出价"/>
         </LinearLayout>

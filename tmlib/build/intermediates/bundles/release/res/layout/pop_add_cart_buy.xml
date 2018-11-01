@@ -63,13 +63,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
                         android:text="颜色"/>
                     <RadioGroup
                         android:id="@+id/rg_shuliang"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:visibility="gone"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"></RadioGroup>
                 </LinearLayout>
