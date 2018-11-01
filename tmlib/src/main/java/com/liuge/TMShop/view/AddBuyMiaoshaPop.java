@@ -87,8 +87,8 @@ public class AddBuyMiaoshaPop extends PopupWindow {
         guige = new ArrayList<>();
         color = new ArrayList<>();
         for (int x = 0; x < entity.getData().getGoods().get_specs_all().size(); x++) {
-            guige.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_1());
-            color.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_2());
+            guige.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_1()+""+entity.getData().getGoods().get_specs_all().get(x).getSpec_2());
+//            color.add(entity.getData().getGoods().get_specs_all().get(x).getSpec_2());
         }
 
 //        for(){
@@ -124,24 +124,24 @@ public class AddBuyMiaoshaPop extends PopupWindow {
                 });
             }
         }
-        if (color != null) {
-
-            for (int x = 0; x < color.size(); x++) {
-                RadioButton rb = new RadioButton(mContext);
-                rb.setBackgroundResource(R.drawable.radio_shape_blue_bg);
-                rb.setButtonDrawable(new ColorDrawable(Color.TRANSPARENT));
-                rb.setTextColor(mContext.getResources().getColorStateList(R.drawable.saixuan_txt_slector));
-                rb.setText(guige.get(x));
-                rb.setId(x);
-                rb.setGravity(Gravity.CENTER);
-                RadioGroup.LayoutParams params = new RadioGroup.LayoutParams(dip2px(mContext, 50), dip2px(mContext, 20));
-                params.setMargins(10, 0, 10, 0);
-                rb.setLayoutParams(params);
-                rb.setClickable(true);
-
-                vh.rg_shuliang.addView(rb);
-            }
-        }
+//        if (color != null) {
+//
+//            for (int x = 0; x < color.size(); x++) {
+//                RadioButton rb = new RadioButton(mContext);
+//                rb.setBackgroundResource(R.drawable.radio_shape_blue_bg);
+//                rb.setButtonDrawable(new ColorDrawable(Color.TRANSPARENT));
+//                rb.setTextColor(mContext.getResources().getColorStateList(R.drawable.saixuan_txt_slector));
+//                rb.setText(guige.get(x));
+//                rb.setId(x);
+//                rb.setGravity(Gravity.CENTER);
+//                RadioGroup.LayoutParams params = new RadioGroup.LayoutParams(dip2px(mContext, 50), dip2px(mContext, 20));
+//                params.setMargins(10, 0, 10, 0);
+//                rb.setLayoutParams(params);
+//                rb.setClickable(true);
+//
+//                vh.rg_shuliang.addView(rb);
+//            }
+//        }
 
         vh.ll_guige.setVisibility(View.GONE);
 

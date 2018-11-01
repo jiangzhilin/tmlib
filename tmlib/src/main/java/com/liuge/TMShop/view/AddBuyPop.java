@@ -84,7 +84,7 @@ public class AddBuyPop extends PopupWindow {
         this.update();
         guige = new ArrayList<>();
         for (int x = 0; x < entity.getData().get_specs().size(); x++) {
-            guige.add(entity.getData().get_specs().get(x).getSpec_1());
+            guige.add(entity.getData().get_specs().get(x).getSpec_1()+entity.getData().get_specs().get(x).getSpec_2());
         }
         color = new ArrayList<>();
         for (int x = 0; x < entity.getData().get_specs().size(); x++) {
