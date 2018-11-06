@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.liuge.TMShop.ui.IndexActivity;
-import com.liuge.TMShop.ui.IndexFragmentActivity;
+import com.liuge.z02sckhd_6wqgx.ui.IndexFragmentActivity;
 import com.tenma.ventures.api.callback.TMUserCallback;
 import com.tenma.ventures.base.TMWebActivity;
 import com.tenma.ventures.bean.TMUser;

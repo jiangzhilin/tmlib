@@ -1,6 +1,5 @@
 package com.tenma.ventures.test.app;
 
-import com.liuge.TMShop.network.SixGridContext;
 import com.tenma.ventures.app.TMApplication;
 
 /**
@@ -11,6 +10,5 @@ public class TMTestApp extends TMApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        SixGridContext.init(this);
     }
 }
