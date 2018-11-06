@@ -5,10 +5,14 @@
       <module fileurl="file://D:/sobey_project/TM_Develop/app/app.iml" filepath="D:/sobey_project/TM_Develop/app/app.iml" />
       <module fileurl="file://D:/sobey_project/TM_Develop/h5/h5.iml" filepath="D:/sobey_project/TM_Develop/h5/h5.iml" />
       <module fileurl="file://$PROJECT_DIR$/native/native.iml" filepath="$PROJECT_DIR$/native/native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native/native.iml" filepath="$PROJECT_DIR$/native/native.iml" />
       <module fileurl="file://D:/sobey_project/TM_Develop/native/native.iml" filepath="D:/sobey_project/TM_Develop/native/native.iml" />
       <module fileurl="file://$PROJECT_DIR$/tm_test/tm_test.iml" filepath="$PROJECT_DIR$/tm_test/tm_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tm_test/tm_test.iml" filepath="$PROJECT_DIR$/tm_test/tm_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tmlib/tmlib.iml" filepath="$PROJECT_DIR$/tmlib/tmlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmlib.iml" filepath="$PROJECT_DIR$/tmlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmlib/tmlib-tmlib.iml" filepath="$PROJECT_DIR$/tmlib/tmlib-tmlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/z02sckhd_6wqgx.iml" filepath="$PROJECT_DIR$/z02sckhd_6wqgx.iml" />
     </modules>
   </component>
 </project>

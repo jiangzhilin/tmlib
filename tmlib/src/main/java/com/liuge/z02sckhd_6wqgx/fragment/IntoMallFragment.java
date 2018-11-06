@@ -16,7 +16,6 @@ import com.liuge.z02sckhd_6wqgx.network.SixGridContext;
 import com.liuge.z02sckhd_6wqgx.utils.StatusBarUtil;
 import com.liuge.z02sckhd_6wqgx.view.ControlScrollViewPager;
 import com.tenma.ventures.base.TMFragment;
-import com.tenma.ventures.tools.change_activity.TitleChange;
 
 import java.util.ArrayList;
 import java.util.List;
