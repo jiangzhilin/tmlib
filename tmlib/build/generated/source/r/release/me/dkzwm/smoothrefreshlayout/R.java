@@ -45,8 +45,8 @@ public final class R {
         public static int sr_header_default_height = 0x7f0a009f;
     }
     public static final class drawable {
-        public static int rotate_arrow_down = 0x7f0200a8;
-        public static int rotate_arrow_up = 0x7f0200a9;
+        public static int rotate_arrow_down = 0x7f020093;
+        public static int rotate_arrow_up = 0x7f020094;
     }
     public static final class id {
         public static int both = 0x7f0f008d;
@@ -65,29 +65,29 @@ public final class R {
         public static int fill_horizontal = 0x7f0f0073;
         public static int fill_vertical = 0x7f0f0069;
         public static int left = 0x7f0f006a;
-        public static int linearLayout_footer_text_container = 0x7f0f0203;
-        public static int linearLayout_header_text_container = 0x7f0f0208;
+        public static int linearLayout_footer_text_container = 0x7f0f013b;
+        public static int linearLayout_header_text_container = 0x7f0f0140;
         public static int load_more = 0x7f0f008e;
         public static int none = 0x7f0f0045;
         public static int over_scroll = 0x7f0f008f;
-        public static int progressBar_footer = 0x7f0f0207;
-        public static int progressBar_header = 0x7f0f020c;
+        public static int progressBar_footer = 0x7f0f013f;
+        public static int progressBar_header = 0x7f0f0144;
         public static int refresh = 0x7f0f0090;
         public static int right = 0x7f0f006b;
         public static int start = 0x7f0f006c;
         public static int style_default = 0x7f0f007e;
         public static int style_scale = 0x7f0f007f;
-        public static int textView_footer_last_update = 0x7f0f0205;
-        public static int textView_footer_title = 0x7f0f0204;
-        public static int textView_header_last_update = 0x7f0f020a;
-        public static int textView_header_title = 0x7f0f0209;
+        public static int textView_footer_last_update = 0x7f0f013d;
+        public static int textView_footer_title = 0x7f0f013c;
+        public static int textView_header_last_update = 0x7f0f0142;
+        public static int textView_header_title = 0x7f0f0141;
         public static int top = 0x7f0f006d;
-        public static int view_footer_rotate = 0x7f0f0206;
-        public static int view_header_rotate = 0x7f0f020b;
+        public static int view_footer_rotate = 0x7f0f013e;
+        public static int view_header_rotate = 0x7f0f0143;
     }
     public static final class layout {
-        public static int sr_classic_footer = 0x7f040093;
-        public static int sr_classic_header = 0x7f040094;
+        public static int sr_classic_footer = 0x7f04005a;
+        public static int sr_classic_header = 0x7f04005b;
     }
     public static final class string {
         public static int app_name = 0x7f0800eb;

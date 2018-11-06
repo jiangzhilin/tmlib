@@ -1,14 +1,18 @@
 [
     {
         "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\xml\\config.xml",
-        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\xml\\config.xml"
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\8d6342edf4015823e9a1881946bb674d26f570ff\\output\\res\\xml\\config.xml"
     },
     {
         "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\xml\\filepaths.xml",
         "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\xml\\filepaths.xml"
     },
     {
+        "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\xml\\z02sckhd_6wqgx_filepaths.xml",
+        "source": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\src\\main\\res\\xml\\z02sckhd_6wqgx_filepaths.xml"
+    },
+    {
         "merged": "C:\\Users\\jiang\\Desktop\\TM_Develop\\TM_Develop\\tmlib\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
-        "source": "C:\\Users\\jiang\\.android\\build-cache\\58ce5243e98667abf14f99f7fbf380f262f62787\\output\\res\\xml\\provider_paths.xml"
+        "source": "C:\\Users\\jiang\\.android\\build-cache\\8d6342edf4015823e9a1881946bb674d26f570ff\\output\\res\\xml\\provider_paths.xml"
     }
 ]

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.liuge.TMShop" >
+    package="com.liuge.z02sckhd_6wqgx" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -29,17 +29,17 @@
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/z02sckhd_6wqgx_filepaths" />
         </provider>
 
         <activity
-            android:name="com.liuge.TMShop.ui.IndexActivity"
+            android:name="com.liuge.z02sckhd_6wqgx.ui.IndexActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.liuge.TMShop.ui.GoodsDetailsActivity"
+            android:name="com.liuge.z02sckhd_6wqgx.ui.GoodsDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.liuge.TMShop.ui.PaimaiDetailsActivity"
+            android:name="com.liuge.z02sckhd_6wqgx.ui.PaimaiDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
@@ -47,24 +47,28 @@
             android:exported="false"
             android:screenOrientation="behind"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name="com.liuge.TMShop.ui.GoodsClassActivity" />
-        <activity android:name="com.liuge.TMShop.ui.TuangouDetailsActivity" />
-        <activity android:name="com.liuge.TMShop.ui.GoodsMiaoshaActivity" />
-        <activity android:name="com.liuge.TMShop.ui.MallActivity" />
-        <activity android:name="com.liuge.TMShop.ui.TixianRecordActivity" />
-        <activity android:name="com.liuge.TMShop.ui.ShouyiRecordActivity" />
-        <activity android:name="com.liuge.TMShop.ui.AddressActivity" />
-        <activity android:name="com.liuge.TMShop.ui.EditAddressActivity" />
-        <activity android:name="com.liuge.TMShop.ui.IndexFragmentActivity" />
-        <activity android:name="com.liuge.TMShop.ui.CollectActivity" />
-        <activity android:name="com.liuge.TMShop.ui.SearchActivity" />
-        <activity android:name="com.liuge.TMShop.ui.SubmitOrderActivity" />
-        <activity android:name="com.liuge.TMShop.ui.MineOrderActivity" />
-        <activity android:name="com.liuge.TMShop.ui.OrderPayActivity" />
-        <activity android:name="com.liuge.TMShop.ui.ApplyTixianActivity" />
-        <activity android:name="com.liuge.TMShop.ui.AccountManagerActivity" />
-        <activity android:name="com.liuge.TMShop.ui.TuiHuanHuoActivity" />
-        <activity android:name="com.liuge.TMShop.ui.CommentActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.GoodsClassActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.TuangouDetailsActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.GoodsMiaoshaActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.MallActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.TixianRecordActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.ShouyiRecordActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.AddressActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.EditAddressActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.IndexFragmentActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.CollectActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.SearchActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.SubmitOrderActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.MineOrderActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.OrderPayActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.ApplyTixianActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.AccountManagerActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.TuiHuanHuoActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.CommentActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.OrderDetailsActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.BindActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.MineCodeActivity" />
+        <activity android:name="com.liuge.z02sckhd_6wqgx.ui.MineVipActivity" />
     </application>
 
 </manifest>

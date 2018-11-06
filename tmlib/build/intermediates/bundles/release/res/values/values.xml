@@ -39,20 +39,26 @@
     <declare-styleable name="androidWheelView"><attr format="integer" name="awv_textsize"/><attr format="float" name="awv_lineSpace"/><attr format="integer" name="awv_centerTextColor"/><attr format="integer" name="awv_outerTextColor"/><attr format="integer" name="awv_dividerTextColor"/><attr format="integer" name="awv_itemsVisibleCount"/><attr format="boolean" name="awv_isLoop"/><attr format="integer" name="awv_initialPosition"/><attr format="float" name="awv_scaleX"/></declare-styleable>
     <string name="app_name">tmlib</string>
     <style name="ACTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        
-
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorBlue</item>-->
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
 
     </style>
     <style name="ActionSheetDialogAnimation">
-        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
-        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <item name="android:windowEnterAnimation">@anim/z02sckhd_6wqgx_popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/z02sckhd_6wqgx_pophidden_anim</item>
     </style>
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        
-
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorBlue</item>-->
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -60,7 +66,14 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="RadingStyle" parent="@android:style/Widget.Holo.RatingBar.Indicator">
+        <!-- 定义星星图片 -->
+        <!--<item name="android:progressDrawable">@drawable/appraise_rating_bar</item>-->
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
     <style name="TranslucentTheme" parent="AppTheme">
-        
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
     </style>
 </resources>
