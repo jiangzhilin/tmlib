@@ -46,9 +46,9 @@ public class IntoMallFragment extends TMFragment {
         StatusBarUtil.setStatusBarColor(getActivity(),R.color.transparent);
         StatusBarUtil.StatusBarLightMode(getActivity());
 
-        if(getActivity() instanceof TitleChange){
-            ((TitleChange) getActivity()).hideTitle();
-        }
+//         if(getActivity() instanceof TitleChange){
+//             ((TitleChange) getActivity()).hideTitle();
+//         }
 
         view = inflater.inflate(R.layout.z02sckhd_6wqgx_activity_new, container, false);
         vh = new ViewHolder(view);
