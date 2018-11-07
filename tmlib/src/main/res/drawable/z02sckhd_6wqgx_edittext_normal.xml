@@ -3,5 +3,5 @@
     <corners android:radius="2dp"/>
     <stroke
         android:width="1px"
-        android:color="@color/input_stock" />
+        android:color="@color/input_stock1" />
 </shape>
