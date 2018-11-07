@@ -16,7 +16,7 @@
             android:id="@+id/ed_code"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@drawable/edittext_normal"
+            android:background="@drawable/z02sckhd_6wqgx_edittext_normal"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:padding="10dp"
