@@ -86,16 +86,16 @@ public class SubmitCartEntity  implements Serializable{
              * pay_fee : 20
              */
 
-            private int amount;
+            private Double amount;
             private int quantity;
             private Double pay_fee;
             private List<GoodsBean> goods;
 
-            public int getAmount() {
+            public Double getAmount() {
                 return amount;
             }
 
-            public void setAmount(int amount) {
+            public void setAmount(Double amount) {
                 this.amount = amount;
             }
 

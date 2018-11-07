@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TMServerConfig.BASE_URL = "http://mchhive.mch.xmg.com.cn:8087";
+        TMServerConfig.BASE_URL = "http://shop.dktoo.com/z02sckhd_6wqgx";
 
         Button htmlBtn = findViewById(R.id.html_btn);
         htmlBtn.setOnClickListener(new View.OnClickListener() {

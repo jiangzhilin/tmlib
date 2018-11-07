@@ -57,7 +57,7 @@ public class IndexHotMallAdapter extends BaseAdapter {
         }
         Glide.with(mContext).load(entity.getData().getBestshop().get(i).getBanner()).into(vh.iv_xianshi_img_1);
         vh.tv_pay_num_1.setText("销量："+entity.getData().getBestshop().get(i).getSales()+"件");
-        vh.tv_shengyu_1.setText("剩余："+entity.getData().getBestshop().get(i).getTotal()+"件");
+        vh.tv_shengyu_1.setText("宝贝数量："+entity.getData().getBestshop().get(i).getTotal()+"件");
         vh.tv_xianshi_name_1.setText(entity.getData().getBestshop().get(i).getShopname());
         return view;
     }

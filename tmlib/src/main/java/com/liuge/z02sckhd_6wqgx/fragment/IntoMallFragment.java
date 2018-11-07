@@ -16,6 +16,7 @@ import com.liuge.z02sckhd_6wqgx.network.SixGridContext;
 import com.liuge.z02sckhd_6wqgx.utils.StatusBarUtil;
 import com.liuge.z02sckhd_6wqgx.view.ControlScrollViewPager;
 import com.tenma.ventures.base.TMFragment;
+//import com.tenma.ventures.tools.change_activity.TitleChange;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,9 +46,9 @@ public class IntoMallFragment extends TMFragment {
         StatusBarUtil.setStatusBarColor(getActivity(),R.color.transparent);
         StatusBarUtil.StatusBarLightMode(getActivity());
 
-//         if(getActivity() instanceof TitleChange){
-//             ((TitleChange) getActivity()).hideTitle();
-//         }
+//        if(getActivity() instanceof TitleChange){
+//            ((TitleChange) getActivity()).hideTitle();
+//        }
 
         view = inflater.inflate(R.layout.z02sckhd_6wqgx_activity_new, container, false);
         vh = new ViewHolder(view);

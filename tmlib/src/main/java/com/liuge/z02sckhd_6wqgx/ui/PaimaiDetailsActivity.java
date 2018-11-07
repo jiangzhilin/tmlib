@@ -307,23 +307,25 @@ public class PaimaiDetailsActivity extends FragmentActivity {
         webSettings.setBuiltInZoomControls(true); // 设置显示缩放按钮
         webSettings.setSupportZoom(true); // 支持缩放
         webSettings.setLoadWithOverviewMode(true);
+        webSettings.setTextSize(WebSettings.TextSize.valueOf("14"));
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        int mDensity = metrics.densityDpi;
-        Log.d("maomao", "densityDpi = " + mDensity);
-        if (mDensity == 240) {
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
-        } else if (mDensity == 160) {
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
-        } else if(mDensity == 120) {
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.CLOSE);
-        }else if(mDensity == DisplayMetrics.DENSITY_XHIGH){
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
-        }else if (mDensity == DisplayMetrics.DENSITY_TV){
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
-        }else{
-            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
-        }
+
+//        int mDensity = metrics.densityDpi;
+//        Log.d("maomao", "densityDpi = " + mDensity);
+//        if (mDensity == 240) {
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+//        } else if (mDensity == 160) {
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
+//        } else if(mDensity == 120) {
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.CLOSE);
+//        }else if(mDensity == DisplayMetrics.DENSITY_XHIGH){
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+//        }else if (mDensity == DisplayMetrics.DENSITY_TV){
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.FAR);
+//        }else{
+//            webSettings.setDefaultZoom(WebSettings.ZoomDensity.MEDIUM);
+//        }
         /**
          * 用WebView显示图片，可使用这个参数 设置网页布局类型： 1、LayoutAlgorithm.NARROW_COLUMNS ：
          * 适应内容大小 2、LayoutAlgorithm.SINGLE_COLUMN:适应屏幕，内容将自动缩放

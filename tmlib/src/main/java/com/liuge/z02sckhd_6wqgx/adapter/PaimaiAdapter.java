@@ -15,6 +15,7 @@ import com.liuge.z02sckhd_6wqgx.R;
 import com.liuge.z02sckhd_6wqgx.entity.BannerEntity;
 import com.liuge.z02sckhd_6wqgx.utils.TimeUtils;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -61,7 +62,7 @@ public class PaimaiAdapter extends BaseAdapter {
         vh.tv_xianshi_name_1.setText(mList.get(i).getGoods_name());
         vh.tv_jingpai_num_1.setText(mList.get(i).getOnum() + "人竞拍");
         vh.tv_xianshi_detail_1.setText(mList.get(i).getExt_info());
-        vh.tv_xianshi_price_1.setText(mList.get(i).getNew_price());
+        vh.tv_xianshi_price_1.setText((new BigDecimal(mList.get(i).getNew_price()).add(new BigDecimal(mList.get(i).getMarkups()))).setScale(2,BigDecimal.ROUND_HALF_UP).toString());
         vh.tv_pay_num_1.setText(mList.get(i).getNum() + "人付款");
         vh.tv_shengyu_1.setText("剩余宝贝" + mList.get(i).getOnum() + "件");
         vh.rl_bottom.setVisibility(View.GONE);

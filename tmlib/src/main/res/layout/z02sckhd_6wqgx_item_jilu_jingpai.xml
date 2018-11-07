@@ -21,7 +21,7 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:layout_height="wrap_content"
-                android:textSize="24px"
+                android:textSize="16sp"
                 android:textColor="#666"
                 android:text="用户名"/>
             <TextView
@@ -30,7 +30,7 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:layout_height="wrap_content"
-                android:textSize="24px"
+                android:textSize="13sp"
                 android:textColor="#666"
                 android:text="2018-08-01 16:54:00"/>
         </LinearLayout>
@@ -47,13 +47,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24px"
+                    android:textSize="14sp"
                     android:text="出价"/>
                 <TextView
                     android:id="@+id/tv_chujia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24px"
+                    android:textSize="14sp"
                     android:textColor="#ff5029"
                     android:text="0"/>
             </LinearLayout>
@@ -66,13 +66,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24px"
+                    android:textSize="14sp"
                     android:text="竞拍价"/>
                 <TextView
                     android:id="@+id/tv_jingpaijia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24px"
+                    android:textSize="14sp"
                     android:textColor="#ff5029"
                     android:text="0"/>
             </LinearLayout>
