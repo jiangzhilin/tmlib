@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 
 import com.alibaba.fastjson.JSONObject;
 import com.liuge.z02sckhd_6wqgx.R;
@@ -28,6 +29,7 @@ public class AddressActivity extends BaseActivity {
 
     AddressAdapter mAdapter;
     AddressEntity add;
+    private String isChoose=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class AddressActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+        isChoose=getIntent().getStringExtra("choose");
         initView();
         refreshLayout.setMode(SmoothRefreshLayout.MODE_REFRESH);
         refreshLayout.setHeaderView(new ClassicHeader(this));
@@ -62,6 +65,18 @@ public class AddressActivity extends BaseActivity {
 
         mAdapter=new AddressAdapter(mContext);
         list.setAdapter(mAdapter);
+
+        if(isChoose!=null){
+            list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    Intent intent=new Intent(mContext,SubmitOrderActivity.class);
+                    intent.putExtra("address",add.getData().get(i));
+                    setResult(10000,intent);
+                    finish();
+                }
+            });
+        }
 
         mAdapter.setDel(new AddressAdapter.del() {
             @Override

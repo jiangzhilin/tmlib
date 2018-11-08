@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.alibaba.fastjson.JSONObject;
 import com.liuge.z02sckhd_6wqgx.R;
 import com.liuge.z02sckhd_6wqgx.adapter.SubmitMallAdapter;
+import com.liuge.z02sckhd_6wqgx.entity.AddressEntity;
 import com.liuge.z02sckhd_6wqgx.entity.CreateOrderResultEntity;
 import com.liuge.z02sckhd_6wqgx.entity.SubmitCartEntity;
 import com.liuge.z02sckhd_6wqgx.network.ApiManager;
@@ -34,9 +35,12 @@ public class SubmitOrderActivity extends BaseActivity {
 
     private SubmitMallAdapter mAdapter;
 
-    private String flow_type=null;
+    private String flow_type = null;
 
     public static SubmitOrderActivity instence;
+    private LinearLayout ll_choose_address;
+
+    AddressEntity.DataBean address=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +53,9 @@ public class SubmitOrderActivity extends BaseActivity {
     protected void initData() {
         setBack();
         setTitle("确认订单");
-        instence=this;
-        flow_type=getIntent().getStringExtra("type");
-        entity= (SubmitCartEntity) getIntent().getSerializableExtra("order");
+        instence = this;
+        flow_type = getIntent().getStringExtra("type");
+        entity = (SubmitCartEntity) getIntent().getSerializableExtra("order");
         initView();
     }
 
@@ -63,8 +67,8 @@ public class SubmitOrderActivity extends BaseActivity {
         tv_amount = (TextView) findViewById(R.id.tv_amount);
         ll_submit = (LinearLayout) findViewById(R.id.ll_submit);
 
-        if(entity!=null) {
-            if(entity.getData()!=null) {
+        if (entity != null) {
+            if (entity.getData() != null) {
                 if (entity.getData().getConsignee_default().size() > 0) {
                     tv_name.setText("收货人：" + entity.getData().getConsignee_default().get(0).getConsignee());
                     tv_phone.setText(entity.getData().getConsignee_default().get(0).getMobile());
@@ -73,7 +77,7 @@ public class SubmitOrderActivity extends BaseActivity {
 
                 tv_amount.setText(SixGridContext.RMB + entity.getData().getTotal().getGoods_price());
 
-                mAdapter=new SubmitMallAdapter(mContext);
+                mAdapter = new SubmitMallAdapter(mContext);
                 list.setAdapter(mAdapter);
                 mAdapter.setmList(entity);
 
@@ -87,24 +91,46 @@ public class SubmitOrderActivity extends BaseActivity {
 
             }
         }
+        ll_choose_address = (LinearLayout) findViewById(R.id.ll_choose_address);
+        ll_choose_address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(mContext,AddressActivity.class);
+                intent.putExtra("choose","choose");
+                startActivityForResult(intent,10000);
+            }
+        });
     }
 
-    private void createOrder(final SubmitCartEntity e){
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode==10000){
+            address= (AddressEntity.DataBean) data.getSerializableExtra("address");
+            if(address!=null){
+                tv_name.setText("收货人：" + address.getConsignee());
+                tv_phone.setText(address.getTel());
+                tv_address.setText("地址：" + address.getAddress());
+            }
+        }
+    }
+
+    private void createOrder(final SubmitCartEntity e) {
         LoadDialog.show(mContext);
-        new ApiManager().createOrder(flow_type, e.getData().getConsignee_default().get(0).getAddress_id(), null, new Callback.CommonCallback<String>() {
+        new ApiManager().createOrder(flow_type, address==null?e.getData().getConsignee_default().get(0).getAddress_id():address.getAddress_id(), null, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d("createOrder", "onSuccess: "+result);
-                CreateOrderResultEntity base=JSONObject.parseObject(result,CreateOrderResultEntity.class);
-                if(entity.getStatus().equals("success")) {
+                Log.d("createOrder", "onSuccess: " + result);
+                CreateOrderResultEntity base = JSONObject.parseObject(result, CreateOrderResultEntity.class);
+                if (entity.getStatus().equals("success")) {
                     Intent intent = new Intent(mContext, OrderPayActivity.class);
-                    intent.putExtra("sn",base.getData().getOrder_sn());
-                    intent.putExtra("time", TimeUtils.getStrTime(System.currentTimeMillis()+""));
-                    intent.putExtra("price",""+e.getData().getTotal().getGoods_price());
-                    intent.putExtra("mid",base.getData().getMid());
+                    intent.putExtra("sn", base.getData().getOrder_sn());
+                    intent.putExtra("time", TimeUtils.getStrTime(System.currentTimeMillis() + ""));
+                    intent.putExtra("price", "" + e.getData().getTotal().getGoods_price());
+                    intent.putExtra("mid", base.getData().getMid());
                     startActivity(intent);
-                }else{
-                    NToast.shortToast(mContext,entity.getMsg());
+                } else {
+                    NToast.shortToast(mContext, entity.getMsg());
                 }
             }
 
@@ -125,13 +151,13 @@ public class SubmitOrderActivity extends BaseActivity {
         });
     }
 
-    public void finishs(){
+    public void finishs() {
         finish();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        instence=null;
+        instence = null;
     }
 }
