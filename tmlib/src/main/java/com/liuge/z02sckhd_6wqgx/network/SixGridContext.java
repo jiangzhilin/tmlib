@@ -21,7 +21,7 @@ public class SixGridContext {
     public static String QQ_ID= "1106604259";
     public static String token= null;
 //    public static String HOST="http://shop.dktoo.com/z02sckhd_6wqgx";
-    public static String HOST= TMServerConfig.BASE_URL+"z02sckhd_6wqgx/";
+    public static String HOST= TMServerConfig.BASE_URL+"/z02sckhd_6wqgx/";
 
 //    public static String IMG="http://shop.dktoo.com/lee/";
 
