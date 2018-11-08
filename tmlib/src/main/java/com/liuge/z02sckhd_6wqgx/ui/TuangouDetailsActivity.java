@@ -377,7 +377,7 @@ public class TuangouDetailsActivity extends FragmentActivity {
         webSettings.setBuiltInZoomControls(true); // 设置显示缩放按钮
         webSettings.setSupportZoom(true); // 支持缩放
         webSettings.setLoadWithOverviewMode(true);
-        webSettings.setTextSize(WebSettings.TextSize.valueOf("14"));
+        webSettings.setTextSize(WebSettings.TextSize.LARGER);
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 //        int mDensity = metrics.densityDpi;
