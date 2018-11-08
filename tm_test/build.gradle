@@ -82,6 +82,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.tenma.ventures:tm_core:1.0.23'
     //    compile project(':tmlib')
-    //    compile 'com.github.jiangzhilin:tmlib:1.0'
+//        compile 'com.github.jiangzhilin:z02sckhd_6wqgx:1.7.10:release@aar'
     compile project(':tmlib')
 }

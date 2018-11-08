@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 
 import com.tenma.ventures.bean.utils.TMSharedPUtil;
+import com.tenma.ventures.config.TMServerConfig;
 
 import org.xutils.x;
 
@@ -19,7 +20,8 @@ public class SixGridContext {
     public static String WX_SCR= "11ba3b55f2cd46ca652d1b434695ae10";
     public static String QQ_ID= "1106604259";
     public static String token= null;
-    public static String HOST="http://shop.dktoo.com/z02sckhd_6wqgx";
+//    public static String HOST="http://shop.dktoo.com/z02sckhd_6wqgx";
+    public static String HOST= TMServerConfig.BASE_URL;
 
 //    public static String IMG="http://shop.dktoo.com/lee/";
 
