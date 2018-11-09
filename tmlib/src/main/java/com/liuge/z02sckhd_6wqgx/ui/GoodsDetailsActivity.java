@@ -101,7 +101,6 @@ public class GoodsDetailsActivity extends FragmentActivity {
 
     protected void initData() {
 //        setNoTitle();
-        initView();
 
         //获得状态栏高度
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, StatusBarUtil.getStatusBarHeight(this));
@@ -251,7 +250,7 @@ public class GoodsDetailsActivity extends FragmentActivity {
         new ApiManager().getGoodsDetails(id, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: " + result);
+                Log.d(TAG, "详情onSuccess: " + result);
                 final GoodsDetailsEntity entity = JSONObject.parseObject(result, GoodsDetailsEntity.class);
                 if (entity.getStatus().equals("success")) {
 
@@ -333,7 +332,7 @@ public class GoodsDetailsActivity extends FragmentActivity {
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
-
+                ex.printStackTrace();
             }
 
             @Override

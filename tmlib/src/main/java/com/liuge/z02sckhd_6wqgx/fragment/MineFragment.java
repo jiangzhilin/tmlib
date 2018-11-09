@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.alibaba.fastjson.JSONObject;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.liuge.z02sckhd_6wqgx.R;
@@ -121,6 +122,8 @@ public class MineFragment extends BaseFragment {
         });
 
         TMUser user = TMSharedPUtil.getTMUser(getActivity());
+
+        System.out.println("用户信息："+ JSONObject.toJSONString(user));
 
         RequestOptions requestOptions = RequestOptions.circleCropTransform();
         Glide.with(this).load(user.getHead_pic()).apply(requestOptions).into(vh.iv_head);

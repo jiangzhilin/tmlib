@@ -47,6 +47,7 @@ public class ApiManager {
     public void getGoodsList(String cate_id,String sid,String sort,String order,String p,String is_best,Callback.CommonCallback<String> call) {
         URL = SixGridContext.DO.GOODS_List;
         RequestParams params = new RequestParams(URL);
+        params.addHeader("Connection","close");
         if(cate_id!=null){
             params.addBodyParameter("cate_id", cate_id);
         }
@@ -87,6 +88,10 @@ public class ApiManager {
     public void getGoodsDetails(String id,Callback.CommonCallback<String> call){
         URL = SixGridContext.DO.GOODS_DETAIL;
         RequestParams params = new RequestParams(URL);
+        params.addHeader("Connection","close");
+        if(SixGridContext.token!=null){
+            params.addBodyParameter("token", SixGridContext.token);
+        }
         if(id!=null){
             params.addBodyParameter("id", id);
         }
@@ -121,6 +126,7 @@ public class ApiManager {
     public void getBanner(Callback.CommonCallback<String> call){
         URL = SixGridContext.DO.INDEX_BANNER;
         RequestParams params = new RequestParams(URL);
+        params.addHeader("Connection","close");
         x.http().get(params, call);
     }
     public void getPaiMaiDetails(String id,Callback.CommonCallback<String> call){

@@ -134,7 +134,7 @@ public class IndexFragment extends BaseFragment {
             }
         });
 
-        getClaGoods(0);
+        getClaGoods(choose_position);
         getBanner();
 
         vh.refreshLayout.setMode(SmoothRefreshLayout.MODE_REFRESH);

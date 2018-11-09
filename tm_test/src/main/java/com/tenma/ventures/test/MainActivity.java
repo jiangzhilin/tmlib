@@ -14,6 +14,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.liuge.z02sckhd_6wqgx.ui.IndexActivity;
+import com.liuge.z02sckhd_6wqgx.utils.NToast;
 import com.tenma.ventures.api.callback.TMUserCallback;
 import com.tenma.ventures.base.TMWebActivity;
 import com.tenma.ventures.bean.TMUser;
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        TMServerConfig.BASE_URL = "http://mchhive.mch.xmg.com.cn:8087/";
-        TMServerConfig.BASE_URL = "http://shop.dktoo.com";
+//        TMServerConfig.BASE_URL = "http://shop.dktoo.com";
+        TMServerConfig.BASE_URL = "http://review.360tianma.com";
 
         Button htmlBtn = findViewById(R.id.html_btn);
         htmlBtn.setOnClickListener(new View.OnClickListener() {
@@ -113,11 +115,16 @@ public class MainActivity extends AppCompatActivity {
         tmModelManager = TMModelManager.getInstance(this);
 
         loginByPassword();
+//        String mobile = "18482180351";
+////        String mobile = "13438885852";
+//        String password = "123456";
+//        Login(mobile,password);
     }
 
     private void Login(String phone,String pwd){
 
-        String url="http://shop.dktoo.com/z02sckhd_6wqgx/member/login/memberLogin";
+        String url="http://review.360tianma.com/member/login/memberLogin";
+//        String url="http://review.360tianma.com/member/login/memberLogin";
         RequestParams params=new RequestParams(url);
         params.addBodyParameter("mobile",phone);
         params.addBodyParameter("password",pwd);
@@ -128,13 +135,19 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(String result) {
-                Log.d("用户信息", "onSuccess: "+result);
-                TMUser user= JSONObject.parseObject(result,TMUser.class);
+                System.out.println("json:"+result);
+                LoginEntity login=JSONObject.parseObject(result,LoginEntity.class);
+                NToast.shortToast(MainActivity.this,login.getMsg());
+                if(login.getCode()==200) {
+                    TMUser user = JSONObject.parseObject(login.getData(), TMUser.class);
+                    System.out.println("用户" + JSONObject.toJSONString(user));
+                    TMSharedPUtil.saveTMUser(MainActivity.this, user);
+                }
             }
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
-
+                ex.printStackTrace();
             }
 
             @Override
@@ -153,8 +166,8 @@ public class MainActivity extends AppCompatActivity {
      * 通过密码登录
      */
     private void loginByPassword() {
-        String mobile = "13438885852";
-//        String password = "opcc11y";
+        String mobile = "18482180351";
+//        String mobile = "13438885852";
         String password = "123456";
 
         JsonObject loginJson = new JsonObject();
@@ -176,6 +189,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onError(Object tag, Throwable e) {
+                e.printStackTrace();
+                System.out.println("登录失败："+tag);
                 Toast.makeText(MainActivity.this, "登录失败", Toast.LENGTH_LONG).show();
             }
 
