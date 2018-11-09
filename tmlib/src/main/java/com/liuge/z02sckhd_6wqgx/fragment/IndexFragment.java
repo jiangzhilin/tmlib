@@ -38,6 +38,11 @@ import org.xutils.common.Callback;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.dkzwm.smoothrefreshlayout.RefreshingListenerAdapter;
+import me.dkzwm.smoothrefreshlayout.SmoothRefreshLayout;
+import me.dkzwm.smoothrefreshlayout.extra.footer.ClassicFooter;
+import me.dkzwm.smoothrefreshlayout.extra.header.ClassicHeader;
+
 import static android.content.ContentValues.TAG;
 
 /**
@@ -55,9 +60,11 @@ public class IndexFragment extends BaseFragment {
 
     private List<String> mBannerData;
 
-    private int[]icons=new int[]{R.mipmap.z02sckhd_6wqgx_icon_nvzhuang,R.mipmap.z02sckhd_6wqgx_icon_xiemao,R.mipmap.z02sckhd_6wqgx_icon_tongzhuang,R.mipmap.z02sckhd_6wqgx_icon_meizhuang,R.mipmap.z02sckhd_6wqgx_icon_shippin,R.mipmap.z02sckhd_6wqgx_icon_baihuo,R.mipmap.z02sckhd_6wqgx_icon_jiadian,R.mipmap.z02sckhd_6wqgx_icon_more};
+    private int[] icons = new int[]{R.mipmap.z02sckhd_6wqgx_icon_nvzhuang, R.mipmap.z02sckhd_6wqgx_icon_xiemao, R.mipmap.z02sckhd_6wqgx_icon_tongzhuang, R.mipmap.z02sckhd_6wqgx_icon_meizhuang, R.mipmap.z02sckhd_6wqgx_icon_shippin, R.mipmap.z02sckhd_6wqgx_icon_baihuo, R.mipmap.z02sckhd_6wqgx_icon_jiadian, R.mipmap.z02sckhd_6wqgx_icon_more};
 
-    private String []names=new String[]{"女装","鞋帽","童装","美妆","食品","百货","家电","更多"};
+    private String[] names = new String[]{"女装", "鞋帽", "童装", "美妆", "食品", "百货", "家电", "更多"};
+
+    private int choose_position=0;
 
     /**
      * Fragment生命周期方法，此view可改为自定义的布局
@@ -103,8 +110,8 @@ public class IndexFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.VISIBLE);
                 vh.rb_xinpin_2.setChecked(false);
                 vh.ll_line_2.setVisibility(View.INVISIBLE);
-
-                getClaGoods(0);
+                choose_position=0;
+                getClaGoods(choose_position);
             }
         });
         vh.ll_rexiao.setOnClickListener(new View.OnClickListener() {
@@ -114,34 +121,48 @@ public class IndexFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.INVISIBLE);
                 vh.rb_xinpin_2.setChecked(true);
                 vh.ll_line_2.setVisibility(View.VISIBLE);
-
-                getClaGoods(1);
+                choose_position=1;
+                getClaGoods(choose_position);
             }
         });
 
         vh.ed_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),SearchActivity.class);
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
                 startActivity(intent);
             }
         });
 
         getClaGoods(0);
         getBanner();
+
+        vh.refreshLayout.setMode(SmoothRefreshLayout.MODE_REFRESH);
+        vh.refreshLayout.setHeaderView(new ClassicHeader(getActivity()));
+        vh.refreshLayout.setOnRefreshListener(new RefreshingListenerAdapter() {
+            @Override
+            public void onRefreshBegin(boolean isRefresh) {
+
+                if(vh.refreshLayout.isRefreshing()){
+                    getBanner();
+                    getClaGoods(choose_position);
+                }
+            }
+        });
     }
-    private void getBanner(){
+
+    private void getBanner() {
         LoadDialog.show(getActivity());
         new ApiManager().getBanner(new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
 
-                Log.d(TAG, "onSuccess: "+result);
+                Log.d(TAG, "onSuccess: " + result);
 
-                final BannerEntity entity=JSONObject.parseObject(result,BannerEntity.class);
+                final BannerEntity entity = JSONObject.parseObject(result, BannerEntity.class);
 
                 mBannerData = new ArrayList<>();
-                for(int x=0;x<entity.getData().getBanner().size();x++){
+                for (int x = 0; x < entity.getData().getBanner().size(); x++) {
                     mBannerData.add(entity.getData().getBanner().get(x).getLitpic());
                 }
                 vh.banner.setImages(mBannerData)
@@ -150,28 +171,28 @@ public class IndexFragment extends BaseFragment {
                         .setDelayTime(4000)
                         .start();
 
-                IndexClassicAdapter adapter = new IndexClassicAdapter(getActivity(),entity);
+                IndexClassicAdapter adapter = new IndexClassicAdapter(getActivity(), entity);
                 vh.rcy_classic.setAdapter(adapter);
                 vh.rcy_classic.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        Intent intent=new Intent(getActivity(),GoodsClassActivity.class);
-                        intent.putExtra("title",entity.getData().getCategory().get(i).getName());
-                        intent.putExtra("pid",entity.getData().getCategory().get(i).getId());
+                        Intent intent = new Intent(getActivity(), GoodsClassActivity.class);
+                        intent.putExtra("title", entity.getData().getCategory().get(i).getName());
+                        intent.putExtra("pid", entity.getData().getCategory().get(i).getId());
                         startActivity(intent);
                     }
                 });
 
-                IndexListAdapter listAdapter = new IndexListAdapter(getActivity(),entity);
+                IndexListAdapter listAdapter = new IndexListAdapter(getActivity(), entity);
                 vh.listView.setAdapter(listAdapter);
 
-                IndexHotMallAdapter mallAdapter=new IndexHotMallAdapter(getActivity(),entity);
-                vh.gvJinpin.setAdapter(mallAdapter);
-                vh.gvJinpin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                IndexHotMallAdapter mallAdapter = new IndexHotMallAdapter(getActivity(), entity);
+                vh.gv_jinping.setAdapter(mallAdapter);
+                vh.gv_jinping.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        Intent intent=new Intent(getActivity(),MallActivity.class);
-                        intent.putExtra("sid",entity.getData().getBestshop().get(i).getId());
+                        Intent intent = new Intent(getActivity(), MallActivity.class);
+                        intent.putExtra("sid", entity.getData().getBestshop().get(i).getId());
                         startActivity(intent);
                     }
                 });
@@ -191,25 +212,28 @@ public class IndexFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 LoadDialog.dismiss(getActivity());
+                if(vh.refreshLayout.isRefreshing()){
+                    vh.refreshLayout.refreshComplete();
+                }
             }
         });
     }
 
-    private void getClaGoods(int type){
+    private void getClaGoods(int type) {
         LoadDialog.show(getActivity());
-        new ApiManager().getGoodsList(null, null, null, null, null, type==0?null:"1", new Callback.CommonCallback<String>() {
+        new ApiManager().getGoodsList(null, null, null, null, null, type == 0 ? null : "1", new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                final GoodsListEntity goodsList=JSONObject.parseObject(result,GoodsListEntity.class);
-                IndexHotGoodsAdapter adapter=new IndexHotGoodsAdapter(getActivity());
+                final GoodsListEntity goodsList = JSONObject.parseObject(result, GoodsListEntity.class);
+                IndexHotGoodsAdapter adapter = new IndexHotGoodsAdapter(getActivity());
                 vh.new_goods.setAdapter(adapter);
                 adapter.setList(goodsList.getData().getResult());
 
                 vh.new_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent intent=new Intent(getActivity(),GoodsDetailsActivity.class);
-                        intent.putExtra("goods_id",goodsList.getData().getResult().get(position).getGoods_id());
+                        Intent intent = new Intent(getActivity(), GoodsDetailsActivity.class);
+                        intent.putExtra("goods_id", goodsList.getData().getResult().get(position).getGoods_id());
                         startActivity(intent);
                     }
                 });
@@ -228,6 +252,9 @@ public class IndexFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 LoadDialog.dismiss(getActivity());
+                if(vh.refreshLayout.isRefreshing()){
+                    vh.refreshLayout.refreshComplete();
+                }
             }
         });
     }
@@ -242,6 +269,7 @@ public class IndexFragment extends BaseFragment {
     class ViewHolder {
         public View rootView;
         public Banner banner;
+        public LinearLayout ll_bar;
         public ImageView iv_search;
         public EditText ed_search;
         public ImageView iv_del;
@@ -253,13 +281,15 @@ public class IndexFragment extends BaseFragment {
         public RadioButton rb_xinpin_2;
         public LinearLayout ll_line_2;
         public LinearLayout ll_rexiao;
-        public LinearLayout ll_bar;
         public NoScroGridView new_goods;
-        public NoScroGridView gvJinpin;
+        public ImageView iv_head;
+        public NoScroGridView gv_jinping;
+        public SmoothRefreshLayout refreshLayout;
 
         public ViewHolder(View rootView) {
             this.rootView = rootView;
             this.banner = (Banner) rootView.findViewById(R.id.banner);
+            this.ll_bar = (LinearLayout) rootView.findViewById(R.id.ll_bar);
             this.iv_search = (ImageView) rootView.findViewById(R.id.iv_search);
             this.ed_search = (EditText) rootView.findViewById(R.id.ed_search);
             this.iv_del = (ImageView) rootView.findViewById(R.id.iv_del);
@@ -268,12 +298,13 @@ public class IndexFragment extends BaseFragment {
             this.rb_xinpin = (RadioButton) rootView.findViewById(R.id.rb_xinpin);
             this.ll_line_1 = (LinearLayout) rootView.findViewById(R.id.ll_line_1);
             this.ll_xinpin = (LinearLayout) rootView.findViewById(R.id.ll_xinpin);
-            this.ll_bar = (LinearLayout) rootView.findViewById(R.id.ll_bar);
             this.rb_xinpin_2 = (RadioButton) rootView.findViewById(R.id.rb_xinpin_2);
             this.ll_line_2 = (LinearLayout) rootView.findViewById(R.id.ll_line_2);
             this.ll_rexiao = (LinearLayout) rootView.findViewById(R.id.ll_rexiao);
             this.new_goods = (NoScroGridView) rootView.findViewById(R.id.new_goods);
-            this.gvJinpin = (NoScroGridView) rootView.findViewById(R.id.gv_jinping);
+            this.iv_head = (ImageView) rootView.findViewById(R.id.iv_head);
+            this.gv_jinping = (NoScroGridView) rootView.findViewById(R.id.gv_jinping);
+            this.refreshLayout = (SmoothRefreshLayout) rootView.findViewById(R.id.smoothRefreshLayout);
         }
 
     }

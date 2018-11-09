@@ -13,9 +13,11 @@ import android.widget.RadioButton;
 import com.liuge.z02sckhd_6wqgx.R;
 import com.liuge.z02sckhd_6wqgx.adapter.PagerAdapter;
 import com.liuge.z02sckhd_6wqgx.network.SixGridContext;
+import com.liuge.z02sckhd_6wqgx.utils.NToast;
 import com.liuge.z02sckhd_6wqgx.utils.StatusBarUtil;
 import com.liuge.z02sckhd_6wqgx.view.ControlScrollViewPager;
 import com.tenma.ventures.base.TMFragment;
+import com.tenma.ventures.bean.utils.TMSharedPUtil;
 //import com.tenma.ventures.tools.change_activity.TitleChange;
 
 import java.util.ArrayList;
@@ -167,18 +169,30 @@ public class IntoMallFragment extends TMFragment {
         vh.rb_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(TMSharedPUtil.getTMUser(getActivity())==null){
+                    NToast.shortToast(getActivity(),"请先登录");
+                    return;
+                }
                 vh.view_pager.setCurrentItem(2,false);
             }
         });
         vh.rb_shouyi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(TMSharedPUtil.getTMUser(getActivity())==null){
+                    NToast.shortToast(getActivity(),"请先登录");
+                    return;
+                }
                 vh.view_pager.setCurrentItem(3,false);
             }
         });
         vh.rb_mine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(TMSharedPUtil.getTMUser(getActivity())==null){
+                    NToast.shortToast(getActivity(),"请先登录");
+                    return;
+                }
                 vh.view_pager.setCurrentItem(4,false);
             }
         });

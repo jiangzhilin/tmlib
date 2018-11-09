@@ -63,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:text="销量0件"
                     android:textSize="10sp"
+                    android:visibility="gone"
                     android:textColor="#999"/>
                 <TextView
                     android:id="@+id/tv_shengyu_1"

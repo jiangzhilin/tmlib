@@ -17,7 +17,9 @@ import com.liuge.z02sckhd_6wqgx.ui.GoodsDetailsActivity;
 import com.liuge.z02sckhd_6wqgx.ui.GoodsMiaoshaActivity;
 import com.liuge.z02sckhd_6wqgx.ui.PaimaiDetailsActivity;
 import com.liuge.z02sckhd_6wqgx.ui.TuangouDetailsActivity;
+import com.liuge.z02sckhd_6wqgx.utils.NToast;
 import com.liuge.z02sckhd_6wqgx.view.NoScroGridView;
+import com.tenma.ventures.bean.utils.TMSharedPUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -242,6 +244,10 @@ public class IndexListAdapter extends BaseAdapter {
             vh.gv_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    if(TMSharedPUtil.getTMUser(mContext)==null){
+                        NToast.shortToast(mContext,"请先登录");
+                        return;
+                    }
                     Intent intent = new Intent(mContext, PaimaiDetailsActivity.class);
                     intent.putExtra("id", entity.getData().getAuction().get(i).getAct_id());
                     mContext.startActivity(intent);
@@ -255,6 +261,10 @@ public class IndexListAdapter extends BaseAdapter {
             vh.gv_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    if(TMSharedPUtil.getTMUser(mContext)==null){
+                        NToast.shortToast(mContext,"请先登录");
+                        return;
+                    }
                     Intent intent=new Intent(mContext,TuangouDetailsActivity.class);
                     intent.putExtra("id",entity.getData().getGroupbuy().get(i).getAct_id());
                     mContext.startActivity(intent);
@@ -268,6 +278,10 @@ public class IndexListAdapter extends BaseAdapter {
             vh.gv_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    if(TMSharedPUtil.getTMUser(mContext)==null){
+                        NToast.shortToast(mContext,"请先登录");
+                        return;
+                    }
                     Intent intent=new Intent(mContext,GoodsMiaoshaActivity.class);
                     intent.putExtra("id",entity.getData().getSpike().get(i).getAct_id());
                     mContext.startActivity(intent);
@@ -281,6 +295,10 @@ public class IndexListAdapter extends BaseAdapter {
             vh.gv_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    if(TMSharedPUtil.getTMUser(mContext)==null){
+                        NToast.shortToast(mContext,"请先登录");
+                        return;
+                    }
                     Intent intent=new Intent(mContext,GoodsDetailsActivity.class);
                     intent.putExtra("goods_id",entity.getData().getIsbest().get(i).getGoods_id());
                     mContext.startActivity(intent);

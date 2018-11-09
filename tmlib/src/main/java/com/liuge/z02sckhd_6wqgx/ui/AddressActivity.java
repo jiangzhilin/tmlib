@@ -202,4 +202,11 @@ public class AddressActivity extends BaseActivity {
         list = (NoScroListView) findViewById(R.id.list);
         refreshLayout = (SmoothRefreshLayout) findViewById(R.id.smoothRefreshLayout);
     }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getAddress();
+    }
 }

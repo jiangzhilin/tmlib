@@ -273,7 +273,7 @@ public class GoodsDetailsActivity extends FragmentActivity {
                     tv_goods_detail.setText(entity.getData().getDescription());
                     tv_goods_detail.setVisibility(View.GONE);
 
-                    tv_ac_num.setText("销量：" + entity.getData().getClick_count() + "件");
+                    tv_ac_num.setText("销量：" + entity.getData().getSales() + "件");
                     tv_shengyu_num.setText("剩余宝贝：" + entity.getData().getGoods_number() + "件");
                     tv_price_detail.setText("价格");
                     tv_price.setText(entity.getData().getPrice());

@@ -4,7 +4,12 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:gravity="center">
-
+    <me.dkzwm.smoothrefreshlayout.SmoothRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/smoothRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -210,4 +215,5 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    </me.dkzwm.smoothrefreshlayout.SmoothRefreshLayout>
 </LinearLayout>

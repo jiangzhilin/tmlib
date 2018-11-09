@@ -116,6 +116,13 @@ public class SubmitOrderActivity extends BaseActivity {
     }
 
     private void createOrder(final SubmitCartEntity e) {
+        if(e.getData().getConsignee_default()==null){
+            NToast.shortToast(mContext,"暂未设置收货地址，请先设置");
+            return;
+        }else if(e.getData().getConsignee_default().size()==0){
+            NToast.shortToast(mContext,"暂未设置收货地址，请先设置");
+            return;
+        }
         LoadDialog.show(mContext);
         new ApiManager().createOrder(flow_type, address==null?e.getData().getConsignee_default().get(0).getAddress_id():address.getAddress_id(), null, new Callback.CommonCallback<String>() {
             @Override

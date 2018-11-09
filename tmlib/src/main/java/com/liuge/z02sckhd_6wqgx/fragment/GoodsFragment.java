@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
@@ -30,6 +31,10 @@ import org.xutils.common.Callback;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.dkzwm.smoothrefreshlayout.RefreshingListenerAdapter;
+import me.dkzwm.smoothrefreshlayout.SmoothRefreshLayout;
+import me.dkzwm.smoothrefreshlayout.extra.header.ClassicHeader;
+
 import static android.content.ContentValues.TAG;
 
 /**
@@ -45,14 +50,16 @@ public class GoodsFragment extends BaseFragment {
     private ViewHolder vh;
     private View view;
 
-    private int[]icons=new int[]{R.mipmap.z02sckhd_6wqgx_icon_nvzhuang,R.mipmap.z02sckhd_6wqgx_icon_xiemao,R.mipmap.z02sckhd_6wqgx_icon_tongzhuang,R.mipmap.z02sckhd_6wqgx_icon_meizhuang,R.mipmap.z02sckhd_6wqgx_icon_shippin,R.mipmap.z02sckhd_6wqgx_icon_baihuo,R.mipmap.z02sckhd_6wqgx_icon_jiadian,R.mipmap.z02sckhd_6wqgx_icon_more};
+    private int[] icons = new int[]{R.mipmap.z02sckhd_6wqgx_icon_nvzhuang, R.mipmap.z02sckhd_6wqgx_icon_xiemao, R.mipmap.z02sckhd_6wqgx_icon_tongzhuang, R.mipmap.z02sckhd_6wqgx_icon_meizhuang, R.mipmap.z02sckhd_6wqgx_icon_shippin, R.mipmap.z02sckhd_6wqgx_icon_baihuo, R.mipmap.z02sckhd_6wqgx_icon_jiadian, R.mipmap.z02sckhd_6wqgx_icon_more};
 
-    private String []names=new String[]{"女装","鞋帽","童装","美妆","食品","百货","家电","更多"};
+    private String[] names = new String[]{"女装", "鞋帽", "童装", "美妆", "食品", "百货", "家电", "更多"};
 
     IndexHotGoodsAdapter madapter;
     IndexHotGoodsAdapter madapter2;
 
-    List<GoodsListEntity.DataBean.ResultBean>mList=new ArrayList<>();
+    List<GoodsListEntity.DataBean.ResultBean> mList = new ArrayList<>();
+
+    private int choose_position=0;
 
     /**
      * Fragment生命周期方法，此view可改为自定义的布局
@@ -94,8 +101,8 @@ public class GoodsFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.VISIBLE);
                 vh.rb_xinpin_2.setChecked(false);
                 vh.ll_line_2.setVisibility(View.INVISIBLE);
-
-                getClaGoods(0);
+                choose_position=0;
+                getClaGoods(choose_position);
             }
         });
         vh.ll_rexiao.setOnClickListener(new View.OnClickListener() {
@@ -105,13 +112,13 @@ public class GoodsFragment extends BaseFragment {
                 vh.ll_line_1.setVisibility(View.INVISIBLE);
                 vh.rb_xinpin_2.setChecked(true);
                 vh.ll_line_2.setVisibility(View.VISIBLE);
-
-                getClaGoods(1);
+                choose_position=1;
+                getClaGoods(choose_position);
             }
         });
 
         madapter2 = new IndexHotGoodsAdapter(getActivity());
-        vh.gvJinpin.setAdapter(madapter2);
+        vh.gv_jinping.setAdapter(madapter2);
 
 //        madapter = new IndexHotGoodsAdapter(getActivity());
 //        vh.new_goods.setAdapter(madapter);
@@ -120,7 +127,7 @@ public class GoodsFragment extends BaseFragment {
 
         getBanner();
 
-        getClaGoods(0);
+        getClaGoods(choose_position);
 
 //        vh.gvJinpin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
@@ -130,25 +137,40 @@ public class GoodsFragment extends BaseFragment {
 //                getActivity().startActivity(intent);
 //            }
 //        });
+        vh.refreshLayout.setMode(SmoothRefreshLayout.MODE_REFRESH);
+        vh.refreshLayout.setHeaderView(new ClassicHeader(getActivity()));
+        vh.refreshLayout.setOnRefreshListener(new RefreshingListenerAdapter() {
+            @Override
+            public void onRefreshBegin(boolean isRefresh) {
+
+                if(vh.refreshLayout.isRefreshing()){
+                    getGoosClass();
+
+                    getBanner();
+
+                    getClaGoods(choose_position);
+                }
+            }
+        });
     }
 
-    private void getGoosClass(){
+    private void getGoosClass() {
         LoadDialog.show(getActivity());
         new ApiManager().getGoodsClass(null, new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                Log.d(TAG, "onSuccess: "+result);
-                final GoodsClassEntity goods= JSONObject.parseObject(result,GoodsClassEntity.class);
+                Log.d(TAG, "onSuccess: " + result);
+                final GoodsClassEntity goods = JSONObject.parseObject(result, GoodsClassEntity.class);
 
-                ClassicAdapter adapter = new ClassicAdapter(getActivity(),goods);
+                ClassicAdapter adapter = new ClassicAdapter(getActivity(), goods);
                 vh.rcy_classic.setAdapter(adapter);
 
                 vh.rcy_classic.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        Intent intent=new Intent(getActivity(),GoodsClassActivity.class);
-                        intent.putExtra("title",goods.getData().get(i).getName());
-                        intent.putExtra("pid",goods.getData().get(i).getId());
+                        Intent intent = new Intent(getActivity(), GoodsClassActivity.class);
+                        intent.putExtra("title", goods.getData().get(i).getName());
+                        intent.putExtra("pid", goods.getData().get(i).getId());
                         startActivity(intent);
                     }
                 });
@@ -167,6 +189,9 @@ public class GoodsFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 LoadDialog.dismiss(getActivity());
+                if(vh.refreshLayout.isRefreshing()){
+                    vh.refreshLayout.refreshComplete();
+                }
             }
         });
     }
@@ -177,14 +202,14 @@ public class GoodsFragment extends BaseFragment {
         new ApiManager().getBanner(new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                final BannerEntity entity=JSONObject.parseObject(result,BannerEntity.class);
-                TuiJianAdapter adapter4=new TuiJianAdapter(getActivity(),entity.getData().getIsbest());
-                vh.gvJinpin.setAdapter(adapter4);
-                vh.gvJinpin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                final BannerEntity entity = JSONObject.parseObject(result, BannerEntity.class);
+                TuiJianAdapter adapter4 = new TuiJianAdapter(getActivity(), entity.getData().getIsbest());
+                vh.gv_jinping.setAdapter(adapter4);
+                vh.gv_jinping.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        Intent intent=new Intent(getActivity(),GoodsDetailsActivity.class);
-                        intent.putExtra("goods_id",entity.getData().getIsbest().get(i).getGoods_id());
+                        Intent intent = new Intent(getActivity(), GoodsDetailsActivity.class);
+                        intent.putExtra("goods_id", entity.getData().getIsbest().get(i).getGoods_id());
                         getActivity().startActivity(intent);
                     }
                 });
@@ -203,6 +228,9 @@ public class GoodsFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 LoadDialog.dismiss(getActivity());
+                if(vh.refreshLayout.isRefreshing()){
+                    vh.refreshLayout.refreshComplete();
+                }
             }
         });
     }
@@ -241,21 +269,21 @@ public class GoodsFragment extends BaseFragment {
 //    }
 
 
-    private void getClaGoods(int type){
+    private void getClaGoods(int type) {
         LoadDialog.show(getActivity());
-        new ApiManager().getGoodsList(null, null, null, null, null, type==0?null:"1", new Callback.CommonCallback<String>() {
+        new ApiManager().getGoodsList(null, null, null, null, null, type == 0 ? null : "1", new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String result) {
-                final GoodsListEntity goodsList=JSONObject.parseObject(result,GoodsListEntity.class);
-                IndexHotGoodsAdapter adapter=new IndexHotGoodsAdapter(getActivity());
+                final GoodsListEntity goodsList = JSONObject.parseObject(result, GoodsListEntity.class);
+                IndexHotGoodsAdapter adapter = new IndexHotGoodsAdapter(getActivity());
                 vh.new_goods.setAdapter(adapter);
                 adapter.setList(goodsList.getData().getResult());
 
                 vh.new_goods.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent intent=new Intent(getActivity(),GoodsDetailsActivity.class);
-                        intent.putExtra("goods_id",goodsList.getData().getResult().get(position).getGoods_id());
+                        Intent intent = new Intent(getActivity(), GoodsDetailsActivity.class);
+                        intent.putExtra("goods_id", goodsList.getData().getResult().get(position).getGoods_id());
                         startActivity(intent);
                     }
                 });
@@ -274,36 +302,42 @@ public class GoodsFragment extends BaseFragment {
             @Override
             public void onFinished() {
                 LoadDialog.dismiss(getActivity());
+                if(vh.refreshLayout.isRefreshing()){
+                    vh.refreshLayout.refreshComplete();
+                }
             }
         });
     }
 
     class ViewHolder {
         public View rootView;
+        public LinearLayout ll_bar;
         public NoScroGridView rcy_classic;
+        public ImageView iv_head;
+        public NoScroGridView gv_jinping;
         public RadioButton rb_xinpin;
         public LinearLayout ll_line_1;
         public LinearLayout ll_xinpin;
         public RadioButton rb_xinpin_2;
         public LinearLayout ll_line_2;
         public LinearLayout ll_rexiao;
-        public NoScroGridView gvJinpin;
         public NoScroGridView new_goods;
-        public LinearLayout ll_bar;
+        public SmoothRefreshLayout refreshLayout;
 
         public ViewHolder(View rootView) {
             this.rootView = rootView;
-
+            this.ll_bar = (LinearLayout) rootView.findViewById(R.id.ll_bar);
             this.rcy_classic = (NoScroGridView) rootView.findViewById(R.id.rcy_classic);
+            this.iv_head = (ImageView) rootView.findViewById(R.id.iv_head);
+            this.gv_jinping = (NoScroGridView) rootView.findViewById(R.id.gv_jinping);
             this.rb_xinpin = (RadioButton) rootView.findViewById(R.id.rb_xinpin);
             this.ll_line_1 = (LinearLayout) rootView.findViewById(R.id.ll_line_1);
             this.ll_xinpin = (LinearLayout) rootView.findViewById(R.id.ll_xinpin);
             this.rb_xinpin_2 = (RadioButton) rootView.findViewById(R.id.rb_xinpin_2);
             this.ll_line_2 = (LinearLayout) rootView.findViewById(R.id.ll_line_2);
             this.ll_rexiao = (LinearLayout) rootView.findViewById(R.id.ll_rexiao);
-            this.gvJinpin = (NoScroGridView) rootView.findViewById(R.id.gv_jinping);
             this.new_goods = (NoScroGridView) rootView.findViewById(R.id.new_goods);
-            this.ll_bar = (LinearLayout) rootView.findViewById(R.id.ll_bar);
+            this.refreshLayout = (SmoothRefreshLayout) rootView.findViewById(R.id.refreshLayout);
         }
 
     }
